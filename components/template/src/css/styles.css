@@ -1,0 +1,104 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	background: var(--primary-color);
+	color: var(--secondary-color);
+	font-size: 2rem;
+}
+
+.grid-container {
+	display: grid;
+	grid: repeat(12, 1fr) / minmax(100px, auto);
+	margin: 0 auto;
+	height: 100%;
+	width: 100%;
+	grid-gap: 10px;
+}
+
+.grid-container > * {
+	padding: 1.5rem;
+}
+
+.header {
+	grid-column: 1/13;
+	grid-row: 1/2;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 0.05rem solid var(--cta-color);
+}
+
+.nav {
+	grid-column: 1/2;
+	grid-row: 2/11;
+}
+
+.main {
+	grid-column: 2/12;
+	grid-row: 2/11;
+}
+
+.aside {
+	grid-column: 12/13;
+	grid-row: 2/11;
+}
+
+.footer {
+	grid-column: 1/13;
+	grid-row: 11/13;
+}
+
+/* || Brand Info - logo and name */
+.brand-info {
+}
+
+.brand-logo {
+	height: 6rem;
+	width: 6rem;
+}
+
+.brand-name {
+	height: 3rem;
+	width: 2rem;
+	position: relative;
+	top: -0.6rem;
+	left: -2.6rem;
+	font-weight: bold;
+	color: var(--cta-color);
+}
+
+/* || Mobile Screen Layout */
+@media screen and (max-width: 480px) {
+	.brand-info {
+		text-align: center;
+	}
+}
+
+.social-icon-container {
+	display: flex;
+	gap: 2rem;
+	color: inherit;
+	color: var(--secondary-color);
+}
+
+.social:hover {
+	color: var(--cta-color);
+}
+
+.fab {
+	cursor: pointer;
+}
+
+.fas {
+	cursor: pointer;
+}
