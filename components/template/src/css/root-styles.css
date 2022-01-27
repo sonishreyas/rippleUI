@@ -2,15 +2,45 @@
 
 /* || Colors and fonts */
 :root {
-	--primary-color: #0a1929;
-	--secondary-color: #fffafa;
-	--cta-color: #3399ff;
-	/* Backup colors: ff4321 */
 	font-family: "Raleway", sans-serif;
 	font-size: 62.5%;
+
+	/* Dark Theme Color */
+	--primary-color-dark: #0a1929;
+	--secondary-color-dark: #fffafa;
+	--cta-color-dark: #3399ff;
+	/* Backup colors: ff4321 */
+
+	/* Light Theme color */
+	--primary-color-light: #fffafa;
+	--secondary-color-light: #0a1929;
+	--cta-color-light: #3399ff;
 }
 
-.light-theme {
-	--primary-color: var(--secondary-color);
-	--secondary-color: var(--primary-color);
+@media (prefers-color-scheme: light) {
+	:root {
+		--primary-color: var(--primary-color-light);
+		--secondary-color: var(--secondary-color-light);
+		--cta-color: var(--cta-color-light);
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--primary-color: var(--primary-color-dark);
+		--secondary-color: var(--secondary-color-dark);
+		--cta-color: var(--cta-color-dark);
+	}
+}
+
+[color-scheme="dark"] {
+	--primary-color: var(--primary-color-dark);
+	--secondary-color: var(--secondary-color-dark);
+	--cta-color: var(--cta-color-dark);
+}
+
+[color-scheme="light"] {
+	--primary-color: var(--primary-color-light);
+	--secondary-color: var(--secondary-color-light);
+	--cta-color: var(--cta-color-light);
 }

@@ -1,16 +1,38 @@
 const themeIcon = document.querySelector(".theme-icon");
-themeIcon.addEventListener("click", () => {
-	document.body.classList.toggle("light-theme");
-	if (document.body.classList.contains("light-theme")) {
-		console.log("here", themeIcon.classList);
-		if (themeIcon.classList.contains("fa-sun")) {
-			themeIcon.classList.remove("fa-sun");
-			themeIcon.classList.add("fa-moon");
-		}
+const getCurrentTheme = () => {
+	let theme = window.matchMedia("(prefers-color-scheme): light").matches
+		? "light"
+		: "dark";
+	localStorage.getItem("ripple.theme")
+		? (theme = localStorage.getItem("ripple.theme"))
+		: null;
+	console.log(theme);
+	return theme;
+};
+
+const loadTheme = (theme) => {
+	const root = document.querySelector(":root");
+	if (theme === "light") {
+		console.log(themeIcon.classList);
+		themeIcon.classList.remove("fa-sun");
+		themeIcon.classList.add("fa-moon");
 	} else {
-		if (themeIcon.classList.contains("fa-moon")) {
-			themeIcon.classList.remove("fa-moon");
-			themeIcon.classList.add("fa-sun");
-		}
+		themeIcon.classList.remove("fa-moon");
+		themeIcon.classList.add("fa-sun");
 	}
+	root.setAttribute("color-scheme", `${theme}`);
+};
+
+themeIcon.addEventListener("click", () => {
+	let theme = getCurrentTheme();
+	if (theme === "dark") {
+		theme = "light";
+	} else {
+		theme = "dark";
+	}
+	localStorage.setItem("ripple.theme", `${theme}`);
+	loadTheme(theme);
+});
+window.addEventListener("DOMContentLoaded", () => {
+	loadTheme(getCurrentTheme());
 });
