@@ -13,7 +13,7 @@ body {
 body {
 	background: var(--primary-color);
 	color: var(--secondary-color);
-	font-size: 2rem;
+	font-size: 1.8rem;
 }
 
 .grid-container {
@@ -22,7 +22,6 @@ body {
 	margin: 0 auto;
 	height: 100%;
 	width: 100%;
-	grid-gap: 10px;
 }
 
 .grid-container > * {
@@ -101,4 +100,75 @@ body {
 
 .fas {
 	cursor: pointer;
+}
+
+/* || Navigation Bar */
+
+.nav {
+	padding: 1rem;
+}
+
+.no-list {
+	list-style: none;
+	margin-left: 1rem;
+}
+
+.rui-drawer-content--list {
+	color: var(--secondary-color);
+}
+
+.rui-drawer-links {
+	color: var(--secondary-color);
+	text-decoration: none;
+}
+
+.rui-drawer-links:hover {
+	color: var(--cta-color);
+}
+
+.rui-drawer-content {
+	padding: 0.5rem;
+}
+
+.rui-drawer--sub-list {
+	margin: 1rem 0 0 2.5rem;
+}
+
+.list-heading {
+	font-weight: bold;
+}
+
+.link-active {
+	color: var(--cta-color);
+	padding-left: 1rem;
+	border-left: 0.2rem solid var(--cta-color);
+}
+/* Aside */
+
+.aside {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	font-size: 1.5rem;
+}
+
+.rui-aside--heading {
+	font-weight: bold;
+}
+
+/* Footer */
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	border-top: 1px solid var(--cta-color);
+}
+.footer-copyright {
+	font-size: 1.2rem;
+}
+.footer-copyright span {
+	font-size: 0.8rem;
 }

@@ -1,4 +1,5 @@
 const themeIcon = document.querySelector(".theme-icon");
+const rippleLogo = document.querySelector(".brand-logo");
 const getCurrentTheme = () => {
 	let theme = window.matchMedia("(prefers-color-scheme): light").matches
 		? "light"
@@ -16,9 +17,11 @@ const loadTheme = (theme) => {
 		console.log(themeIcon.classList);
 		themeIcon.classList.remove("fa-sun");
 		themeIcon.classList.add("fa-moon");
+		rippleLogo.src = "./src/media/images/ripple-logo-light.png";
 	} else {
 		themeIcon.classList.remove("fa-moon");
 		themeIcon.classList.add("fa-sun");
+		rippleLogo.src = "./src/media/images/ripple-logo-dark.png";
 	}
 	root.setAttribute("color-scheme", `${theme}`);
 };

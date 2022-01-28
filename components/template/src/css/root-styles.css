@@ -12,9 +12,9 @@
 	/* Backup colors: ff4321 */
 
 	/* Light Theme color */
-	--primary-color-light: #fffafa;
+	--primary-color-light: #d4d4d8;
 	--secondary-color-light: #0a1929;
-	--cta-color-light: #3399ff;
+	--cta-color-light: #ff4321;
 }
 
 @media (prefers-color-scheme: light) {

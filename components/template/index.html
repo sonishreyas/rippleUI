@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./src/css/root-styles.css">
-    <link rel="stylesheet" href="./src/css/styles.css">
+    <link rel="stylesheet" href="./src/css/root-styles.css" />
+    <link rel="stylesheet" href="./src/css/styles.css" />
     <title>Document</title>
 </head>
 
@@ -17,7 +17,7 @@
     <div class="grid-container">
         <header class="header">
             <div class="brand-info">
-                <img src="./src/media/images/ripple-logo.png" alt="Logo of ripple UI" class="brand-logo">
+                <img src="./src/media/images/ripple-logo-dark.png" alt="Logo of ripple UI" class="brand-logo" />
                 <sub class="brand-name">Ripple UI</sub>
             </div>
             <div class="social-icon-container">
@@ -28,9 +28,98 @@
             </div>
         </header>
         <main class="main trial">main</main>
-        <aside class="aside trial">aside</aside>
-        <nav class="nav trial">nav</nav>
-        <footer class="footer trial">footer</footer>
+        <aside class="aside">
+            <p class="rui-aside--heading">On this page</p>
+            <ul class="rui-drawer-content--list no-list">
+                <li class="rui-drawer-content">
+                    <a href="#simple-avatar" class="rui-drawer-links  link-active">
+                        <span class="rui-drawer-content--text">Simple Avatar</span>
+                    </a>
+                </li>
+                <li class="rui-drawer-content">
+                    <a href="#simple-avatar" class="rui-drawer-links">
+                        <span class="rui-drawer-content--text">Avatar with picture</span>
+                    </a>
+                </li>
+                <li class="rui-drawer-content">
+                    <a href="#simple-avatar" class="rui-drawer-links">
+                        <span class="rui-drawer-content--text">Avatar badge</span>
+                    </a>
+                </li>
+        </aside>
+        <nav class="nav">
+            <ul class="rui-drawer-content--list no-list">
+                <li class="rui-drawer-content">
+                    <a href="" class="rui-drawer-links">
+                        <span class="rui-drawer-content--text">Home</span>
+                    </a>
+                </li>
+                <li class="rui-drawer-content">
+                    <span class="rui-drawer-content--text list-heading">Getting Started</span>
+                    <ul class="rui-drawer--sub-list no-list">
+                        <li class="rui-drawer-content">
+                            <a href="" class="rui-drawer-links">
+                                <span class="rui-drawer-content--text">Installation</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="rui-drawer-content">
+                    <span class="rui-drawer-content--text list-heading">Components</span>
+                    <ul class="rui-drawer--sub-list no-list">
+                        <li class="rui-drawer-content">
+                            <a href="" class="rui-drawer-links link-active">
+                                <span class="rui-drawer-content--text">Avatar</span>
+                            </a>
+                        </li>
+                        <li class="rui-drawer-content">
+                            <a href="" class="rui-drawer-links">
+                                <span class="rui-drawer-content--text">Alert</span>
+                            </a>
+                        </li>
+                        <li class="rui-drawer-content">
+                            <a href="" class="rui-drawer-links">
+                                <span class="rui-drawer-content--text">Badges</span>
+                            </a>
+                        </li>
+                        <li class="rui-drawer-content">
+                            <a href="" class="rui-drawer-links">
+                                <span class="rui-drawer-content--text">Buttons</span>
+                            </a>
+                        </li>
+                        <li class="rui-drawer-content">
+                            <a href="" class="rui-drawer-links">
+                                <span class="rui-drawer-content--text">Cards</span>
+                            </a>
+                        </li>
+                        <li class="rui-drawer-content">
+                            <a href="" class="rui-drawer-links">
+                                <span class="rui-drawer-content--text">Chips</span>
+                            </a>
+                        </li>
+                        <li class="rui-drawer-content">
+                            <a href="" class="rui-drawer-links">
+                                <span class="rui-drawer-content--text">Drawer</span>
+                            </a>
+                        </li>
+                        <li class="rui-drawer-content">
+                            <a href="" class="rui-drawer-links">
+                                <span class="rui-drawer-content--text">Snackbar</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <footer class="footer">
+            <div class="social-icon-container">
+                <i class="fab fa-github social"></i>
+                <i class="fab fa-twitter social"></i>
+                <i class="fab fa-linkedin-in social"></i>
+            </div>
+            <p class="footer-copyright"><span class="footer-copyright-icon"><i class="far fa-copyright"></i></span>
+                Ripple UI</p>
+        </footer>
     </div>
     <script src="./src/js/root.js"></script>
 </body>
