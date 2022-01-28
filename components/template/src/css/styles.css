@@ -1,174 +1,195 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html,
 body {
-	height: 100%;
-	width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 body {
-	background: var(--primary-color);
-	color: var(--secondary-color);
-	font-size: 1.8rem;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  font-size: 1.8rem;
 }
 
 .grid-container {
-	display: grid;
-	grid: repeat(12, 1fr) / minmax(100px, auto);
-	margin: 0 auto;
-	height: 100%;
-	width: 100%;
+  display: grid;
+  grid: repeat(12, 1fr) / minmax(100px, auto);
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
 }
 
 .grid-container > * {
-	padding: 1.5rem;
+  padding: 1.5rem;
 }
 
 .header {
-	grid-column: 1/13;
-	grid-row: 1/2;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	border-bottom: 0.05rem solid var(--cta-color);
+  grid-column: 1/13;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.05rem solid var(--cta-color);
 }
 
 .nav {
-	grid-column: 1/2;
-	grid-row: 2/11;
+  grid-column: 1/2;
+  grid-row: 2/11;
 }
 
 .main {
-	grid-column: 2/12;
-	grid-row: 2/11;
+  grid-column: 2/12;
+  grid-row: 2/11;
 }
 
 .aside {
-	grid-column: 12/13;
-	grid-row: 2/11;
+  grid-column: 12/13;
+  grid-row: 2/11;
 }
 
 .footer {
-	grid-column: 1/13;
-	grid-row: 11/13;
+  grid-column: 1/13;
+  grid-row: 11/13;
 }
 
-/* || Brand Info - logo and name */
-.brand-info {
+/* || Flex Properties */
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
+
+/* ||  Header Brand Info - logo and name */
 
 .brand-logo {
-	height: 6rem;
-	width: 6rem;
+  height: 6rem;
+  width: 6rem;
 }
 
 .brand-name {
-	height: 3rem;
-	width: 2rem;
-	position: relative;
-	top: -0.6rem;
-	left: -2.6rem;
-	font-weight: bold;
-	color: var(--cta-color);
+  height: 3rem;
+  width: 2rem;
+  position: relative;
+  top: -0.6rem;
+  left: -2.6rem;
+  font-weight: bold;
+  color: var(--cta-color);
 }
 
 /* || Mobile Screen Layout */
 @media screen and (max-width: 480px) {
-	.brand-info {
-		text-align: center;
-	}
+  .brand-info {
+    text-align: center;
+  }
 }
 
 .social-icon-container {
-	display: flex;
-	gap: 2rem;
-	color: inherit;
-	color: var(--secondary-color);
+  display: flex;
+  gap: 2rem;
+  color: inherit;
+  color: var(--secondary-color);
 }
 
 .social:hover {
-	color: var(--cta-color);
+  color: var(--cta-color);
 }
 
 .fab {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .fas {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 /* || Navigation Bar */
 
 .nav {
-	padding: 1rem;
+  padding: 1rem;
 }
 
 .no-list {
-	list-style: none;
-	margin-left: 1rem;
+  list-style: none;
+  margin-left: 1rem;
 }
 
 .rui-drawer-content--list {
-	color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 .rui-drawer-links {
-	color: var(--secondary-color);
-	text-decoration: none;
+  color: var(--secondary-color);
+  text-decoration: none;
 }
 
 .rui-drawer-links:hover {
-	color: var(--cta-color);
+  color: var(--cta-color);
 }
 
 .rui-drawer-content {
-	padding: 0.5rem;
+  padding: 0.5rem;
 }
 
 .rui-drawer--sub-list {
-	margin: 1rem 0 0 2.5rem;
+  margin: 1rem 0 0 2.5rem;
 }
 
 .list-heading {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 .link-active {
-	color: var(--cta-color);
-	padding-left: 1rem;
-	border-left: 0.2rem solid var(--cta-color);
+  color: var(--cta-color);
+  padding-left: 1rem;
+  border-left: 0.2rem solid var(--cta-color);
 }
 /* Aside */
 
 .aside {
-	display: flex;
-	flex-direction: column;
-	justify-content: start;
-	font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  font-size: 1.5rem;
 }
 
 .rui-aside--heading {
-	font-weight: bold;
+  font-weight: bold;
 }
 
-/* Footer */
+/* || Footer */
 
 .footer {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	gap: 1rem;
-	border-top: 1px solid var(--cta-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-top: 1px solid var(--cta-color);
 }
 .footer-copyright {
-	font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 .footer-copyright span {
-	font-size: 0.8rem;
+  font-size: 0.8rem;
+}
+
+/* || Main */
+
+.rui-main--heading-container,
+.rui-main--sub-heading {
+  padding: 1rem;
+  margin: 0 1rem 0 1rem;
+  border-bottom: 0.01em solid var(--cta-color);
+}
+.rui-main--heading {
+  padding: 1rem;
+}
+
+.rui-main--text {
+  padding: 1rem;
 }

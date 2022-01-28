@@ -10,6 +10,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./src/css/root-styles.css" />
     <link rel="stylesheet" href="./src/css/styles.css" />
+    <link rel="stylesheet" href="./src/css/code-tabs.css">
     <title>Document</title>
 </head>
 
@@ -17,7 +18,8 @@
     <div class="grid-container">
         <header class="header">
             <div class="brand-info">
-                <img src="./src/media/images/ripple-logo-dark.png" alt="Logo of ripple UI" class="brand-logo" />
+                <img src="../../components/media/images/ripple-logo-dark.png" alt="Logo of ripple UI"
+                    class="brand-logo" />
                 <sub class="brand-name">Ripple UI</sub>
             </div>
             <div class="social-icon-container">
@@ -27,7 +29,20 @@
                 <i class="fas fa-sun theme-icon social" aria-label="dark/light theme icon"></i>
             </div>
         </header>
-        <main class="main trial">main</main>
+        <main class="main flex-column">
+            <section class="rui-main--heading-container">
+                <h2 class="rui-main--heading">Avatar</h2>
+                <p class="rui-main--text">Avatar can be used to show user's profile picture on profile information page,
+                    on navigation bar, in blogs grid items.</p>
+            </section>
+            <section class="rui-main--sub-heading">
+                <h3 class="rui-main--heading simple-avatar">Simple Avatar</h3>
+                <div class="rui-import-html">
+
+                </div>
+
+            </section>
+        </main>
         <aside class="aside">
             <p class="rui-aside--heading">On this page</p>
             <ul class="rui-drawer-content--list no-list">
@@ -68,15 +83,16 @@
                     <span class="rui-drawer-content--text list-heading">Components</span>
                     <ul class="rui-drawer--sub-list no-list">
                         <li class="rui-drawer-content">
-                            <a href="" class="rui-drawer-links link-active">
-                                <span class="rui-drawer-content--text">Avatar</span>
-                            </a>
-                        </li>
-                        <li class="rui-drawer-content">
                             <a href="" class="rui-drawer-links">
                                 <span class="rui-drawer-content--text">Alert</span>
                             </a>
                         </li>
+                        <li class="rui-drawer-content">
+                            <a href="" class="rui-drawer-links link-active">
+                                <span class="rui-drawer-content--text">Avatar</span>
+                            </a>
+                        </li>
+
                         <li class="rui-drawer-content">
                             <a href="" class="rui-drawer-links">
                                 <span class="rui-drawer-content--text">Badges</span>
@@ -117,10 +133,11 @@
                 <i class="fab fa-twitter social"></i>
                 <i class="fab fa-linkedin-in social"></i>
             </div>
-            <p class="footer-copyright"><span class="footer-copyright-icon"><i class="far fa-copyright"></i></span>
+            <p class="footer-copyright"><span class="footer-copyright-icon"><i class="far fa-copyright"></i></span> 2022
                 Ripple UI</p>
         </footer>
     </div>
+    <script src="./src/js/index.js"></script>
     <script src="./src/js/root.js"></script>
 </body>
 
