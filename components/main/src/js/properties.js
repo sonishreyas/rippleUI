@@ -15,6 +15,7 @@
 const elements = [
 	{
 		name: "Simple Avatar",
+		rootCodeTabFilePath: "../main/src/html/code-tabs-root.html",
 		rootCodeLocation:
 			".main .rui-main--sub-heading .simple-avatar .rui-import-html",
 		elementCodeFilePath: "../main/src/html/simple-avatar.html",

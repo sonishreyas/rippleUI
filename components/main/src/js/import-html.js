@@ -18,33 +18,34 @@ const importHtml = async (
 
 // Build Logic
 
-const codeImport = async (
-	params,
-	rootCodeTabFilePath = "../main/src/html/code-tabs-root.html"
-) => {
+const codeImport = async (params) => {
 	// Import root Code Drawer and then add styling
-	return importHtml(rootCodeTabFilePath, params.rootCodeLocation).then(() => {
-		return importHtml(
-			params.elementCodeFilePath,
-			params.elementCodeLocation
-		).then(() => {
-			const element_code = document.querySelector(params.elementCodeClassPath);
-			element_code.innerHTML = params.elementCodeInnerText;
+	return importHtml(params.rootCodeTabFilePath, params.rootCodeLocation).then(
+		() => {
+			return importHtml(
+				params.elementCodeFilePath,
+				params.elementCodeLocation
+			).then(() => {
+				const element_code = document.querySelector(
+					params.elementCodeClassPath
+				);
+				element_code.innerHTML = params.elementCodeInnerText;
 
-			const element_JS_code = document.querySelector(
-				params.elementJSCodeClassPath
-			);
-			element_JS_code.innerHTML = params.elementJSCodeInnerText;
+				const element_JS_code = document.querySelector(
+					params.elementJSCodeClassPath
+				);
+				element_JS_code.innerHTML = params.elementJSCodeInnerText;
 
-			handleCodeTab(
-				params.handleCodeTabBtnClass,
-				params.handleCodeTabCodeContentClass
-			);
+				handleCodeTab(
+					params.handleCodeTabBtnClass,
+					params.handleCodeTabCodeContentClass
+				);
 
-			const addSandboxURL = document.querySelector(params.sandboxURLClass);
-			addSandboxURL.href = params.sandboxURL;
-		});
-	});
+				const addSandboxURL = document.querySelector(params.sandboxURLClass);
+				addSandboxURL.href = params.sandboxURL;
+			});
+		}
+	);
 };
 
 export { importHtml, codeImport };
