@@ -18,7 +18,7 @@ body {
 
 .grid-container {
 	display: grid;
-	grid: repeat(12, 1fr) / minmax(100px, auto);
+	grid: 100px, repeat(10, 1fr), 100px / minmax(100px, auto);
 	margin: 0 auto;
 }
 
@@ -76,7 +76,7 @@ body {
 	border-radius: 0.8rem;
 	border: 0.1rem solid var(--secondary-color);
 	margin: 1rem;
-	display: none;
+	/* display: none; */
 }
 
 .header-nav-icon:hover {
@@ -126,7 +126,7 @@ body {
 
 /* || Navigation Bar */
 .inactive {
-	display: none;
+	visibility: hidden;
 }
 .nav {
 	padding: 1rem;
