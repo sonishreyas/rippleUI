@@ -76,7 +76,7 @@ body {
 	border-radius: 0.8rem;
 	border: 0.1rem solid var(--secondary-color);
 	margin: 1rem;
-	/* display: none; */
+	display: none;
 }
 
 .header-nav-icon:hover {

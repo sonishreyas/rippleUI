@@ -1,9 +1,3 @@
-@media screen and (min-width: 1180px) {
-	.nav {
-		visibility: visible;
-	}
-}
-
 /* || Tablet Screen Layout */
 @media screen and (max-width: 1180px) {
 	.grid-container {
@@ -16,7 +10,7 @@
 
 	.nav {
 		height: 100%;
-		grid-column: 1/4;
+		grid-column: 1/6;
 		grid-row: 1/13;
 		overflow: hidden;
 		background: var(--primary-color);
@@ -46,7 +40,7 @@
 
 	.nav {
 		height: 100%;
-		grid-column: 1/6;
+		grid-column: 1/8;
 		grid-row: 1/13;
 		overflow: hidden;
 		background: var(--primary-color);

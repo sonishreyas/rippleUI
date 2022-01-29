@@ -12,16 +12,8 @@ async function callImportFunctions() {
 }
 
 function runScripts() {
-	callImportFunctions().then((response) => {
-		if (window.matchMedia("(min-width: 1180px)")) handleNavBar();
-		else {
-			const brandName = document.querySelector(".header .brand-info");
-			const navBar = document.querySelector(".nav");
-			const drawerHeader = document.querySelector(".nav .rui-drawer-header");
-			navBar.style.visibility = "visible";
-			brandName.style.visibility = "visible";
-			drawerHeader.style.visibility = "hidden";
-		}
+	callImportFunctions().then(() => {
+		handleNavBar();
 	});
 }
 
