@@ -125,9 +125,7 @@ body {
 }
 
 /* || Navigation Bar */
-.inactive {
-	visibility: hidden;
-}
+
 .nav {
 	padding: 1rem;
 	overflow-y: auto;
@@ -145,7 +143,9 @@ body {
 	padding: 1rem;
 	margin-bottom: 1.5rem;
 }
-
+.inactive {
+	display: none;
+}
 .no-list {
 	list-style: none;
 	margin-left: 1rem;
@@ -192,6 +192,7 @@ body {
 	position: sticky;
 	top: 0rem;
 	height: calc(100vh - 2rem);
+	/* margin-top: 10rem; */
 }
 
 .rui-aside--heading {

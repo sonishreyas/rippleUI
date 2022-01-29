@@ -20,8 +20,13 @@ const handleNavBar = () => {
 		if (window.innerWidth >= 1180) {
 			navBar.style.visibility = "visible";
 			brandName.style.visibility = "visible";
-			drawerHeader.style.visibility = "hidden";
+			if (drawerHeader.classList.contains("inactive") === false) {
+				drawerHeader.classList.add("inactive");
+			}
 		} else {
+			if (drawerHeader.classList.contains("inactive")) {
+				drawerHeader.classList.remove("inactive");
+			}
 			navBar.style.visibility = "hidden";
 			drawerHeader.style.visibility = "hidden";
 			brandName.style.visibility = "visible";
