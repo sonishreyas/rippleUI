@@ -4,17 +4,24 @@
 		/* background: red; */
 	}
 
-	.header {
-	}
 	.header-nav-icon {
 		display: block;
 	}
+
 	.nav {
-		display: none;
+		height: 100vh;
+		grid-column: 1/4;
+		grid-row: 1/13;
+		overflow: hidden;
+		background: var(--primary-color);
+		visibility: hidden;
 	}
 
+	.rui-drawer-content--list {
+		margin-top: 3rem;
+	}
 	.main {
-		grid-column: 1/10;
+		grid-column: 3/10;
 	}
 
 	.aside {
@@ -30,12 +37,24 @@
 	.grid-container {
 		/* background: yellow; */
 	}
-	.aside {
-		display: none;
+
+	.nav {
+		height: 100%;
+		grid-column: 1/6;
+		grid-row: 1/13;
+		overflow: hidden;
+		background: var(--primary-color);
+		visibility: hidden;
+	}
+
+	.rui-drawer-content--list {
+		margin-top: 3rem;
 	}
 	.main {
 		grid-column: 1/13;
-		grid-row: 2/12;
+	}
+	.aside {
+		display: none;
 	}
 }
 

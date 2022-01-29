@@ -1,6 +1,7 @@
 // // Index JS
 import { codeImport } from "./js/import-html.js";
 import { elements } from "./js/properties.js";
+import { handleNavBar } from "./js/handle-nav-bar.js";
 
 // Call Function
 async function callImportFunctions() {
@@ -12,8 +13,7 @@ async function callImportFunctions() {
 
 function runScripts() {
 	callImportFunctions().then((response) => {
-		// standardDrawer();
-		console.log("here");
+		handleNavBar();
 	});
 }
 

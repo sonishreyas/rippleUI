@@ -34,7 +34,6 @@ const codeImport = async (
 			const element_JS_code = document.querySelector(
 				params.elementJSCodeClassPath
 			);
-			console.log(element_JS_code);
 			element_JS_code.innerHTML = params.elementJSCodeInnerText;
 
 			handleCodeTab(
