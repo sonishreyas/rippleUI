@@ -13,45 +13,32 @@
  */
 
 const elements = [
-  {
-    name: "Simple Avatar",
-    rootCodeLocation: ".simple-avatar .rui-import-html",
-    elementCodeFilePath: "../src/html/simple-avatar.html",
-    elementCodeLocation:
-      ".simple-avatar .rui-import-html .rui-code-tabs--content-container .preview",
-    handleCodeTabBtnClass:
-      ".simple-avatar .rui-import-html .rui-code-tabs-btn--container .rui-code-tabs--btn",
-    handleCodeTabCodeContentClass:
-      ".simple-avatar .rui-import-html .rui-code-tabs--content",
-    elementCodeClassPath:
-      ".simple-avatar .rui-import-html .rui-code-tabs--container .rui-code",
-    elementCodeInnerText: `<article></article>`,
-    elementJSCodeClassPath:
-      ".simple-avatar .rui-import-html .rui-code-tabs--container .rui-code-js",
-    elementJSCodeInnerText: `const drawer_menu_icon = document.querySelector(
-      ".simple-avatar .drawer-menu-icon"
-    );
-    const rdc_drawer = document.querySelector(".simple-avatar .rui-drawer");
-    const rdc_drawer_content_list = document.querySelector(
-      ".simple-avatar .rui-drawer .rui-drawer-content--list"
-    );
-    drawer_menu_icon.addEventListener("click", () => {
-      if (
-        rdc_drawer_content_list.classList.contains("drawer-menu-icon-inactive") &&
-        rdc_drawer.classList.contains("rui-drawer-inactive")
-      ) {
-        rdc_drawer_content_list.classList.remove("drawer-menu-icon-inactive");
-        rdc_drawer.classList.remove("rui-drawer-inactive");
-        rdc_drawer.classList.add("rui-drawer-active");
-      } else {
-        rdc_drawer_content_list.classList.add("drawer-menu-icon-inactive");
-        rdc_drawer.classList.remove("rui-drawer-active");
-        rdc_drawer.classList.add("rui-drawer-inactive");
-      }
-    });`,
-    sandboxURLClass: ".simple-avatar .rui-code-tabs-sandbox--link",
-    sandboxURL: "https://codesandbox.io/s/drawers-uq55y?file=/src/index.js"
-  }
+	{
+		name: "Simple Avatar",
+		rootCodeLocation:
+			".main .rui-main--sub-heading .simple-avatar .rui-import-html",
+		elementCodeFilePath: "../template/src/html/simple-avatar.html",
+		elementCodeLocation:
+			".simple-avatar .rui-import-html .rui-code-tabs--content-container .preview",
+		handleCodeTabBtnClass:
+			".simple-avatar .rui-import-html .rui-code-tabs-btn--container .rui-code-tabs--btn",
+		handleCodeTabCodeContentClass:
+			".simple-avatar .rui-import-html .rui-code-tabs--content",
+		elementCodeClassPath:
+			".simple-avatar .rui-import-html .rui-code-tabs--container .rui-code",
+		elementCodeInnerText: `<iframe
+    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=twilight&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%253E%250A%2520%2520%2520%2520%253Ch1%253ESample%2520File%253C%252Fh1%253E%250A%253C%252Fdiv%253E"
+    sandbox="allow-scripts allow-same-origin" class="rui-code--iframe">
+  </iframe>`,
+		elementJSCodeClassPath:
+			".simple-avatar .rui-import-html .rui-code-tabs--container .rui-code-js",
+		elementJSCodeInnerText: `<iframe
+    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=twilight&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%253E%250A%2520%2520%2520%2520%253Ch1%253ESample%2520File%253C%252Fh1%253E%250A%253C%252Fdiv%253E"
+    sandbox="allow-scripts allow-same-origin" class="rui-code--iframe">
+  </iframe>`,
+		sandboxURLClass: ".simple-avatar .rui-code-tabs-sandbox--link",
+		sandboxURL: "https://codesandbox.io/s/drawers-uq55y?file=/src/index.js",
+	},
 ];
 
 export { elements };

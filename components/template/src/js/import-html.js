@@ -1,4 +1,4 @@
-import { handleCodeTab } from "./code-tabs-root";
+import { handleCodeTab } from "./code-tabs-root.js";
 
 // Importing HTML Functionn
 const importHtml = async (
@@ -10,7 +10,8 @@ const importHtml = async (
 	return fetch(htmlPath)
 		.then((response) => response.text())
 		.then((data) => {
-			data = data.split(splitOne)[1].split(splitTwo)[0];
+			if (data.includes(splitOne) && data.includes(splitTwo))
+				data = data.split(splitOne)[1].split(splitTwo)[0];
 			document.querySelector(classPath).innerHTML += data;
 		});
 };
@@ -19,7 +20,7 @@ const importHtml = async (
 
 const codeImport = async (
 	params,
-	rootCodeTabFilePath = "../src/html/code-tabs-root.html"
+	rootCodeTabFilePath = "../template/src/html/code-tabs-root.html"
 ) => {
 	// Import root Code Drawer and then add styling
 	return importHtml(rootCodeTabFilePath, params.rootCodeLocation).then(() => {
@@ -33,7 +34,8 @@ const codeImport = async (
 			const element_JS_code = document.querySelector(
 				params.elementJSCodeClassPath
 			);
-			element_JS_code.innerText = params.elementJSCodeInnerText;
+			console.log(element_JS_code);
+			element_JS_code.innerHTML = params.elementJSCodeInnerText;
 
 			handleCodeTab(
 				params.handleCodeTabBtnClass,
