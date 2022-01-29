@@ -1,0 +1,103 @@
+@import url("../../../../css/components.css");
+
+/* || Basic Alert */
+.rui-alert--container {
+	position: fixed;
+	display: flex;
+	gap: 1rem;
+	font-size: 1.35rem;
+	width: max-content;
+	padding: 1rem;
+	border-radius: 1rem;
+	align-items: center;
+	justify-content: center;
+	z-index: var(--z-index);
+	bottom: 1rem;
+	left: 1rem;
+}
+
+.active {
+	visibility: visible;
+}
+
+.inactive {
+	visibility: hidden;
+}
+
+.rui-cross {
+	border: 0;
+	font-size: 2rem;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.rui-cross:hover {
+	color: var(--primary-color);
+	background: var(--secondary-color);
+}
+
+/* || Alert Position */
+.rui-alert-type--container {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.rui-alert-type {
+	border: 0;
+	padding: 1rem;
+	border-radius: 1rem;
+	font-family: inherit;
+	font-weight: bold;
+}
+
+.rui-alert-type:hover {
+	cursor: pointer;
+	background: var(--cta-color);
+}
+
+.trial {
+	visibility: hidden;
+}
+
+.success {
+	color: darkgreen;
+	background: lightgreen;
+}
+
+.success .rui-cross:hover {
+	color: lightgreen;
+	background: darkgreen;
+}
+
+.error {
+	color: darkred;
+	background: lightcoral;
+}
+
+.error .rui-cross:hover {
+	color: lightcoral;
+	background: darkred;
+}
+
+.warning {
+	color: darkgoldenrod;
+	background: lightyellow;
+}
+
+.warning .rui-cross:hover {
+	color: lightyellow;
+	background: darkgoldenrod;
+}
+
+.info {
+	color: darkblue;
+	background: lightblue;
+}
+
+.info .rui-cross:hover {
+	color: lightblue;
+	background: darkblue;
+}

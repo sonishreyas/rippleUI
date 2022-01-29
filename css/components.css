@@ -1,5 +1,5 @@
 @import url("../components/main/src/css/root-styles.css");
 @import url("../components/main/src/css/code-tabs.css");
 @import url("../components/main/src/css/styles.css");
-@import url("../components/main/src/css/root-styles.css");
+@import url("./root-styles.css");
 @import url("../components/main/src/css/media-queries.css");
