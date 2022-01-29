@@ -20,7 +20,7 @@ const importHtml = async (
 
 const codeImport = async (
 	params,
-	rootCodeTabFilePath = "../template/src/html/code-tabs-root.html"
+	rootCodeTabFilePath = "../main/src/html/code-tabs-root.html"
 ) => {
 	// Import root Code Drawer and then add styling
 	return importHtml(rootCodeTabFilePath, params.rootCodeLocation).then(() => {

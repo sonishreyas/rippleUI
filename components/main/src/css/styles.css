@@ -76,7 +76,7 @@ body {
 	border-radius: 0.8rem;
 	border: 0.1rem solid var(--secondary-color);
 	margin: 1rem;
-	/* display: none; */
+	display: none;
 }
 
 .header-nav-icon:hover {
@@ -132,6 +132,16 @@ body {
 	position: sticky;
 	top: 0rem;
 	height: calc(100vh - 2rem);
+}
+
+.rui-drawer-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: var(--cta-color);
+	border-bottom: 0.05rem solid var(--cta-color);
+	padding: 1rem;
+	margin-bottom: 1.5rem;
 }
 
 .no-list {

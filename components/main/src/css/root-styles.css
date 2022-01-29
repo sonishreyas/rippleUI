@@ -57,6 +57,7 @@
 	--secondary-background-color: var(--secondary-background-color-dark);
 	--secondary-color-filter: var(--secondary-color-filter-dark);
 	--cta-color-filter: var(--cta-color-filter-dark);
+	--ripple-logo: var(--ripple-logo-dark);
 }
 
 [color-scheme="light"] {
@@ -66,4 +67,5 @@
 	--secondary-background-color: var(--secondary-background-color-light);
 	--secondary-color-filter: var(--secondary-color-filter-light);
 	--cta-color-filter: var(--cta-color-filter-light);
+	--ripple-logo: var(--ripple-logo-light);
 }

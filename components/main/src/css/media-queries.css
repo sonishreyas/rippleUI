@@ -20,10 +20,13 @@
 	.aside {
 		grid-column: 10/13;
 	}
+	.rui-code--iframe {
+		width: 50rem;
+	}
 }
 
 /* || Mobile Screen Layout */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 870px) {
 	.grid-container {
 		/* background: yellow; */
 	}
@@ -33,5 +36,12 @@
 	.main {
 		grid-column: 1/13;
 		grid-row: 2/12;
+	}
+}
+
+/* || Mobile Screen Layout */
+@media screen and (max-width: 480px) {
+	body {
+		font-size: 2rem;
 	}
 }

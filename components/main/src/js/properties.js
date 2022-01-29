@@ -17,7 +17,7 @@ const elements = [
 		name: "Simple Avatar",
 		rootCodeLocation:
 			".main .rui-main--sub-heading .simple-avatar .rui-import-html",
-		elementCodeFilePath: "../template/src/html/simple-avatar.html",
+		elementCodeFilePath: "../main/src/html/simple-avatar.html",
 		elementCodeLocation:
 			".simple-avatar .rui-import-html .rui-code-tabs--content-container .preview",
 		handleCodeTabBtnClass:
