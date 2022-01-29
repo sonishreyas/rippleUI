@@ -1,0 +1,37 @@
+/* || Tablet Screen Layout */
+@media screen and (max-width: 1180px) {
+	.grid-container {
+		/* background: red; */
+	}
+
+	.header {
+	}
+	.header-nav-icon {
+		display: block;
+	}
+	.nav {
+		display: none;
+	}
+
+	.main {
+		grid-column: 1/10;
+	}
+
+	.aside {
+		grid-column: 10/13;
+	}
+}
+
+/* || Mobile Screen Layout */
+@media screen and (max-width: 800px) {
+	.grid-container {
+		/* background: yellow; */
+	}
+	.aside {
+		display: none;
+	}
+	.main {
+		grid-column: 1/13;
+		grid-row: 2/12;
+	}
+}

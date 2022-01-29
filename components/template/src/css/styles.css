@@ -13,15 +13,13 @@ body {
 body {
 	background: var(--primary-color);
 	color: var(--secondary-color);
-	font-size: 1.8rem;
+	font-size: 1.6rem;
 }
 
 .grid-container {
 	display: grid;
 	grid: repeat(12, 1fr) / minmax(100px, auto);
 	margin: 0 auto;
-	/* height: 100%;
-	width: 100%; */
 }
 
 .grid-container > * {
@@ -43,12 +41,12 @@ body {
 }
 
 .main {
-	grid-column: 2/12;
+	grid-column: 2/11;
 	grid-row: 2/12;
 }
 
 .aside {
-	grid-column: 12/13;
+	grid-column: 11/13;
 	grid-row: 2/12;
 }
 
@@ -65,6 +63,26 @@ body {
 
 /* ||  Header Brand Info - logo and name */
 
+.brand-info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+.header-nav-icon {
+	padding: 0.5rem;
+	color: var(--cta-color);
+	border-radius: 0.8rem;
+	border: 0.1rem solid var(--secondary-color);
+	margin: 1rem;
+	/* display: none; */
+}
+
+.header-nav-icon:hover {
+	color: var(--secondary-color);
+	border-color: var(--cta-color);
+}
 .brand-logo {
 	height: 6rem;
 	width: 6rem;
@@ -84,13 +102,7 @@ body {
 	color: inherit;
 	padding: 0;
 	margin: 0;
-}
-
-/* || Mobile Screen Layout */
-@media screen and (max-width: 480px) {
-	.brand-info {
-		text-align: center;
-	}
+	text-decoration: none;
 }
 
 .social-icon-container {
@@ -193,9 +205,6 @@ body {
 }
 
 /* || Main */
-.main {
-	/* overflow: ; */
-}
 .rui-main--heading-container,
 .rui-main--sub-heading {
 	padding: 1rem;
@@ -208,4 +217,17 @@ body {
 
 .rui-main--text {
 	padding: 1rem;
+}
+
+.rui-main-nav-links--container {
+	display: flex;
+	justify-content: space-between;
+	padding: 2rem;
+}
+.rui-main-nav-links:hover {
+	color: var(--cta-color);
+}
+
+.main-nav-icon {
+	margin: 1.5rem;
 }
