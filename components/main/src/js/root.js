@@ -16,13 +16,15 @@ const loadTheme = (theme) => {
 		themeIcon.classList.remove("fa-sun");
 		themeIcon.classList.add("fa-moon");
 		rippleLogo.forEach((item) => {
-			item.src = "../../components/media/images/ripple-logo-light.png";
+			item.src =
+				"https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/ripple-logo-light.png";
 		});
 	} else {
 		themeIcon.classList.remove("fa-moon");
 		themeIcon.classList.add("fa-sun");
 		rippleLogo.forEach((item) => {
-			item.src = "../../components/media/images/ripple-logo-dark.png";
+			item.src =
+				"https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/ripple-logo-dark.png";
 		});
 	}
 	root.setAttribute("color-scheme", `${theme}`);
