@@ -37,6 +37,11 @@
 	--warning-color: darkgoldenrod;
 	--info-background-color: skyblue;
 	--info-color: darkblue;
+
+	/* Avatars */
+	--online-badge-color: green;
+	--away-badge-color: yellow;
+	--busy-badge-color: red;
 }
 
 @media (prefers-color-scheme: light) {
