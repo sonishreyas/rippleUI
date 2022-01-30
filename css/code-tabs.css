@@ -1,0 +1,91 @@
+/* || Code Tab */
+.rui-code-tabs--container {
+	background-color: var(--secondary-background-color);
+	padding: 1rem;
+	gap: 1rem;
+	border-radius: 1rem;
+	margin: 1rem 1rem 1rem 1rem;
+	box-shadow: 1rem 1rem 1rem var(--shadow-color);
+	color: inherit;
+}
+
+.rui-code-tabs-btn--container {
+	display: flex;
+	border-bottom: 0.05rem solid var(--secondary-background-color);
+	flex-grow: 1;
+}
+
+.rui-code-tabs--btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	font-family: inherit;
+	font-size: 1.5rem;
+	color: inherit;
+	background-color: var(--secondary-background-color);
+	padding: 1rem;
+	border: 0;
+}
+
+.rui-code-tabs-sandbox--link {
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	flex-grow: 1;
+	padding: 1rem;
+}
+
+.rui-code-tabs--icons {
+	height: 2.5rem;
+	width: 2.5rem;
+}
+
+.rui-code-tabs--btn-active {
+	font-weight: bold;
+	color: var(--cta-color);
+	border-bottom: 0.25rem solid var(--cta-color);
+}
+
+.codesandbox-icon {
+	width: 3rem;
+	height: 3rem;
+	filter: var(--secondary-color-filter);
+}
+
+.codesandbox-icon:hover {
+	filter: var(--cta-color-filter);
+}
+
+.fab {
+	font-size: 2.5rem;
+}
+.fas {
+	font-size: 2.2rem;
+}
+
+.rui-code-tabs--content-container {
+	background: var(--primary-color);
+	padding: 1rem;
+	gap: 1rem;
+	border-radius: 1rem;
+	color: inherit;
+}
+
+.rui-code-tabs--content {
+	display: none;
+	padding: 1rem;
+	font-size: 1.5rem;
+	margin: auto;
+}
+
+.rui-code--iframe {
+	width: 120rem;
+	height: 15rem;
+	border: 1rem solid var(--primary-color);
+	background: var(--primary-color);
+	transform: scale(1);
+	overflow: hidden;
+	border-radius: 1rem;
+	margin: auto;
+}
