@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&family=Roboto:ital,wght@1,300&display=swap");
+
+/* || Colors and fonts */
+:root {
+	font-family: "Raleway", sans-serif;
+	font-size: 62.5%;
+	--max-z-index: 99999;
+
+	/* Dark Theme Color */
+	--primary-color-dark: #0a1929;
+	--secondary-color-dark: #fffafa;
+	--cta-color-dark: #3399ff;
+	--secondary-background-color-dark: #0f263e;
+	--secondary-color-filter-dark: invert(100%) sepia(37%) saturate(278%)
+		hue-rotate(338deg) brightness(102%) contrast(104%);
+	--cta-color-filter-dark: invert(54%) sepia(38%) saturate(4203%)
+		hue-rotate(190deg) brightness(100%) contrast(104%);
+
+	/* Light Theme color */
+	--primary-color-light: #d4d4d8;
+	--secondary-color-light: #0a1929;
+	--cta-color-light: #ff4321;
+	--secondary-background-color-light: #f3f4f6;
+	--secondary-color-filter-light: invert(8%) sepia(13%) saturate(3148%)
+		hue-rotate(172deg) brightness(95%) contrast(97%);
+	--cta-color-filter-light: invert(34%) sepia(91%) saturate(3439%)
+		hue-rotate(349deg) brightness(109%) contrast(101%);
+
+	/* Components Color */
+
+	/* Alerts */
+	--success-background-color: lightgreen;
+	--success-color: darkgreen;
+	--error-background-color: lightcoral;
+	--error-color: darkred;
+	--warning-background-color: lightyellow;
+	--warning-color: darkgoldenrod;
+	--info-background-color: skyblue;
+	--info-color: darkblue;
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--primary-color: var(--primary-color-light);
+		--secondary-color: var(--secondary-color-light);
+		--cta-color: var(--cta-color-light);
+		--secondary-background-color: var(--secondary-background-color-light);
+		--secondary-color-filter: var(--secondary-color-filter-light);
+		--cta-color-filter: var(--cta-color-filter-light);
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--primary-color: var(--primary-color-dark);
+		--secondary-color: var(--secondary-color-dark);
+		--cta-color: var(--cta-color-dark);
+		--secondary-background-color: var(--secondary-background-color-dark);
+		--secondary-color-filter: var(--secondary-color-filter-dark);
+		--cta-color-filter: var(--cta-color-filter-dark);
+	}
+}
+
+[color-scheme="dark"] {
+	--primary-color: var(--primary-color-dark);
+	--secondary-color: var(--secondary-color-dark);
+	--cta-color: var(--cta-color-dark);
+	--secondary-background-color: var(--secondary-background-color-dark);
+	--secondary-color-filter: var(--secondary-color-filter-dark);
+	--cta-color-filter: var(--cta-color-filter-dark);
+	--ripple-logo: var(--ripple-logo-dark);
+}
+
+[color-scheme="light"] {
+	--primary-color: var(--primary-color-light);
+	--secondary-color: var(--secondary-color-light);
+	--cta-color: var(--cta-color-light);
+	--secondary-background-color: var(--secondary-background-color-light);
+	--secondary-color-filter: var(--secondary-color-filter-light);
+	--cta-color-filter: var(--cta-color-filter-light);
+	--ripple-logo: var(--ripple-logo-light);
+}
