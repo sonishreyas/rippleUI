@@ -1,0 +1,107 @@
+@import url("../../../../css/components.css");
+
+/* || Basic Alert */
+.rui-alert--container {
+	position: fixed;
+	display: flex;
+	gap: 1rem;
+	font-size: 1.35rem;
+	width: max-content;
+	padding: 1rem;
+	border-radius: 1rem;
+	align-items: center;
+	justify-content: center;
+	z-index: var(--max-z-index);
+	bottom: 1rem;
+	left: 1rem;
+	transition: 0.1s;
+}
+
+.active {
+	visibility: visible;
+}
+
+.inactive {
+	visibility: hidden;
+}
+
+.rui-cross {
+	border: 0;
+	font-size: 2rem;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.rui-cross:hover {
+	color: var(--primary-color);
+	background: var(--secondary-color);
+}
+
+/* || Alert Position */
+.rui-alert-type--container {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.rui-alert-type {
+	border: 0;
+	padding: 1rem;
+	border-radius: 1rem;
+	font-family: inherit;
+	font-weight: bold;
+	background-color: var(--cta-color);
+	color: var(--primary-color);
+}
+
+.rui-alert-type:hover {
+	cursor: pointer;
+	background: var(--secondary-color);
+	color: var(--cta-color);
+}
+
+.trial {
+	visibility: hidden;
+}
+
+.success {
+	color: var(--success-color);
+	background: var(--success-background-color);
+}
+
+.success .rui-cross:hover {
+	color: var(--success-background-color);
+	background: var(--success-color);
+}
+
+.error {
+	color: var(--error-color);
+	background: var(--error-background-color);
+}
+
+.error .rui-cross:hover {
+	color: var(--error-background-color);
+	background: var(--error-color);
+}
+
+.warning {
+	color: var(--warning-color);
+	background: var(--warning-background-color);
+}
+
+.warning .rui-cross:hover {
+	color: var(--warning-background-color);
+	background: var(--warning-color);
+}
+
+.info {
+	color: var(--info-color);
+	background: var(--info-background-color);
+}
+
+.info .rui-cross:hover {
+	color: var(--info-background-color);
+	background: var(--info-color);
+}
