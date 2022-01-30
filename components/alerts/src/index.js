@@ -5,18 +5,16 @@ import { handleNavBar } from "./js/handle-nav-bar.js";
 import { standardAlert } from "./js/alert.js";
 
 // Call Function
-async function callImportFunctions() {
+const callImportFunctions = async () => {
 	for (let i = 0; i < elements.length; i++) {
 		await codeImport(elements[i]);
 	}
-	return true;
-}
+};
 
-function runScripts() {
-	callImportFunctions().then(() => {
-		handleNavBar();
-		standardAlert();
-	});
-}
-
+// runs all the js files
+const runScripts = async () => {
+	const importCode = await callImportFunctions();
+	handleNavBar();
+	standardAlert();
+};
 runScripts();

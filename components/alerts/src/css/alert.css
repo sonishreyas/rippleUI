@@ -11,9 +11,10 @@
 	border-radius: 1rem;
 	align-items: center;
 	justify-content: center;
-	z-index: var(--z-index);
+	z-index: var(--max-z-index);
 	bottom: 1rem;
 	left: 1rem;
+	transition: 0.1s;
 }
 
 .active {
@@ -51,11 +52,14 @@
 	border-radius: 1rem;
 	font-family: inherit;
 	font-weight: bold;
+	background-color: var(--cta-color);
+	color: var(--primary-color);
 }
 
 .rui-alert-type:hover {
 	cursor: pointer;
-	background: var(--cta-color);
+	background: var(--secondary-color);
+	color: var(--cta-color);
 }
 
 .trial {
@@ -63,41 +67,41 @@
 }
 
 .success {
-	color: darkgreen;
-	background: lightgreen;
+	color: var(--success-color);
+	background: var(--success-background-color);
 }
 
 .success .rui-cross:hover {
-	color: lightgreen;
-	background: darkgreen;
+	color: var(--success-background-color);
+	background: var(--success-color);
 }
 
 .error {
-	color: darkred;
-	background: lightcoral;
+	color: var(--error-color);
+	background: var(--error-background-color);
 }
 
 .error .rui-cross:hover {
-	color: lightcoral;
-	background: darkred;
+	color: var(--error-background-color);
+	background: var(--error-color);
 }
 
 .warning {
-	color: darkgoldenrod;
-	background: lightyellow;
+	color: var(--warning-color);
+	background: var(--warning-background-color);
 }
 
 .warning .rui-cross:hover {
-	color: lightyellow;
-	background: darkgoldenrod;
+	color: var(--warning-background-color);
+	background: var(--warning-color);
 }
 
 .info {
-	color: darkblue;
-	background: lightblue;
+	color: var(--info-color);
+	background: var(--info-background-color);
 }
 
 .info .rui-cross:hover {
-	color: lightblue;
-	background: darkblue;
+	color: var(--info-background-color);
+	background: var(--info-color);
 }

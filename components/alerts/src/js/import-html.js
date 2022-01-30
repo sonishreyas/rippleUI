@@ -7,7 +7,7 @@ const importHtml = async (
 	splitOne = "<body>",
 	splitTwo = "<script"
 ) => {
-	return fetch(htmlPath)
+	await fetch(htmlPath)
 		.then((response) => response.text())
 		.then((data) => {
 			if (data.includes(splitOne) && data.includes(splitTwo))
@@ -18,34 +18,32 @@ const importHtml = async (
 
 // Build Logic
 
+// This function defines the code inside the tabs
+const handleCodeTabContent = (params) => {
+	const element_code = document.querySelector(params.elementCodeClassPath);
+	element_code.innerHTML = params.elementCodeInnerText;
+	const element_JS_code = document.querySelector(params.elementJSCodeClassPath);
+	element_JS_code.innerHTML = params.elementJSCodeInnerText;
+	handleCodeTab(
+		params.handleCodeTabBtnClass,
+		params.handleCodeTabCodeContentClass
+	);
+	const addSandboxURL = document.querySelector(params.sandboxURLClass);
+	addSandboxURL.href = params.sandboxURL;
+};
+
+// This function is used to import code from code tabs and element
 const codeImport = async (params) => {
 	// Import root Code Drawer and then add styling
-	return importHtml(params.rootCodeTabFilePath, params.rootCodeLocation).then(
-		() => {
-			return importHtml(
-				params.elementCodeFilePath,
-				params.elementCodeLocation
-			).then(() => {
-				const element_code = document.querySelector(
-					params.elementCodeClassPath
-				);
-				element_code.innerHTML = params.elementCodeInnerText;
-
-				const element_JS_code = document.querySelector(
-					params.elementJSCodeClassPath
-				);
-				element_JS_code.innerHTML = params.elementJSCodeInnerText;
-
-				handleCodeTab(
-					params.handleCodeTabBtnClass,
-					params.handleCodeTabCodeContentClass
-				);
-
-				const addSandboxURL = document.querySelector(params.sandboxURLClass);
-				addSandboxURL.href = params.sandboxURL;
-			});
-		}
+	const importRootCode = await importHtml(
+		params.rootCodeTabFilePath,
+		params.rootCodeLocation
 	);
+	const importElementCode = await importHtml(
+		params.elementCodeFilePath,
+		params.elementCodeLocation
+	);
+	handleCodeTabContent(params);
 };
 
 export { importHtml, codeImport };

@@ -1,3 +1,8 @@
+const changeClass = (element, removeClass, addClass) => {
+	element.classList.remove(removeClass);
+	element.classList.add(addClass);
+};
+
 const standardAlert = () => {
 	const error_btn = document.querySelector(".error-btn");
 	const warning_btn = document.querySelector(".warning-btn");
@@ -12,26 +17,21 @@ const standardAlert = () => {
 	const rui_cross_error = document.querySelector(".error .rui-cross");
 	const rui_cross_warning = document.querySelector(".warning .rui-cross");
 
-	console.log(rui_cross_warning.parentElement);
 	const displayAlert = (element) => {
 		if (error.classList.contains("active")) {
-			error.classList.remove("active");
-			error.classList.add("inactive");
+			changeClass(error, "active", "inactive");
 		}
 		if (warning.classList.contains("active")) {
-			warning.classList.remove("active");
-			warning.classList.add("inactive");
+			changeClass(warning, "active", "inactive");
 		}
 		if (info.classList.contains("active")) {
-			info.classList.remove("active");
-			info.classList.add("inactive");
+			changeClass(info, "active", "inactive");
 		}
 		if (success.classList.contains("active")) {
-			success.classList.remove("active");
-			success.classList.add("inactive");
+			changeClass(success, "active", "inactive");
 		}
-		element.classList.remove("inactive");
-		element.classList.add("active");
+		changeClass(element, "inactive", "active");
+		setTimeout(() => changeClass(element, "active", "inactive"), 10000);
 	};
 	error_btn.addEventListener("click", () => {
 		displayAlert(error);
@@ -47,23 +47,19 @@ const standardAlert = () => {
 	});
 
 	rui_cross_success.addEventListener("click", () => {
-		success.classList.remove("active");
-		success.classList.add("inactive");
+		changeClass(success, "active", "inactive");
 	});
 
 	rui_cross_error.addEventListener("click", () => {
-		error.classList.remove("active");
-		error.classList.add("inactive");
+		changeClass(error, "active", "inactive");
 	});
 
 	rui_cross_info.addEventListener("click", () => {
-		info.classList.remove("active");
-		info.classList.add("inactive");
+		changeClass(info, "active", "inactive");
 	});
 
 	rui_cross_warning.addEventListener("click", () => {
-		warning.classList.remove("active");
-		warning.classList.add("inactive");
+		changeClass(warning, "active", "inactive");
 	});
 };
 

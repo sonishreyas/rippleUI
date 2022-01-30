@@ -4,17 +4,15 @@ import { elements } from "./js/properties.js";
 import { handleNavBar } from "./js/handle-nav-bar.js";
 
 // Call Function
-async function callImportFunctions() {
+const callImportFunctions = async () => {
 	for (let i = 0; i < elements.length; i++) {
 		await codeImport(elements[i]);
 	}
-	return true;
-}
+};
 
-function runScripts() {
-	callImportFunctions().then(() => {
-		handleNavBar();
-	});
-}
-
+// runs all the js files
+const runScripts = async () => {
+	const importCode = await callImportFunctions();
+	handleNavBar();
+};
 runScripts();
