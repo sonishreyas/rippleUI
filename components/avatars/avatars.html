@@ -8,11 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./src/css/root-styles.css" />
-    <link rel="stylesheet" href="./src/css/styles.css" />
-    <link rel="stylesheet" href="./src/css/code-tabs.css">
-    <link rel="stylesheet" href="./src/css/media-queries.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/avatar.css">
+    <title>Avatars - RippleUI</title>
 </head>
 
 <body>
@@ -40,44 +37,68 @@
         </header>
         <main class="main">
             <section class="rui-main--heading-container">
-                <h2 class="rui-main--heading">Avatar</h2>
+                <h2 class="rui-main--heading">Avatars</h2>
                 <p class="rui-main--text">Avatar can be used to show user's profile picture on profile information page,
-                    on navigation bar, in blogs grid items.
-                </p>
+                    on navigation bar, in blogs grid items.</p>
             </section>
             <section class="rui-main--sub-heading">
-                <div id="simple-avatar" class="simple-avatar">
-                    <h3 class="rui-main--heading">Simple Avatar</h3>
+                <div id="text-avatar" class="text-avatar">
+                    <h3 class="rui-main--heading">Text Avatar</h3>
+                    <p class="rui-main--text">We can use text initials for text avatar. You will need to include the
+                        avatar, avatar-text and the size class. These are available in four sizes xl, l, m, and s.</p>
                     <div class="rui-import-html">
 
                     </div>
                 </div>
+            </section>
+            <section class="rui-main--sub-heading">
+                <div id="profile-avatar" class="profile-avatar">
+                    <h3 class="rui-main--heading">Profile Avatar</h3>
+                    <p class="rui-main--text">We can use user profile picture for avatar. You will need to include the
+                        avatar,and the size class. These are available in four sizes xl, l, m, and s.</p>
+                    <div class="rui-import-html">
 
+                    </div>
+                </div>
+            </section>
+            <section class="rui-main--sub-heading">
+                <div id="status-avatar" class="status-avatar">
+                    <h3 class="rui-main--heading">Status Avatar</h3>
+                    <p class="rui-main--text">We can use user status avatar for getting the status of the user. You will
+                        need to include the
+                        avatar, avatar-badge, avatar-badge-xl (this will change based on sizes), and the size class.
+                        These are available in four sizes xl, l, m, and s.</p>
+                    <div class="rui-import-html">
+
+                    </div>
+                </div>
             </section>
 
+
             <section class="rui-main-nav-links--container">
-                <a href="#" class="rui-main-nav-links no-link"><i class="fas fa-angle-left main-nav-icon"></i>
+                <a href="https://ripple-ui.netlify.app/components/alerts/alerts.html"
+                    class="rui-main-nav-links no-link"><i class="fas fa-angle-left main-nav-icon"></i>
                     Alerts</a>
-                <a href="#" class="rui-main-nav-links no-link">Badges <i
-                        class="fas fa-angle-right main-nav-icon"></i></a>
+                <a href="https://ripple-ui.netlify.app/components/badges/badges.html"
+                    class="rui-main-nav-links no-link">Badges <i class="fas fa-angle-right main-nav-icon"></i></a>
             </section>
         </main>
         <aside class="aside">
             <p class="rui-aside--heading">On this page</p>
             <ul class="rui-drawer-content--list no-list">
                 <li class="rui-drawer-content">
-                    <a href="#simple-avatar" class="rui-drawer-links">
-                        <span class="rui-drawer-content--text">Simple Avatar</span>
+                    <a href="#text-avatar" class="rui-drawer-links">
+                        <span class="rui-drawer-content--text">Text Avatar</span>
                     </a>
                 </li>
                 <li class="rui-drawer-content">
-                    <a href="#simple-avatar" class="rui-drawer-links">
-                        <span class="rui-drawer-content--text">Avatar with picture</span>
+                    <a href="#profile-avatar" class="rui-drawer-links">
+                        <span class="rui-drawer-content--text">Profile Avatar</span>
                     </a>
                 </li>
                 <li class="rui-drawer-content">
-                    <a href="#simple-avatar" class="rui-drawer-links">
-                        <span class="rui-drawer-content--text">Avatar badge</span>
+                    <a href="#status-avatar" class="rui-drawer-links">
+                        <span class="rui-drawer-content--text">Status Avatar</span>
                     </a>
                 </li>
         </aside>
@@ -112,43 +133,51 @@
                     <span class="rui-drawer-content--text list-heading">Components</span>
                     <ul class="rui-drawer--sub-list no-list">
                         <li class="rui-drawer-content">
-                            <a href="" class="rui-drawer-links">
+                            <a href="https://ripple-ui.netlify.app/components/alerts/alerts.html"
+                                class="rui-drawer-links">
                                 <span class="rui-drawer-content--text">Alert</span>
                             </a>
                         </li>
                         <li class="rui-drawer-content">
-                            <a href="" class="rui-drawer-links link-active">
-                                <span class="rui-drawer-content--text">Avatar</span>
+                            <a href="https://ripple-ui.netlify.app/components/avatars/avatars.html"
+                                class="rui-drawer-links">
+                                <span class="rui-drawer-content--text link-active">Avatar</span>
                             </a>
                         </li>
 
                         <li class="rui-drawer-content">
-                            <a href="" class="rui-drawer-links">
+                            <a href="https://ripple-ui.netlify.app/components/badges/badges.html"
+                                class="rui-drawer-links">
                                 <span class="rui-drawer-content--text">Badges</span>
                             </a>
                         </li>
                         <li class="rui-drawer-content">
-                            <a href="" class="rui-drawer-links">
+                            <a href="https://ripple-ui.netlify.app/components/buttons/buttons.html"
+                                class="rui-drawer-links">
                                 <span class="rui-drawer-content--text">Buttons</span>
                             </a>
                         </li>
                         <li class="rui-drawer-content">
-                            <a href="" class="rui-drawer-links">
+                            <a href="https://ripple-ui.netlify.app/components/cards/cards.html"
+                                class="rui-drawer-links">
                                 <span class="rui-drawer-content--text">Cards</span>
                             </a>
                         </li>
                         <li class="rui-drawer-content">
-                            <a href="" class="rui-drawer-links">
+                            <a href="https://ripple-ui.netlify.app/components/chips/chips.html"
+                                class="rui-drawer-links">
                                 <span class="rui-drawer-content--text">Chips</span>
                             </a>
                         </li>
                         <li class="rui-drawer-content">
-                            <a href="" class="rui-drawer-links">
+                            <a href="https://ripple-ui.netlify.app/components/drawers/drawers.html"
+                                class="rui-drawer-links">
                                 <span class="rui-drawer-content--text">Drawer</span>
                             </a>
                         </li>
                         <li class="rui-drawer-content">
-                            <a href="" class="rui-drawer-links">
+                            <a href="https://ripple-ui.netlify.app/components/snackbars/snackbars.html"
+                                class="rui-drawer-links">
                                 <span class="rui-drawer-content--text">Snackbar</span>
                             </a>
                         </li>
@@ -169,8 +198,8 @@
                 Ripple UI</p>
         </footer>
     </div>
-    <script type="module" src="./src/index.js"></script>
-    <script src="./src/js/root.js"></script>
+    <script type="module" src="./src/js/index.js"></script>
+    <script src="../../main/js/root.js"></script>
 </body>
 
 </html>

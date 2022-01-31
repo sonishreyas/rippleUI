@@ -1,7 +1,7 @@
 // // Index JS
-import { codeImport } from "./js/import-html.js";
-import { elements } from "./js/properties.js";
-import { handleNavBar } from "./js/handle-nav-bar.js";
+import { codeImport } from "../../../../main/js/import-html.js";
+import { handleNavBar } from "../../../../main/js/handle-nav-bar.js";
+import { elements } from "./properties.js";
 
 // Call Function
 const callImportFunctions = async () => {
