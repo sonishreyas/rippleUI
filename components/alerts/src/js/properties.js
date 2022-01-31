@@ -15,7 +15,7 @@
 const elements = [
 	{
 		name: "Standard Alert",
-		rootCodeTabFilePath: "./src/html/code-tabs-root.html",
+		rootCodeTabFilePath: "../../../../main/html/code-tabs-root.html",
 		rootCodeLocation:
 			".main .rui-main--sub-heading .standard-alert .rui-import-html",
 		elementCodeFilePath: "./src/html/standard-alert.html",
