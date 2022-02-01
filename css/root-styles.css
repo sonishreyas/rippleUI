@@ -47,6 +47,8 @@
 	--shadow-color-light: #9ca3af;
 	--shadow-color-dark: #111827;
 	--review-star-color: #f59e0b;
+	--review-star-color-unset: grey;
+	--secondary-font-color: grey;
 	--zoom-card: 1.02;
 }
 

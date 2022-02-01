@@ -82,6 +82,9 @@ body {
 	padding: 0;
 	margin: 0;
 }
+.card-price-tag strike {
+	color: var(--secondary-font-color);
+}
 
 .discount {
 	color: var(--cta-color);
@@ -89,6 +92,10 @@ body {
 
 .review-star {
 	color: var(--review-star-color);
+}
+
+.fa-star {
+	font-size: 1.4rem;
 }
 .card-btn {
 	display: flex;
@@ -101,12 +108,14 @@ body {
 	font-weight: bold;
 	border: 0;
 	font-family: inherit;
+	color: var(--secondary-color);
 }
 .card-wishlist {
 	opacity: 0.65;
 	grid-column: 1/2;
 	grid-row: 4/5;
 	background-color: var(--secondary-background-color);
+
 	margin: 1rem;
 	visibility: hidden;
 }
@@ -131,7 +140,7 @@ body {
 }
 
 .card-text-overlay {
-	opacity: 0.3;
+	opacity: 0.4;
 	text-align: center;
 	color: var(--cta-color);
 	background: var(--secondary-color);
@@ -139,11 +148,11 @@ body {
 	grid-row: 1/6;
 	position: relative;
 	border-radius: 1rem;
+	z-index: var(--max-z-index);
 }
 .overlay-text {
-	background: var(--secondary-color);
 	font-size: 2rem;
-	font-weight: bolder;
+	font-weight: bold;
 	opacity: 100%;
 }
 .rui-cross {
@@ -160,7 +169,7 @@ body {
 	align-self: start;
 	justify-self: end;
 	padding: 0.2rem;
-	color: white;
+	color: var(--secondary-color);
 }
 
 .card-dismiss-btn:hover {
@@ -208,8 +217,7 @@ body {
 }
 
 .unset {
-	color: grey;
-	/* background: var(--primary-color); */
+	color: var(--review-star-color-unset);
 }
 
 .flex-ac {
@@ -221,11 +229,11 @@ body {
 }
 
 .secondary-font {
-	color: grey;
+	color: var(--secondary-font-color);
 }
 
 .rating {
-	border-bottom: 0.1rem solid var(--primary-color);
+	border-bottom: 0.1rem solid var(--cta-color);
 	padding-bottom: 1rem;
 }
 
@@ -238,36 +246,42 @@ body {
 	width: 4rem;
 	height: 4rem;
 	border: 0.2rem solid var(--primary-color);
+	background: var(--primary-color);
+	color: var(--secondary-color);
 	border-radius: 50%;
 }
 
 .size:hover {
 	color: var(--cta-color);
-	background: var(--primary-color);
+	background: var(--secondary-color);
+	border-color: var(--secondary-color);
 }
 
 .horizontal-card-btn-container {
 	gap: 1rem;
 	margin-bottom: 1rem;
-	border-bottom: 0.1rem solid var(--primary-color);
+	border-bottom: 0.1rem solid var(--cta-color);
+	font-size: inherit;
 }
 
 .horizintal-card-btn-primary {
 	flex-grow: 1;
 	padding: 1rem;
 	margin: 1rem;
-	font-size: 1.6rem;
 	width: 45%;
 	margin-bottom: 2rem;
+	font-size: inherit;
 }
+
 .horizintal-card-btn-secondary {
 	flex-grow: 1;
 	padding: 1rem;
 	margin: 1rem;
-	font-size: 1.6rem;
 	width: 45%;
 	margin-bottom: 2rem;
-	border: 0.2rem solid var(--primary-color);
+	background: none;
+	font-size: inherit;
+	border: 0.2rem solid var(--secondary-color);
 }
 .horizintal-card-btn-secondary:hover {
 	background: var(--primary-color);
@@ -286,10 +300,8 @@ body {
 	flex-grow: 1;
 	flex-wrap: wrap;
 }
-.specification-column {
-}
 .specification-key {
-	font-size: 1.2rem;
+	font-size: 1.3rem;
 	font-weight: bold;
 }
 
@@ -298,7 +310,8 @@ body {
 	padding: 0.4rem;
 	border: 0;
 	background: inherit;
-	border-bottom: 0.1rem solid var(--primary-color);
+	color: var(--secondary-color);
+	border-bottom: 0.1rem solid var(--cta-color);
 	font-size: inherit;
 }
 
@@ -314,7 +327,7 @@ body {
 	.horizontal {
 		grid-template-areas: "h-img" "h-txt" "h-txt";
 		height: 130rem;
-		width: 30rem;
+		width: 35rem;
 	}
 	.horizintal-card-btn-primary {
 		margin: 0.5rem 0.5rem 0 0.5rem;
