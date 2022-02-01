@@ -42,6 +42,12 @@
 	--online-badge-color: green;
 	--away-badge-color: yellow;
 	--busy-badge-color: red;
+
+	/* Cards */
+	--shadow-color-light: #9ca3af;
+	--shadow-color-dark: #111827;
+	--review-star-color: #f59e0b;
+	--zoom-card: 1.02;
 }
 
 @media (prefers-color-scheme: light) {
@@ -52,6 +58,7 @@
 		--secondary-background-color: var(--secondary-background-color-light);
 		--secondary-color-filter: var(--secondary-color-filter-light);
 		--cta-color-filter: var(--cta-color-filter-light);
+		--shadow-color: var(--shadow-color-light);
 	}
 }
 
@@ -63,6 +70,7 @@
 		--secondary-background-color: var(--secondary-background-color-dark);
 		--secondary-color-filter: var(--secondary-color-filter-dark);
 		--cta-color-filter: var(--cta-color-filter-dark);
+		--shadow-color: var(--shadow-color-dark);
 	}
 }
 
@@ -74,6 +82,7 @@
 	--secondary-color-filter: var(--secondary-color-filter-dark);
 	--cta-color-filter: var(--cta-color-filter-dark);
 	--ripple-logo: var(--ripple-logo-dark);
+	--shadow-color: var(--shadow-color-dark);
 }
 
 [color-scheme="light"] {
@@ -84,4 +93,5 @@
 	--secondary-color-filter: var(--secondary-color-filter-light);
 	--cta-color-filter: var(--cta-color-filter-light);
 	--ripple-logo: var(--ripple-logo-light);
+	--shadow-color: var(--shadow-color-light);
 }
