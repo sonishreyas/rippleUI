@@ -80,8 +80,10 @@
 }
 
 .rui-code--iframe {
-	width: 120rem;
-	height: 15rem;
+	width: 45rem;
+	height: 30rem;
+	margin: 0;
+	padding: 0;
 	border: 1rem solid var(--primary-color);
 	background: var(--primary-color);
 	transform: scale(1);
