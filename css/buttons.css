@@ -1,0 +1,121 @@
+@import url("../../../../css/components.css");
+
+body {
+	font-family: inherit;
+}
+.primary-btn {
+	background: var(--cta-color);
+	padding: 1rem;
+	border-radius: 1rem;
+	font-family: inherit;
+	border: 0.2rem solid var(--cta-color);
+	color: var(--secondary-color);
+	font-size: inherit;
+}
+
+.primary-btn:hover {
+	background: var(--secondary-color);
+	color: var(--cta-color);
+	border-color: var(--secondary-color);
+}
+
+.outline {
+	background: var(--primary-color);
+	border: 0.2rem solid var(--secondary-color);
+	color: var(--secondary-color);
+}
+.outline:hover {
+	background: var(--primary-color);
+	border-color: var(--cta-color);
+	color: var(--cta-color);
+}
+
+.link-btn {
+	color: var(--secondary-color);
+	text-decoration: none;
+	border-bottom: 0.2rem solid var(--cta-color);
+}
+
+.link-btn:hover {
+	color: var(--cta-color);
+	border-bottom: 0.3rem solid var(--cta-color);
+}
+
+.icon-btn {
+	color: var(--secondary-color);
+}
+.icon-btn:hover {
+	color: var(--cta-color);
+}
+
+.icon-text-btn {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	justify-content: center;
+}
+
+.floating-btn {
+	background: var(--cta-color);
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+	font-family: inherit;
+	border: 0.2rem solid var(--cta-color);
+	color: var(--secondary-color);
+	font-size: 1.2rem;
+	z-index: var(--z-index);
+}
+.floating-btn:hover {
+	color: var(--cta-color);
+	background: var(--secondary-color);
+	border-color: var(--secondary-color);
+}
+.toggle-button-container {
+	position: absoulte;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+}
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 11rem;
+	height: 6rem;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: var(--secondary-background-color);
+	transition: 0.4s;
+	border-radius: 2rem;
+}
+
+.switch input {
+	display: none;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 5.2rem;
+	width: 5.2rem;
+	left: 0.5rem;
+	bottom: 0.5rem;
+	background-color: var(--secondary-color);
+	border-radius: 50%;
+	transition: 0.4s;
+}
+
+input:checked + .slider {
+	background: var(--cta-color);
+}
+
+input:checked + .slider::before {
+	transform: translateX(5rem);
+}
