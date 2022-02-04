@@ -1,9 +1,9 @@
-const handleTabs = (tabsClass) => {
+const handleTabs = (header, tabsClass) => {
 	const tabs_btn = document.querySelectorAll(
-		`.${tabsClass}-tabs .${tabsClass}-tabs-btn-container .tabs-btn`
+		`.${header}-tabs .${tabsClass}-tabs-btn-container .tabs-btn`
 	);
 	const tabs_content = document.querySelectorAll(
-		`.${tabsClass}-tabs .${tabsClass}-tabs-content`
+		`.${header}-tabs .${tabsClass}-tabs-content`
 	);
 
 	const clearAlltabs = () => {

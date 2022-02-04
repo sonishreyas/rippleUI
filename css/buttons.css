@@ -11,6 +11,7 @@ body {
 	border: 0.2rem solid var(--cta-color);
 	color: var(--secondary-color);
 	font-size: inherit;
+	margin: 1rem 0rem;
 }
 
 .primary-btn:hover {
@@ -20,9 +21,14 @@ body {
 }
 
 .outline {
-	background: var(--primary-color);
+	background: var(--secondary-background-color);
 	border: 0.2rem solid var(--secondary-color);
 	color: var(--secondary-color);
+	padding: 1rem;
+	border-radius: 1rem;
+	font-family: inherit;
+	font-size: inherit;
+	margin: 1rem 0rem;
 }
 .outline:hover {
 	background: var(--primary-color);
@@ -33,7 +39,8 @@ body {
 .link-btn {
 	color: var(--secondary-color);
 	text-decoration: none;
-	border-bottom: 0.2rem solid var(--cta-color);
+	border-bottom: 0.1rem solid var(--cta-color);
+	margin: 1rem 0;
 }
 
 .link-btn:hover {

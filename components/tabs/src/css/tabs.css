@@ -82,3 +82,25 @@ body {
 	display: none;
 	padding: 1rem;
 }
+
+/* Authentication Tabs */
+
+.tabs-btn-center {
+	display: flex;
+	flex-grow: 1;
+	justify-content: center;
+	align-items: center;
+}
+
+.show-password {
+	cursor: pointer;
+	position: absolute;
+	top: 0.8rem;
+	right: 1rem;
+}
+
+.password-container {
+	display: flex;
+	justify-content: end;
+	margin-bottom: 1rem;
+}
