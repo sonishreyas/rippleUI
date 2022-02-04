@@ -1,0 +1,84 @@
+@import url("../../../../css/components.css");
+
+body {
+	font-family: inherit;
+}
+
+/* || Horizontal Tab Styling */
+.horizontal-tabs-container {
+	display: flex;
+	flex-direction: column;
+	background: var(--secondary-background-color);
+	padding: 1rem;
+	flex-wrap: wrap;
+	gap: 1rem;
+	border-radius: 1rem;
+	box-shadow: 1rem 1rem 1rem var(--shadow-color);
+	color: inherit;
+}
+
+.horizontal-tabs-btn-container {
+	display: flex;
+	border-bottom: 0.05rem solid var(--primary-color);
+	flex-grow: 1;
+}
+
+.tabs-btn {
+	font-family: inherit;
+	font-size: 1.5rem;
+	color: inherit;
+	background: var(--secondary-background-color);
+	padding: 1rem;
+	border: 0;
+}
+
+.horizontal-tabs-btn-active {
+	font-weight: bold;
+	border-bottom: 0.25rem solid var(--cta-color);
+	color: var(--cta-color);
+}
+
+.horizontal-tabs-content {
+	display: none;
+	padding: 1rem;
+	font-size: 1.5rem;
+}
+
+/* Vertical Tabs Styling */
+
+.vertical-tabs-container {
+	display: flex;
+	background: var(--secondary-background-color);
+	padding: 1rem;
+	flex-wrap: wrap;
+	gap: 1rem;
+	border-radius: 1rem;
+	box-shadow: 1rem 1rem 1rem var(--shadow-color);
+	color: inherit;
+}
+
+.vertical-tabs-btn-container {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	font-family: inherit;
+	font-size: 1.5rem;
+	color: inherit;
+	background: var(--secondary-background-color);
+	padding: 0;
+	border: 0;
+	border-right: 0.05rem solid var(--primary-color);
+}
+
+.vertical-tabs-btn-active {
+	padding-right: 3rem;
+	font-weight: bold;
+	border-right: 0.25rem solid var(--cta-color);
+	color: var(--cta-color);
+}
+
+.vertical-tabs-content {
+	display: none;
+	padding: 1rem;
+}
