@@ -50,6 +50,10 @@
 	--review-star-color-unset: grey;
 	--secondary-font-color: grey;
 	--zoom-card: 1.02;
+
+	/* Inputs */
+	--valid-color: green;
+	--invalid-color: red;
 }
 
 @media (prefers-color-scheme: light) {
