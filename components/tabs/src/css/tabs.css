@@ -59,11 +59,11 @@ body {
 
 .vertical-tabs-btn-container {
 	display: flex;
-	justify-content: center;
-	align-items: flex-start;
+	justify-content: start;
+	align-items: start;
 	flex-direction: column;
 	font-family: inherit;
-	font-size: 1.5rem;
+	font-size: inherit;
 	color: inherit;
 	background: var(--secondary-background-color);
 	padding: 0;
