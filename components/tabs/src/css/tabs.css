@@ -69,18 +69,27 @@ body {
 	padding: 0;
 	border: 0;
 	border-right: 0.05rem solid var(--primary-color);
+	margin: 1rem 0;
 }
 
 .vertical-tabs-btn-active {
 	padding-right: 3rem;
 	font-weight: bold;
-	border-right: 0.25rem solid var(--cta-color);
+	border-right: 0.5rem solid var(--cta-color);
+	border-radius: 0.5rem;
+	background: var(--primary-color);
 	color: var(--cta-color);
 }
 
 .vertical-tabs-content {
 	display: none;
 	padding: 1rem;
+	margin: 1rem 0;
+	flex-grow: 1;
+	background: var(--primary-color);
+	gap: 1rem;
+	border-radius: 1rem;
+	color: inherit;
 }
 
 /* Authentication Tabs */
