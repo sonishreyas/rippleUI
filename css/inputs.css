@@ -61,14 +61,20 @@ body {
 	color: var(--cta-color);
 }
 
+.email-check {
+	padding: 0.5rem;
+}
 .password-check {
 	padding: 0.5rem;
 }
 
-.email-check {
-	padding: 0.5rem;
+.inactive-check {
+	display: none;
 }
 
+.active-check {
+	display: block;
+}
 .valid {
 	color: var(--valid-color);
 }
