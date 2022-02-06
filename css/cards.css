@@ -321,7 +321,7 @@ body {
 @media screen and (max-width: 870px) {
 	.horizontal {
 		grid-template-areas: "h-img" "h-txt";
-		height: 100rem;
+		height: auto;
 		width: 100%;
 	}
 }
