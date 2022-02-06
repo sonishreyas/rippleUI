@@ -76,13 +76,15 @@
 	display: none;
 	padding: 1rem;
 	font-size: 1.5rem;
-	/* margin: auto; */
 }
 
 .preview {
 	margin: auto;
 }
 
+.preview {
+	margin: auto;
+}
 .rui-code--iframe {
 	width: 100%;
 	height: auto;
