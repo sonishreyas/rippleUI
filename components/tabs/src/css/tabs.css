@@ -59,26 +59,57 @@ body {
 
 .vertical-tabs-btn-container {
 	display: flex;
-	justify-content: center;
-	align-items: flex-start;
+	justify-content: start;
+	align-items: start;
 	flex-direction: column;
 	font-family: inherit;
-	font-size: 1.5rem;
+	font-size: inherit;
 	color: inherit;
 	background: var(--secondary-background-color);
 	padding: 0;
 	border: 0;
 	border-right: 0.05rem solid var(--primary-color);
+	margin: 1rem 0;
 }
 
 .vertical-tabs-btn-active {
 	padding-right: 3rem;
 	font-weight: bold;
-	border-right: 0.25rem solid var(--cta-color);
+	border-right: 0.5rem solid var(--cta-color);
+	border-radius: 0.5rem;
+	background: var(--primary-color);
 	color: var(--cta-color);
 }
 
 .vertical-tabs-content {
 	display: none;
 	padding: 1rem;
+	margin: 1rem 0;
+	flex-grow: 1;
+	background: var(--primary-color);
+	gap: 1rem;
+	border-radius: 1rem;
+	color: inherit;
+}
+
+/* Authentication Tabs */
+
+.tabs-btn-center {
+	display: flex;
+	flex-grow: 1;
+	justify-content: center;
+	align-items: center;
+}
+
+.show-password {
+	cursor: pointer;
+	position: absolute;
+	top: 0.8rem;
+	right: 1rem;
+}
+
+.password-container {
+	display: flex;
+	justify-content: end;
+	margin-bottom: 1rem;
 }

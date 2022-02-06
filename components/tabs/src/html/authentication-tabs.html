@@ -1,11 +1,11 @@
-<article class="tabs-container tabs-container-center">
-    <article class="tabs-btn-container tabs-btn-center">
+<article class="horizontal-tabs-container">
+    <article class="horizontal-tabs-btn-container tabs-btn-center">
         <button class="tabs-btn tabs-btn-center">Login</button>
         <button class="tabs-btn tabs-btn-center">Register</button>
     </article>
 
-    <div class="tabs-content">
-        <form class="input-form">
+    <div class="horizontal-tabs-content">
+        <form class="input-form login">
             <section class="input-container">
                 <input id="email" class="textbox-content" type="email" name="email" />
                 <label for="email" class="textbox-label">Email<span class="required-field">*</span></label>
@@ -21,31 +21,31 @@
                     <sub class="password-check"></sub>
                 </span>
                 <section class="password-container">
-
                     <section class="forget-password-container">
                         <a href="#" class="link-btn">Forget Password</a>
                     </section>
-
                 </section>
                 <button class="outline">Test Credentials</button>
                 <button class="primary-btn">Login</button>
         </form>
     </div>
-    <div class="tabs-content">
-        <form class="input-form">
+    <div class="horizontal-tabs-content">
+        <form class="input-form register">
             <section class="input-container">
                 <input id="first-name" class="textbox-content" type="first-name" name="first-name" />
                 <label for="first-name" class="textbox-label">First Name<span class="required-field">*</span></label>
+                <span><sub></sub></span>
             </section>
             <section class="input-container">
                 <input id="last-name" class="textbox-content" type="last-name" name="last-name" />
                 <label for="last-name" class="textbox-label">Last Name<span class="required-field">*</span></label>
+                <span><sub></sub></span>
             </section>
             <section class="input-container">
                 <input id="email" class="textbox-content" type="email" name="email" />
                 <label for="email" class="textbox-label">Email<span class="required-field">*</span></label>
                 <span>
-                    <sub class="email-check"></sub>
+                    <sub class="email-check  inactive-check"></sub>
                 </span>
             </section>
             <section class="input-container">
@@ -54,27 +54,22 @@
 
                 <label for="password" class="textbox-label">Password<span class="required-field">*</span></label>
                 <span>
-                    <sub class="password-check"></sub>
+                    <sub class="password-check  inactive-check"></sub>
                 </span>
-                <section class="password-container">
-
-                </section>
             </section>
             <section class="input-container">
-                <input id="password" class="textbox-content  confirm-password" type="password" name="password" />
+                <input id="confirm-password" class="textbox-content  confirm-password" type="password"
+                    name="confirm-password" />
                 <i class="fas fa-eye show-password" id="show-password"></i>
 
-                <label for="password" class="textbox-label">Confirm Password<span
+                <label for="confirm-password" class="textbox-label">Confirm Password<span
                         class="required-field">*</span></label>
                 <span>
-                    <sub class="password-check"></sub>
+                    <sub class="password-check confirm-password-check  inactive-check"></sub>
                 </span>
-                <section class="password-container">
-
-                </section>
-            </section>
             </section>
             <button class="primary-btn">Register</button>
+        </form>
 
     </div>
 </article>

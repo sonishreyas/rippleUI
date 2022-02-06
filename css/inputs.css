@@ -37,15 +37,15 @@ body {
 .textbox-label {
 	position: absolute;
 	left: 0.5rem;
-	top: 1.2rem;
+	top: 1.8rem;
 	transform: translateY(-50%);
 	transition: 0.3s transform ease-in-out;
 }
 
 .focused > .textbox-label {
-	transform: translateY(-1.6rem);
+	transform: translateY(-2.3rem);
 	font-size: 1.2rem;
-	background: var(--primary-color);
+	background: var(--secondary-background-color);
 }
 
 .focused > .textbox-content {
@@ -61,14 +61,20 @@ body {
 	color: var(--cta-color);
 }
 
+.email-check {
+	padding: 0.5rem;
+}
 .password-check {
 	padding: 0.5rem;
 }
 
-.email-check {
-	padding: 0.5rem;
+.inactive-check {
+	display: none;
 }
 
+.active-check {
+	display: block;
+}
 .valid {
 	color: var(--valid-color);
 }

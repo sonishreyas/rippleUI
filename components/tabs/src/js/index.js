@@ -16,8 +16,9 @@ const callImportFunctions = async () => {
 const runScripts = async () => {
 	const importCode = await callImportFunctions();
 	handleNavBar();
-	handleTabs("horizontal");
-	handleTabs("vertical");
+	handleTabs("horizontal", "horizontal");
+	handleTabs("vertical", "vertical");
+	handleTabs("authentication", "horizontal");
 	handleInput();
 };
 runScripts();
