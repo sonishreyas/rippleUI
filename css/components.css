@@ -6,10 +6,11 @@
 @import url("./code-tabs.css");
 @import url("./styles.css");
 @import url("./media-queries.css");
-@import url("./alert.css");
-@import url("./avatar.css");
+@import url("./alerts.css");
+@import url("./avatars.css");
 @import url("./badges.css");
 @import url("./buttons.css");
 @import url("./cards.css");
 @import url("./chips.css");
 @import url("./inputs.css");
+@import url("./tabs.css");
