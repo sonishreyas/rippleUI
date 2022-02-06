@@ -19,7 +19,7 @@ body {
 }
 
 .basic-card {
-	height: 20rem;
+	height: auto;
 	width: 30rem;
 	padding: 2rem;
 }
@@ -322,15 +322,15 @@ body {
 	.horizontal {
 		grid-template-areas: "h-img" "h-txt";
 		height: 100rem;
-		width: 60rem;
+		width: 100%;
 	}
 }
 
 @media screen and (max-width: 450px) {
 	.horizontal {
 		grid-template-areas: "h-img" "h-txt" "h-txt";
-		height: 130rem;
-		width: 35rem;
+		height: auto;
+		width: 100%;
 	}
 	.horizintal-card-btn-primary {
 		margin: 0.5rem 0.5rem 0 0.5rem;
@@ -338,5 +338,11 @@ body {
 
 	.horizintal-card-btn-secondary {
 		margin: 0 0.5rem 0.5rem 0.5rem;
+	}
+
+	.basic-card,
+	.vertical,
+	.card-image {
+		width: 100%;
 	}
 }
