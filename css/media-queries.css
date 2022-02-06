@@ -61,6 +61,14 @@
 /* || Mobile Screen Layout */
 @media screen and (max-width: 480px) {
 	body {
-		font-size: 2rem;
+		font-size: 1.5rem;
+	}
+	.main {
+	}
+
+	.header {
+		overflow: auto;
+	}
+	.footer {
 	}
 }

@@ -4,7 +4,7 @@
 	padding: 1rem;
 	gap: 1rem;
 	border-radius: 1rem;
-	margin: 1rem 1rem 1rem 1rem;
+	margin: 1rem;
 	box-shadow: 1rem 1rem 1rem var(--shadow-color);
 	color: inherit;
 }
@@ -70,6 +70,8 @@
 	gap: 1rem;
 	border-radius: 1rem;
 	color: inherit;
+	width: 100%;
+	height: auto;
 }
 
 .rui-code-tabs--content {
@@ -95,5 +97,14 @@
 	transform: scale(1);
 	overflow: hidden;
 	border-radius: 1rem;
-	margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+	.rui-code-tabs--btn p {
+		display: none;
+	}
+	.rui-code--iframe {
+		width: 100% !important;
+		height: auto;
+	}
 }
