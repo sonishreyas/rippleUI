@@ -2,7 +2,6 @@
 import { codeImport } from "../../../../main/js/import-html.js";
 import { handleNavBar } from "../../../../main/js/handle-nav-bar.js";
 import { elements } from "./properties.js";
-import { standardAlert } from "./alert.js";
 
 // Call Function
 const callImportFunctions = async () => {
@@ -15,6 +14,5 @@ const callImportFunctions = async () => {
 const runScripts = async () => {
 	const importCode = await callImportFunctions();
 	handleNavBar();
-	standardAlert();
 };
 runScripts();
