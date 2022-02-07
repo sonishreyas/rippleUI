@@ -267,7 +267,7 @@ body {
 	font-size: inherit;
 }
 
-.horizintal-card-btn-primary {
+.horizontal-card-btn-primary {
 	flex-grow: 1;
 	padding: 1rem;
 	margin: 1rem;
@@ -276,7 +276,7 @@ body {
 	font-size: inherit;
 }
 
-.horizintal-card-btn-secondary {
+.horizontal-card-btn-secondary {
 	flex-grow: 1;
 	padding: 1rem;
 	margin: 1rem;
@@ -286,7 +286,7 @@ body {
 	font-size: inherit;
 	border: 0.2rem solid var(--secondary-color);
 }
-.horizintal-card-btn-secondary:hover {
+.horizontal-card-btn-secondary:hover {
 	background: var(--primary-color);
 	color: var(--cta-color);
 	border: 0;
@@ -332,11 +332,11 @@ body {
 		height: auto;
 		width: 100%;
 	}
-	.horizintal-card-btn-primary {
+	.horizontal-card-btn-primary {
 		margin: 0.5rem 0.5rem 0 0.5rem;
 	}
 
-	.horizintal-card-btn-secondary {
+	.horizontal-card-btn-secondary {
 		margin: 0 0.5rem 0.5rem 0.5rem;
 	}
 
