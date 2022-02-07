@@ -1,0 +1,75 @@
+/* Profile Container Style */
+
+.profile-container {
+	width: 100%;
+}
+
+.profile-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 1rem;
+	margin: 0 1rem;
+}
+.margin-7px {
+	padding: 0.7rem;
+}
+.basic-card {
+	width: 100%;
+	height: auto;
+}
+
+.basic-card > * {
+	padding: 0.4rem;
+}
+
+.card-footer {
+	display: flex;
+	flex-grow: 1;
+	justify-content: center;
+	gap: 1rem;
+	padding: 1rem 0;
+}
+
+.card-footer > * {
+	flex-grow: 1;
+}
+
+.profile-heading {
+	padding: 0.5rem;
+	margin: 0.5rem 0;
+}
+.stacked-list > * {
+	margin: 2rem;
+}
+
+/* Modal Styling */
+.modal-container {
+	display: none;
+	background: var(--primary-color);
+	width: max-content;
+	padding: 1rem;
+	margin: 1rem;
+	border-radius: 1rem;
+	text-align: center;
+	z-index: 1;
+	box-shadow: 0rem 0rem 1rem 1rem var(--shadow-color);
+}
+.center {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.modal-container .input-form {
+	width: max-content;
+}
+
+@media screen and (max-width: 450px) {
+	.center {
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
