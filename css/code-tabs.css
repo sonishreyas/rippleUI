@@ -95,7 +95,8 @@
 	border: 1rem solid var(--primary-color);
 	background: var(--primary-color);
 	transform: scale(1);
-	overflow: hidden;
+	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
 	border-radius: 1rem;
 }
 
@@ -106,5 +107,7 @@
 	.rui-code--iframe {
 		width: 100% !important;
 		height: auto;
+		overflow: scroll;
+		-webkit-overflow-scrolling: touch;
 	}
 }
