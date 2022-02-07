@@ -1,0 +1,69 @@
+<div class="profile-container">
+    <div class="profile-header">
+        <h1 class="profile-heading">Address</h1>
+        <button class="primary-btn outline icon-text-btn margin-7px address-btn">
+            <span><i class="fas fa-plus"></i></span>
+            <p class="btn-text">Add new address</p>
+        </button>
+    </div>
+    <ul class="stacked-list">
+        <li class="no-list">
+            <article class="card basic-card .flex-jc-ac card-shadow">
+                <h2 class="name">Shreyas Soni</h2>
+                <p class="address">
+                    D-203, Nisarg Nirman, Kokne Chowk Pimple Saudagar
+                </p>
+                <p class="city">Pune</p>
+                <p class="state">Maharashtra</p>
+                <p class="country">India</p>
+                <p class="pincode">411027</p>
+                <p class="ph-number"><b>Mobile Number: </b> 7894561230</p>
+                <section class="card-footer">
+                    <button class="primary-btn edit-btn">Edit</button>
+                    <button class="primary-btn outline delete-btn">Delete</button>
+                </section>
+            </article>
+        </li>
+    </ul>
+
+    <div class="modal-container center">
+        <h3 class="profile-heading">Add a new Address</h3>
+        <form class="input-form">
+            <section class="input-container">
+                <input id="name" class="textbox-content" type="text" name="name" />
+                <label for="name" class="textbox-label">Name</label>
+            </section>
+            <section class="input-container">
+                <input id="address" class="textbox-content" type="text" name="address" />
+                <label for="address" class="textbox-label">Address</label>
+            </section>
+            <section class="input-container">
+                <input id="country" class="textbox-content" name="country" type="text" />
+                <label for="country" class="textbox-label">Country</label>
+            </section>
+
+            <section class="input-container">
+                <input id="state" class="textbox-content" name="state" type="text" />
+                <label for="state" class="textbox-label">State</label>
+            </section>
+            <section class="input-container">
+                <input id="city" class="textbox-content" type="text" name="city" />
+                <label for="city" class="textbox-label">City</label>
+            </section>
+            <section class="input-container">
+                <input id="pincode" class="textbox-content" type="number" name="pincode" />
+                <label for="pincode" class="textbox-label">Pincode</label>
+            </section>
+            <section class="input-container">
+                <input id="ph-number" class="textbox-content" type="number" name="ph-number" />
+                <label for="ph-number" class="textbox-label">Mobile Number</label>
+            </section>
+            <section class="card-footer">
+                <div class="primary-btn save-btn" type="button">Save</div>
+                <div class="primary-btn outline cancel-btn" type="button">
+                    Cancel
+                </div>
+            </section>
+        </form>
+    </div>
+</div>
