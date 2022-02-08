@@ -1,0 +1,15 @@
+.rating {
+	border-bottom: 0.1rem solid var(--cta-color);
+	padding-bottom: 1rem;
+}
+.set {
+	color: var(--review-star-color);
+}
+
+.unset {
+	color: var(--review-star-color-unset);
+}
+
+.rating-container .rating {
+	border: 0;
+}
