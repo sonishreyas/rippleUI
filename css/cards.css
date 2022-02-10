@@ -289,7 +289,7 @@ body {
 .horizontal-card-btn-secondary:hover {
 	background: var(--primary-color);
 	color: var(--cta-color);
-	border: 0;
+	border-color: var(--primary-color);
 }
 
 .specification {
