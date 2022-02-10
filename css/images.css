@@ -1,0 +1,15 @@
+.image-container {
+	width: 100%;
+	height: auto;
+}
+
+.responsive-image {
+	width: 100%;
+	height: auto;
+}
+
+.image-container .round-image {
+	width: 15rem;
+	height: 15rem;
+	border-radius: 50%;
+}
