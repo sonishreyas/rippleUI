@@ -31,8 +31,8 @@
 }
 
 .rui-cross:hover {
-	color: var(--primary-color);
-	background: var(--secondary-color);
+	color: var(--secondary-color);
+	background: var(--cta-color);
 }
 
 /* || Alert Position */
