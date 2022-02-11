@@ -1,9 +1,5 @@
 /* || Tablet Screen Layout */
 @media screen and (max-width: 1180px) {
-	.grid-container {
-		/* background: red; */
-	}
-
 	.header-nav-icon {
 		display: block;
 	}
@@ -36,10 +32,6 @@
 
 /* || Mobile Screen Layout */
 @media screen and (max-width: 870px) {
-	.grid-container {
-		/* background: yellow; */
-	}
-
 	.nav {
 		height: 100%;
 		grid-column: 1/8;
@@ -65,12 +57,7 @@
 	body {
 		font-size: 1.5rem;
 	}
-	.main {
-	}
-
 	.header {
 		overflow: auto;
-	}
-	.footer {
 	}
 }

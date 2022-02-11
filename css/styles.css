@@ -126,6 +126,26 @@ body {
 
 /* || Navigation Bar */
 
+* {
+	scrollbar-width: thin;
+	scrollbar-color: blue orange;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 3px;
+}
+
+*::-webkit-scrollbar-track {
+	background: var(--secondary-background-color);
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: var(--cta-color);
+	border-radius: 10px;
+	border: 1px solid var(--cta-color);
+}
+
 .nav {
 	padding: 1rem;
 	overflow-y: auto;
