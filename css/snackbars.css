@@ -1,0 +1,30 @@
+.snackbar--container {
+	position: fixed;
+	display: flex;
+	gap: 1rem;
+	background: var(--secondary-color);
+	color: var(--cta-color);
+	font-size: 1.35rem;
+	width: max-content;
+	padding: 1rem;
+	border-radius: 1rem;
+	align-items: center;
+	justify-content: center;
+	z-index: var(--max-z-index);
+	visibility: hidden;
+}
+.snackbar--retry {
+	font-weight: bold;
+	padding: 0.5rem;
+	border-radius: 1rem;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 870px) {
+	.top-right,
+	.top-center,
+	.bottom-right,
+	.bottom-center {
+		display: none;
+	}
+}
