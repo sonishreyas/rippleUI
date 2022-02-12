@@ -63,11 +63,8 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	position: sticky;
-	top: 0;
-	left: 0;
-	z-index: var(--header-z-index);
 	background-color: var(--primary-color);
+	z-index: var(--header-z-index);
 }
 
 .header-shadow {
@@ -158,7 +155,7 @@ body {
 	overflow-y: auto;
 	position: sticky;
 	top: 0rem;
-	height: calc(90vh - 2rem);
+	height: 100vh;
 }
 
 .rui-drawer-header {
@@ -236,6 +233,8 @@ body {
 	align-items: center;
 	gap: 1rem;
 	padding: 2rem;
+	background-color: var(--primary-color);
+	z-index: 1;
 }
 
 .footer-shadow {
@@ -274,4 +273,25 @@ body {
 
 .main-nav-icon {
 	margin: 1.5rem;
+}
+
+/* Scroll bar */
+*::-webkit-scrollbar {
+	width: 0.2rem;
+	height: 0.5rem;
+}
+
+* {
+	scrollbar-width: thin;
+	scrollbar-color: var(--cta-color);
+}
+
+*::-webkit-scrollbar-track {
+	background: var(--primary-color);
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: var(--cta-color);
+	border-radius: 1rem;
+	border: 0.1rem solid var(--cta-color);
 }

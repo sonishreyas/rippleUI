@@ -1,9 +1,5 @@
 /* || Tablet Screen Layout */
 @media screen and (max-width: 1180px) {
-	.grid-container {
-		/* background: red; */
-	}
-
 	.header-nav-icon {
 		display: block;
 	}
@@ -14,6 +10,7 @@
 		grid-row: 1/13;
 		overflow: hidden;
 		background: var(--primary-color);
+		z-index: var(--max-z-index);
 		visibility: hidden;
 	}
 
@@ -34,10 +31,6 @@
 
 /* || Mobile Screen Layout */
 @media screen and (max-width: 870px) {
-	.grid-container .grid-container {
-		/* background: yellow; */
-	}
-
 	.grid-container .nav {
 		height: 100%;
 		grid-column: 1/8;
