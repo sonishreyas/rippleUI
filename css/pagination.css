@@ -1,0 +1,27 @@
+.pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+	margin: 5rem 0 0 0;
+	background-color: var(--secondary-background-color);
+	border-radius: 2rem;
+	gap: 1rem;
+}
+
+.page-number {
+	font-family: inherit;
+	padding: 1rem;
+	width: 4rem;
+	height: 4rem;
+	border: 0.2rem solid var(--cta-color);
+	background: var(--cta-color);
+	color: var(--secondary-color);
+	border-radius: 50%;
+}
+
+.page-number:hover {
+	color: var(--cta-color);
+	background: var(--secondary-color);
+	border-color: var(--secondary-color);
+}

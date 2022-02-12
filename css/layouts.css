@@ -1,0 +1,74 @@
+.grid-3-rows {
+	display: grid;
+	grid-template-areas:
+		"g-row-1 g-row-1 g-row-1 g-row-1"
+		". g-row-2 g-row-2 ."
+		"g-row-3 g-row-3 g-row-3 g-row-3";
+	height: 100vh;
+	width: 100%;
+	grid-template-rows: 10rem 1fr 10rem;
+}
+
+.grid-3-rows .nav {
+	grid-area: g-row-nav;
+	display: none;
+}
+.grid-3-rows .header {
+	grid-area: g-row-1;
+}
+
+.grid-3-rows .main {
+	grid-area: g-row-2;
+}
+
+.grid-3-rows .footer {
+	grid-area: g-row-3;
+}
+
+.grid-30-70-column {
+	display: grid;
+	grid-template-areas: "grid-col-30 grid-col-70 grid-col-70 grid-col-70";
+	width: 100%;
+	margin: 5rem 0;
+}
+
+.grid-30-70-column .grid-col-30 {
+	grid-area: grid-col-30;
+	padding-right: 5rem;
+	margin-right: 12rem;
+	margin-left: 0;
+	overflow-y: auto;
+	position: sticky;
+	top: 0rem;
+	height: auto;
+}
+
+.grid-30-70-column .grid-col-70 {
+	grid-area: grid-col-70;
+}
+
+.flex-container {
+	display: flex;
+	gap: 2rem;
+	align-items: center;
+	flex-wrap: wrap;
+}
+/* || Mobile Screen Layout */
+@media screen and (max-width: 870px) {
+	.grid-3-rows {
+		grid-template-columns: "g-row-nav g-row-1" "g-row-nav g-row-2" "g-row-3";
+	}
+	.grid-3-rows .nav {
+		display: block;
+		height: 100%;
+		overflow: hidden;
+		background: var(--primary-color);
+		visibility: hidden;
+	}
+	.header-nav-icon {
+		display: block;
+	}
+	.brand-info .header-nav {
+		display: none;
+	}
+}

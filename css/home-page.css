@@ -1,0 +1,43 @@
+.home-heading {
+	margin: 2rem 0;
+	border-bottom: 0.2rem solid var(--cta-color);
+}
+
+.brand-card {
+	width: max-content;
+}
+
+.featured-brand-image {
+	width: 28rem;
+	height: auto;
+}
+
+.background-card {
+	width: 100%;
+}
+
+.background-image-container {
+	width: 100%;
+	height: auto;
+	background-color: var(--primary-color-dark);
+	margin: 3rem 0 0 0;
+	border-radius: 1rem;
+}
+.background-image {
+	background-image: url("../assets/media/images/background1.jpg");
+	background-size: cover;
+	height: 50rem;
+	width: 100%;
+	border-radius: 1rem;
+	opacity: 0.6;
+	position: relative;
+}
+
+.background-content {
+	position: absolute;
+	top: 30rem;
+	font-weight: bolder;
+	font-size: 2.2rem;
+	color: var(--secondary-color-dark);
+	z-index: 1;
+}
