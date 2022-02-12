@@ -1,13 +1,13 @@
 // // Index JS
 import { codeImport } from "../../../../main/js/import-html.js";
 import { handleNavBar } from "../../../../main/js/handle-nav-bar.js";
-import { elements } from "./properties.js";
+import { components } from "./properties.js";
 
-// Call Function
+/**
+ * Calling codeImport for all components
+ */
 const callImportFunctions = async () => {
-	for (let i = 0; i < elements.length; i++) {
-		await codeImport(elements[i]);
-	}
+	components.map(async (component) => await codeImport(component));
 };
 
 // runs all the js files
