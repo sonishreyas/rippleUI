@@ -1,16 +1,20 @@
-// // Index JS
+// Index JS
 import { codeImport } from "../../../../main/js/import-html.js";
 import { handleNavBar } from "../../../../main/js/handle-nav-bar.js";
-import { components } from "./properties.js";
+import { elements } from "./properties.js";
 
 /**
  * Calling codeImport for all components
  */
 const callImportFunctions = async () => {
-	components.map(async (component) => await codeImport(component));
+	for (let i = 0; i < elements.length; i++) {
+		await codeImport(elements[i]);
+	}
 };
 
-// runs all the js files
+/**
+ * Run all scripts on the page
+ */
 const runScripts = async () => {
 	const importCode = await callImportFunctions();
 	handleNavBar();

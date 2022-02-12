@@ -1,8 +1,17 @@
+/**
+ * Manipulate classList of given element
+ * @param {NodeList} element The element to be modified
+ * @param {String} removeClass Class to be removed
+ * @param {String} addClass Class to be added
+ */
 const changeClass = (element, removeClass, addClass) => {
 	element.classList.remove(removeClass);
 	element.classList.add(addClass);
 };
 
+/**
+ * Handle Alert button and dismiss alert functionality
+ */
 const standardAlert = () => {
 	const error_btn = document.querySelector(".error-btn");
 	const warning_btn = document.querySelector(".warning-btn");

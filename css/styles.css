@@ -157,6 +157,9 @@ body {
 	position: sticky;
 	top: 0rem;
 	height: 100vh;
+	margin-bottom: 8.8rem;
+	/* z-index: var(--max-z-index); */
+	background-color: var(--primary-color);
 }
 
 .nav-shadow {
