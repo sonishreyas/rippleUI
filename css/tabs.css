@@ -181,9 +181,6 @@ body {
 	padding: 0.5rem;
 	margin: 0.5rem 0;
 }
-ul > * {
-	margin: 2rem;
-}
 
 /* Modal Styling */
 .modal-container {
