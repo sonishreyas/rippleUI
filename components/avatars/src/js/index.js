@@ -16,7 +16,7 @@ const callImportFunctions = async () => {
  * Run all scripts on the page
  */
 const runScripts = async () => {
-	const importCode = await callImportFunctions();
+	await callImportFunctions();
 	handleNavBar();
 };
 runScripts();

@@ -28,6 +28,10 @@
 	align-items: start;
 }
 
+.flex-gap-half {
+	gap: calc(0.5 * var(--flex-gap));
+}
+
 .flex-gap-1 {
 	gap: calc(1 * var(--flex-gap));
 }
@@ -42,4 +46,8 @@
 
 .flex-wrap {
 	flex-wrap: wrap;
+}
+
+.flex-grow-1 {
+	flex-grow: 1;
 }

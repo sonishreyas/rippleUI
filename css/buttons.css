@@ -18,7 +18,7 @@ body {
 	border-color: var(--secondary-color);
 }
 
-.outline {
+.outline-btn {
 	background: var(--secondary-background-color);
 	border: var(--b-2) solid var(--secondary-color);
 	color: var(--secondary-color);
@@ -28,7 +28,7 @@ body {
 	font-size: inherit;
 	margin: var(--m-5) var(--m-0);
 }
-.outline:hover {
+.outline-btn:hover {
 	background: var(--primary-color);
 	border-color: var(--cta-color);
 	color: var(--cta-color);
