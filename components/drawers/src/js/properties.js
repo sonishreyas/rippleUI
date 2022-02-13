@@ -40,8 +40,7 @@ const elements = [
 		sandbox="allow-scripts allow-same-origin">
 		</iframe>`,
 		sandboxURLClass: ".hamburger-drawer .rui-code-tabs-sandbox--link",
-		sandboxURL:
-			"https://codesandbox.io/s/drawers-final-hjtbl?file=/src/html/standard-drawer.html",
+		sandboxURL: "https://codesandbox.io/s/drawers-final-hjtbl",
 	},
 ];
 

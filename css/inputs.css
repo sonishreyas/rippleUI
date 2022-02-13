@@ -3,30 +3,24 @@ body {
 }
 
 .input-form {
-	display: flex;
-	flex-direction: column;
-	gap: 1rem;
-	flex-grow: 1;
-	flex-wrap: wrap;
 	width: 100%;
+	height: auto;
 }
 
 .input-container {
-	display: flex;
-	flex-direction: column;
-	margin: 1rem;
+	margin: var(--m-5);
 	outline: none;
-	width: 30rem;
+	width: 100%;
 }
 
 .textbox-content {
 	font-family: inherit;
-	padding: 1rem;
-	border: 0;
+	padding: var(--p-5);
+	border: var(--b-0);
 	background: inherit;
 	font-size: inherit;
 	outline: none;
-	border-bottom: 0.15rem solid var(--cta-color);
+	border-bottom: var(--b-2) solid var(--cta-color);
 	color: var(--secondary-color);
 }
 
@@ -45,16 +39,16 @@ body {
 .focused > .textbox-label {
 	transform: translateY(-2.3rem);
 	font-size: 1.2rem;
-	background: var(--secondary-background-color);
+	background: var(--primary-color);
 }
 
 .focused > .textbox-content {
-	border: 0.15rem solid var(--secondary-color);
-	border-radius: 0.3rem;
+	border: var(--b-2) solid var(--secondary-color);
+	border-radius: var(--br-1);
 	outline: none;
 }
 .input-filled .input-container:focus-within::after {
-	border: 0.1rem solid var(--secondary-color);
+	border: var(--b-1) solid var(--secondary-color);
 }
 
 .required-field {
@@ -62,10 +56,10 @@ body {
 }
 
 .email-check {
-	padding: 0.5rem;
+	padding: var(--p-2);
 }
 .password-check {
-	padding: 0.5rem;
+	padding: var(--p-2);
 }
 
 .inactive-check {
@@ -75,6 +69,7 @@ body {
 .active-check {
 	display: block;
 }
+
 .valid {
 	color: var(--valid-color);
 }
@@ -88,7 +83,7 @@ body {
 }
 
 .valid-border {
-	border: 0.15rem solid var(--valid-color);
+	border: var(--b-2) solid var(--valid-color);
 }
 
 .show-password {
@@ -102,36 +97,30 @@ body {
 
 /* || Form Radio and Checkbox buttons */
 .form-container {
-	display: flex;
-	flex-direction: column;
-	gap: 2rem;
-	width: max-content;
-	padding: 1rem;
-	margin: 1rem;
+	width: 100%;
+	height: auto;
+	padding: var(--p-5);
+	margin: var(--m-5);
 }
 
 .form-header {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding-bottom: 2rem;
-	border-bottom: 0.1rem solid var(--cta-color);
+	padding-bottom: var(--p-10);
+	border-bottom: var(--b-1) solid var(--cta-color);
 }
 
 .form-heading {
-	font-weight: bold;
-	padding: 1rem 0rem;
+	padding: var(--p-5) var(--p-0);
 	color: var(--cta-color);
 }
 
 .radio-btn-container {
-	padding-bottom: 2rem;
-	border-bottom: 0.1rem solid var(--cta-color);
+	padding-bottom: var(--p-10);
+	border-bottom: var(--b-1) solid var(--cta-color);
 }
 
 .checkbox-btn-container {
-	padding-bottom: 2rem;
-	border-bottom: 0.1rem solid var(--cta-color);
+	padding-bottom: var(--p-10);
+	border-bottom: var(--b-1) solid var(--cta-color);
 }
 
 /* Textbox with icon */
@@ -150,10 +139,10 @@ body {
 }
 
 .input-with-icon {
-	border: 0.1rem solid;
-	border-radius: 1rem;
+	border: var(--b-1) solid;
+	border-radius: var(--br-2);
 }
 
 .input-with-icon .textbox-content {
-	border: 0;
+	border: var(--b-0);
 }

@@ -1,14 +1,14 @@
-<form class="input-form">
-    <section class="input-container">
-        <input id="email" class="textbox-content" type="email" name="email" />
+<form class="input-form flex-column flex-gap-1 flex-grow-1 flex-wrap">
+    <section class="input-container flex-column">
+        <input id="email" class="textbox-content" type="email" name="email" aria-label="Enter Email" />
         <label for="email" class="textbox-label">Email<span class="required-field">*</span></label>
         <span>
             <sub class="email-check"></sub>
         </span>
     </section>
-    <section class="input-container">
-        <input id="password" class="textbox-content" type="password" name="password" />
-        <i class="fas fa-eye show-password" id="show-password"></i>
+    <section class="input-container flex-column">
+        <input id="password" class="textbox-content" type="password" name="password" aria-label="Enter Password" />
+        <i class="fas fa-eye show-password" id="show-password" aria-label="Show password button"></i>
         <label for="password" class="textbox-label">Password<span class="required-field">*</span></label>
         <span>
             <sub class="password-check"></sub>

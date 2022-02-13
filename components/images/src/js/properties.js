@@ -36,8 +36,7 @@ const elements = [
 			".responsive-image .rui-import-html .rui-code-tabs--container .rui-code-js",
 		elementJSCodeInnerText: `NA`,
 		sandboxURLClass: ".responsive-image .rui-code-tabs-sandbox--link",
-		sandboxURL:
-			"https://codesandbox.io/s/alert-lr17y?file=/index.html:662-1972",
+		sandboxURL: "https://codesandbox.io/s/images-vzhjf",
 	},
 	{
 		name: "Round Image",
@@ -62,8 +61,7 @@ const elements = [
 			".round-image .rui-import-html .rui-code-tabs--container .rui-code-js",
 		elementJSCodeInnerText: `NA`,
 		sandboxURLClass: ".round-image .rui-code-tabs-sandbox--link",
-		sandboxURL:
-			"https://codesandbox.io/s/images-vzhjf?file=/index.html:341-451",
+		sandboxURL: "https://codesandbox.io/s/images-vzhjf",
 	},
 ];
 

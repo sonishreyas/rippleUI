@@ -1,86 +1,100 @@
-<div class="form-container">
-    <section class="form-header">
-        <h3 class="form-heading">Filters</h3>
+<div class="form-container flex-colmn flex-gap-2">
+    <section class="form-header flex-row align-center justify-content-space-between">
+        <h3 class="form-heading text-bold">Filters</h3>
         <a href="#" class="link-btn">Clear All</a>
     </section>
     <ul class="radio-btn-container">
-        <li class="no-list form-heading">Sort by</li class="no-list">
+        <li class="no-list form-heading text-bold">Sort by</li>
         <li class="no-list">
-            <input class="radio-btn" type="radio" id="radio-btn" name="radio-btn" value="Price Low to High" /> Price:
+            <input class="radio-btn" type="radio" id="radio-btn" name="radio-btn" value="Price Low to High"
+                aria-label="Sort by price: low to high" /> Price:
             Low to High
-        </li class="no-list">
+        </li>
         <li class="no-list">
-            <input class="radio-btn" type="radio" id="radio-btn" name="radio-btn" value="Price Low to High" /> Price:
+            <input class="radio-btn" type="radio" id="radio-btn" name="radio-btn" value="High to Low"
+                aria-label="Sort by price: high to low" /> Price:
             High to Low
-        </li class="no-list">
+        </li>
         <li class="no-list">
-            <input class="radio-btn" type="radio" name="radio-btn" id="radio-btn" value="Customer Rating" /> Customer
+            <input class="radio-btn" type="radio" name="radio-btn" id="radio-btn" value="Customer Rating"
+                aria-label="Sort by customer rating" /> Customer
             Rating
-        </li class="no-list">
+        </li>
         <li class="no-list">
-            <input class="radio-btn" type="radio" name="radio-btn" id="radio-btn" value="Better Discount" /> Better
+            <input class="radio-btn" type="radio" name="radio-btn" id="radio-btn" value="Better Discount"
+                aria-label="Sort by better discount" /> Better
             Discount
-        </li class="no-list">
+        </li>
     </ul>
     <ul class="checkbox-btn-container">
-        <li class="no-list form-heading">Categories</li class="no-list">
-        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Casual Shoes" /> Casual Shoes</li
-            class="no-list">
-        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Sports Shoes" /> Sports Shoes</li
-            class="no-list">
-        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Formal Shoes" /> Formal Shoes</li
-            class="no-list">
-        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Sneakers" /> Sneakers</li
-            class="no-list">
+        <li class="no-list form-heading text-bold">Categories</li>
+        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Casual Shoes"
+                aria-label="Filter to casual shoes" /> Casual Shoes</li>
+        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Sports Shoes"
+                aria-label="Filter to sports shoes" /> Sports Shoes</li>
+        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Formal Shoes"
+                aria-label="Filter to formal shoes" /> Formal Shoes</li>
+        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Sneakers"
+                aria-label="Filter to sneakers" /> Sneakers</li>
         <li class="no-list">
-            <input class="checkbox-btn" type="checkbox" value="Sandles & Floaters" />
+            <input class="checkbox-btn" type="checkbox" value="Sandles & Floaters"
+                aria-label="Filter to sandles and floaters" />
             Sandles & Floaters
-        </li class="no-list">
-        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Socks" /> Socks</li class="no-list">
+        </li>
+        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Socks" aria-label="Filter to sockes" />
+            Socks</li>
     </ul>
 
     <ul class="checkbox-btn-container">
-        <li class="no-list form-heading">Brand</li class="no-list">
-        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Adidas" /> Adidas</li class="no-list">
-        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Puma" /> Puma</li class="no-list">
+        <li class="no-list form-heading text-bold">Brand</li>
+        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Adidas"
+                aria-label="Filter to Adidas products" /> Adidas</li>
+        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Puma"
+                aria-label="Filter to Puma products" /> Puma</li>
         <li class="no-list">
-            <input class="checkbox-btn" type="checkbox" value="U.S. Polo Assn." /> U.S. Polo Assn.
-        </li class="no-list">
-        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Woodland" /> Woodland</li
-            class="no-list">
-        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Bata" /> Bata</li class="no-list">
-        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Roadster" /> Roadster</li
-            class="no-list">
+            <input class="checkbox-btn" type="checkbox" value="U.S. Polo Assn."
+                aria-label="Filter to U.S. Polo Assn. products" /> U.S. Polo Assn.
+        </li>
+        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Woodland"
+                aria-label="Filter to Woodland products" /> Woodland</li>
+        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Bata"
+                aria-label="Filter to Bata products" /> Bata</li>
+        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Roadster"
+                aria-label="Filter to Roadster products" /> Roadster
+        </li>
     </ul>
 
     <ul class="checkbox-btn-container">
-        <li class="no-list form-heading">Price</li class="no-list">
-        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Under ₹1000" /> Under ₹1000</li
-            class="no-list">
-        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="₹1000 to ₹2000" /> ₹1000 to ₹2000</li
-            class="no-list">
+        <li class="no-list form-heading text-bold">Price</li>
+        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="Under ₹1000"
+                aria-label="Filter by price: under ₹1000" /> Under ₹1000</li>
+        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="₹1000 to ₹2000"
+                aria-label="Filter by price: ₹1000 to ₹2000" /> ₹1000 to ₹2000</li>
         <li class="no-list">
-            <input class="checkbox-btn" type="checkbox" value="₹2000 to ₹3000" />
+            <input class="checkbox-btn" type="checkbox" value="₹2000 to ₹3000"
+                aria-label="Filter by price: ₹2000 to ₹3000" />
             ₹2000 to ₹3000
-        </li class="no-list">
+        </li>
         <li class="no-list">
-            <input class="checkbox-btn" type="checkbox" value="₹3000 to ₹4000" />
+            <input class="checkbox-btn" type="checkbox" value="₹3000 to ₹4000"
+                aria-label="Filter by price: ₹3000 to ₹4000" />
             ₹3000 to ₹4000
-        </li class="no-list">
-        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="₹4000 to ₹5000" /> ₹4000 to ₹5000</li
-            class="no-list">
-        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="₹5000+" /> ₹5000+</li class="no-list">
+        </li>
+        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="₹4000 to ₹5000"
+                aria-label="Filter by price: ₹4000 to ₹5000" /> ₹4000 to ₹5000</li>
+        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="₹5000+"
+                aria-label="Filter by price: more than ₹5000" /> ₹5000+</li>
     </ul>
 
     <ul class="checkbox-btn-container">
-        <li class="no-list form-heading">Rating</li class="no-list">
-        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="4 and above" /> 4 and above</li
-            class="no-list">
-        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="3 and above" /> 3 and above</li
-            class="no-list">
-        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="2 and above" /> 2 and above</li
-            class="no-list">
-        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="1 and above" /> 1 and above</li
-            class="no-list">
+        <li class="no-list form-heading text-bold">Rating</li>
+        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="4 and above"
+                aria-label="Filter by rating: 4 and above" /> 4 and above</li>
+        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="3 and above"
+                aria-label="Filter by rating: 3 and above" /> 3 and above</li>
+        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="2 and above"
+                aria-label="Filter by rating: 2 and above" /> 2 and above</li>
+        <li class="no-list"><input class="checkbox-btn" type="checkbox" value="1 and above"
+                aria-label="Filter by rating: 1 and above" /> 1 and above</li>
     </ul>
 </div>
