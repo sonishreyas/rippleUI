@@ -1,4 +1,4 @@
-// // Index JS
+// Index JS
 import { codeImport } from "../../../../main/js/import-html.js";
 import { handleNavBar } from "../../../../main/js/handle-nav-bar.js";
 import { elements } from "./properties.js";
