@@ -16,7 +16,6 @@ const handleInputChips = () => {
 		"flex-gap-1",
 	];
 	inputChipInput.addEventListener("keypress", (e) => {
-		const section = document.createElement("section");
 		if (e.key === "Enter") {
 			const section = document.createElement("section");
 			section.classList.add(...basicChipClasses);
