@@ -1,7 +1,7 @@
 <div class="profile-container">
-    <div class="profile-header">
+    <div class="profile-header flex-row justify-content-space-between align-center flex-wrap">
         <h1 class="profile-heading">Address</h1>
-        <button class="primary-btn outline icon-text-btn margin-7px address-btn">
+        <button class="outline-btn icon-text-btn flex-row justify-content-center align-center flex-gap-1 address-btn">
             <span><i class="fas fa-plus"></i></span>
             <p class="btn-text">Add new address</p>
         </button>
@@ -26,41 +26,41 @@
         </li>
     </ul>
 
-    <div class="modal-container center">
+    <div class="modal-container modal-center text-center">
         <h3 class="profile-heading">Add a new Address</h3>
-        <form class="input-form">
-            <section class="input-container">
+        <form class="input-form flex-column flex-gap-1 flex-grow-1 flex-wrap">
+            <section class="input-container flex-column">
                 <input id="name" class="textbox-content" type="text" name="name" />
                 <label for="name" class="textbox-label">Name</label>
             </section>
-            <section class="input-container">
+            <section class="input-container flex-column">
                 <input id="address" class="textbox-content" type="text" name="address" />
                 <label for="address" class="textbox-label">Address</label>
             </section>
-            <section class="input-container">
+            <section class="input-container flex-column">
                 <input id="country" class="textbox-content" name="country" type="text" />
                 <label for="country" class="textbox-label">Country</label>
             </section>
 
-            <section class="input-container">
+            <section class="input-container flex-column">
                 <input id="state" class="textbox-content" name="state" type="text" />
                 <label for="state" class="textbox-label">State</label>
             </section>
-            <section class="input-container">
+            <section class="input-container flex-column">
                 <input id="city" class="textbox-content" type="text" name="city" />
                 <label for="city" class="textbox-label">City</label>
             </section>
-            <section class="input-container">
+            <section class="input-container flex-column">
                 <input id="pincode" class="textbox-content" type="number" name="pincode" />
                 <label for="pincode" class="textbox-label">Pincode</label>
             </section>
-            <section class="input-container">
+            <section class="input-container flex-column">
                 <input id="ph-number" class="textbox-content" type="number" name="ph-number" />
                 <label for="ph-number" class="textbox-label">Mobile Number</label>
             </section>
-            <section class="card-footer">
-                <div class="primary-btn save-btn" type="button">Save</div>
-                <div class="primary-btn outline cancel-btn" type="button">
+            <section class="card-footer flex-row flex-grow-1 justify-content-center flex-gap-1">
+                <div class="primary-btn save-btn flex-grow-1" type="button">Save</div>
+                <div class="primary-btn outline cancel-btn flex-grow-1" type="button">
                     Cancel
                 </div>
             </section>

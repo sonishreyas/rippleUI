@@ -5,58 +5,35 @@
 }
 
 .profile-header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
-	padding: 1rem;
-	margin: 0 1rem;
-}
-.margin-7px {
-	padding: 0.7rem;
-}
-.basic-card {
-	width: 100%;
-	height: auto;
+	padding: var(--p-5);
+	margin: var(--m-0) var(--m-5);
 }
 
-.basic-card > * {
-	padding: 0.4rem;
+.address-btn {
+	margin: var(--m-3);
 }
 
 .card-footer {
-	display: flex;
-	flex-grow: 1;
-	justify-content: center;
-	gap: 1rem;
-	padding: 1rem 0;
-}
-
-.card-footer > * {
-	flex-grow: 1;
+	padding: var(--p-5) var(--p-0);
 }
 
 .profile-heading {
-	padding: 0.5rem;
-	margin: 0.5rem 0;
-}
-.stacked-list > * {
-	margin: 2rem;
+	padding: var(--p-2);
+	margin: var(--m-2) var(--m-0);
 }
 
 /* Modal Styling */
 .modal-container {
-	display: none;
+	/* display: none; */
 	background: var(--primary-color);
-	width: max-content;
-	padding: 1rem;
-	margin: 1rem;
-	border-radius: 1rem;
-	text-align: center;
+	/* width: max-content; */
+	padding: var(--p-5);
+	margin: var(--m-5);
+	border-radius: var(--br-2);
 	z-index: 1;
 	box-shadow: 0rem 0rem 1rem 1rem var(--shadow-color);
 }
-.center {
+.modal-center {
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -68,8 +45,8 @@
 
 @media screen and (max-width: 450px) {
 	.center {
-		left: 50%;
-		top: 50%;
-		transform: translate(-50%, -50%);
+		left: 50vh;
+		top: 50vh;
+		transform: translate(-50vh, -50vh);
 	}
 }

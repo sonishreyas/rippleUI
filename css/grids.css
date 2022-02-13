@@ -85,27 +85,6 @@
 	margin: 0.5rem 0;
 }
 
-/* Modal Styling */
-.modal-container {
-	display: none;
-	background: var(--primary-color);
-	width: max-content;
-	padding: 1rem;
-	margin: 1rem;
-	border-radius: 1rem;
-	text-align: center;
-	z-index: 1;
-	box-shadow: 0rem 0rem 1rem 1rem var(--shadow-color);
-}
-.center {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-}
-.modal-container .input-form {
-	width: max-content;
-}
 .cart-billing {
 	margin: 1rem;
 	padding: 1rem;
