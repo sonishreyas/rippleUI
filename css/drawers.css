@@ -1,43 +1,39 @@
-/* Drawer Styling */
+/* || Drawer Styling */
 
 .drawer {
 	background: var(--secondary-background-color);
-	display: flex;
-	flex-direction: column;
 	height: 30rem;
-	border-radius: 0.5rem;
-	padding: 0.5rem;
-	margin: auto;
+	border-radius: var(--br-1);
+	padding: var(--p-2);
+	margin: var(--margin-auto);
 }
 .drawer-icon-tab {
-	display: flex;
-	justify-content: end;
-	padding: 1.2rem;
-	border-bottom: 0.1rem solid var(--cta-color);
+	padding: var(--p-6);
+	border-bottom: var(--b-1) solid var(--cta-color);
 }
+
 /* || Drawer List Styling */
 .drawer-content--list {
 	list-style: none;
-	margin: 0;
-	padding: 0;
-	font-weight: bold;
-	margin-top: 1rem;
+	margin: var(--m-0);
+	padding: var(--p-0);
+	margin-top: var(--m-5);
 }
 
 .drawer-content {
-	padding: 1rem;
+	padding: var(--p-5);
 }
+
 .drawer-content:hover {
 	background: var(--cta-color);
 }
-/* Link Styling */
+
+/* || Link Styling */
 .drawer-links {
-	display: flex;
-	align-items: center;
-	gap: 1.2rem;
-	padding: 0;
+	padding: var(--p-0);
 }
-/* Icon Styling */
+
+/* || Icon Styling */
 .drawer-icon {
 	width: 2rem;
 	height: 2rem;
