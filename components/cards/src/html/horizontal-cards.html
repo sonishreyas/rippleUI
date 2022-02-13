@@ -1,11 +1,11 @@
 <article class="card horizontal card-shadow">
-    <div class="horizontal-card-img--container flex-jc-ac">
+    <div class="horizontal-card-img--container flex-row justify-content-center align-center flex-wrap">
         <img src="../media/images/sneaker.png" alt="Puma Sneakers" class="horizontal-card-img" />
     </div>
-    <div class="horizontal-card-text--container">
-        <h1>Puma White Sneakers</h1>
+    <div class="horizontal-card-text--container flex-column flex-gap-1">
+        <h2>Puma White Sneakers</h2>
         <p>PUMA</p>
-        <span class="rating flex-ac">
+        <span class="rating flex-row align-center flex-gap-half">
             <i class="fas fa-star set"></i>
             <i class="fas fa-star set"></i>
             <i class="fas fa-star set"></i>
@@ -13,8 +13,8 @@
             <i class="fas fa-star unset"></i>
             <p class="secondary-font">| (400 reviews)</p>
         </span>
-        <div class="pricing flex-ac">
-            <h3>Rs. 2999</h3>
+        <div class="pricing flex-row align-center flex-gap-half text-bold">
+            <h4>Rs. 2999</h4>
             <p class="secondary-font">
                 <strike>Rs. 5999</strike>
             </p>
@@ -29,58 +29,60 @@
             <button class="size">10</button>
             <button class="size">11</button>
         </div>
-        <div class="horizontal-card-btn-container flex-ac">
-            <button class="card-btn card-cart horizontal-card-btn-primary">
+        <div class="horizontal-card-btn-container flex-row align-center flex-gap-1 flex-wrap">
+            <button
+                class="card-btn card-cart horizontal-card-btn-primary flex-row justify-content-center align-center flex-gap-1 flex-grow-1 text-bold">
                 <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span>
                 <p class="cart-text">Add to Cart</p>
             </button>
-            <button class="card-btn horizontal-card-btn-secondary">
+            <button
+                class="card-btn horizontal-card-btn-secondary  flex-row justify-content-center align-center flex-gap-1 flex-grow-1 text-bold">
                 <span class="wishlist-icon"><i class="far fa-heart"></i></span>
                 <p class="wishlist-text">Add to wishlist</p>
             </button>
         </div>
         <div class="horizontal-card-details-container">
             <h3>Specifications</h3>
-            <div class="specification-column flex-ac">
-                <form class="specifications-form">
-                    <section class="specification">
+            <div class="specification-column flex-row align-center flex-wrap">
+                <form class="specifications-form flex-column flex-grow-1 flex-wrap">
+                    <section class="specification flex-column">
                         <label for="type" class="specification-key">Type</label>
                         <input type="text" value="Sneakers" class="specification-value" readonly
                             aria-label="Shoes Type" />
                     </section>
-                    <section class="specification">
+                    <section class="specification flex-column">
                         <label for="type" class="specification-key">Pattern</label>
                         <input type="text" value="Solid" class="specification-value" readonly
                             aria-label="Shoes pattern" />
                     </section>
-                    <section class="specification">
+                    <section class="specification flex-column">
                         <label for="type" class="specification-key">Shoe Width</label>
                         <input type="text" value="Regular" class="specification-value" readonly
                             aria-label="Shoe Width" />
                     </section>
-                    <section class="specification">
+                    <section class="specification flex-column">
                         <label for="type" class="specification-key">Insole</label>
                         <input type="text" value="Comfort Insole" class="specification-value" readonly
                             aria-label="Shoe Insole Material" />
                     </section>
                 </form>
-                <form action="" class="specifications-form">
-                    <section class="specification">
+                <form action="" class="specifications-form flex-column flex-grow-1 flex-wrap">
+                    <section class="specification flex-column">
                         <label for="type" class="specification-key">Sole Material</label>
                         <input type="text" value="Rubber" class="specification-value" readonly
                             aria-label="Shoe Sole Material" />
                     </section>
-                    <section class="specification">
+                    <section class="specification flex-column">
                         <label for="type" class="specification-key">Warranty</label>
                         <input type="text" value="3 months" class="specification-value" readonly
                             aria-label="Shoes Warranty" />
                     </section>
-                    <section class="specification">
+                    <section class="specification flex-column">
                         <label for="type" class="specification-key">Toe Shape</label>
                         <input type="text" value="Round Toe" class="specification-value" readonly
                             aria-label="Toe Shape" />
                     </section>
-                    <section class="specification">
+                    <section class="specification flex-column">
                         <label for="type" class="specification-key">Occasion</label>
                         <input type="text" value="Everyday" class="specification-value" readonly
                             aria-label="Occasions" />

@@ -1,0 +1,14 @@
+:root {
+	--padding: 0.2rem;
+	--p-0: 0;
+	--p-1: calc(1 * var(--padding));
+	--p-2: calc(2 * var(--padding));
+	--p-3: calc(3 * var(--padding));
+	--p-4: calc(4 * var(--padding));
+	--p-5: calc(5 * var(--padding));
+	--p-6: calc(6 * var(--padding));
+	--p-7: calc(7 * var(--padding));
+	--p-8: calc(8 * var(--padding));
+	--p-9: calc(9 * var(--padding));
+	--p-10: calc(10 * var(--padding));
+}

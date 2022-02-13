@@ -1,14 +1,17 @@
+/**
+ * Handle badge position on icon
+ */
 const handleIconBadge = () => {
 	// Icon batch Alignment
 
-	const badge_text = document.querySelectorAll(".badge-text");
+	const badgeText = document.querySelectorAll(".badge-text");
 	const top = document.querySelector("#top");
 	const bottom = document.querySelector("#bottom");
 	const right = document.querySelector("#right");
 	const left = document.querySelector("#left");
 
 	top.addEventListener("change", () => {
-		badge_text.forEach((item) => {
+		badgeText.forEach((item) => {
 			if (item.classList.contains("bottom")) {
 				item.classList.remove("bottom");
 			}
@@ -17,7 +20,7 @@ const handleIconBadge = () => {
 	});
 
 	bottom.addEventListener("change", () => {
-		badge_text.forEach((item) => {
+		badgeText.forEach((item) => {
 			if (item.classList.contains("top")) {
 				item.classList.remove("top");
 			}
@@ -26,7 +29,7 @@ const handleIconBadge = () => {
 	});
 
 	left.addEventListener("change", () => {
-		badge_text.forEach((item) => {
+		badgeText.forEach((item) => {
 			if (item.classList.contains("rightt")) {
 				item.classList.remove("rightt");
 			}
@@ -34,7 +37,7 @@ const handleIconBadge = () => {
 		});
 	});
 	right.addEventListener("change", () => {
-		badge_text.forEach((item) => {
+		badgeText.forEach((item) => {
 			if (item.classList.contains("left")) {
 				item.classList.remove("left");
 			}

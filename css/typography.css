@@ -1,0 +1,87 @@
+/* || Heading */
+
+h1,
+.h1 {
+	font-size: 3rem;
+}
+
+h2,
+.h2 {
+	font-size: 2.5rem;
+}
+
+h3,
+.h3 {
+	font-size: 2rem;
+}
+
+h4,
+.h4 {
+	font-size: 1.75rem;
+}
+
+h5,
+.h5 {
+	font-size: 1.5rem;
+}
+
+h6,
+.h6 {
+	font-size: 1.25rem;
+}
+
+/* || Text Colors */
+
+.text-primary-color {
+	color: var(--primary-color);
+}
+
+.text-secondary-color {
+	color: var(--secondary-color);
+}
+
+.text-disabled {
+	color: var(--dark-grey);
+}
+
+/* || Text Sizes */
+.text-uppercase {
+	text-transform: uppercase;
+}
+
+.text-lowercase {
+	text-transform: lowercase;
+}
+
+.text-capitalise {
+	text-transform: capitalize;
+}
+
+.text-light {
+	font-weight: lighter;
+}
+
+.text-bold {
+	font-weight: bold;
+}
+
+.text-italic {
+	font-style: italic;
+}
+
+/* || Text Alignment */
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: end;
+}
+
+.text-left {
+	text-align: start;
+}
+
+.text-justify {
+	text-align: justify;
+}

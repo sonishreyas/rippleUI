@@ -1,0 +1,24 @@
+:root {
+	/* Border Variables */
+	--border: 0.1rem;
+	--b-0: 0;
+	--b-1: calc(1 * var(--border));
+	--b-2: calc(2 * var(--border));
+	--b-3: calc(3 * var(--border));
+	--b-4: calc(4 * var(--border));
+	--b-5: calc(5 * var(--border));
+	--b-6: calc(6 * var(--border));
+	--b-10: calc(10 * var(--border));
+
+	/* Border Radius Variables */
+
+	--border-radius: 0.5rem;
+	--br-circle: 50%;
+	--br-1: calc(1 * var(--border-radius));
+	--br-2: calc(2 * var(--border-radius));
+	--br-3: calc(3 * var(--border-radius));
+	--br-4: calc(4 * var(--border-radius));
+	--br-5: calc(5 * var(--border-radius));
+	--br-6: calc(6 * var(--border-radius));
+	--br-10: calc(10 * var(--border-radius));
+}

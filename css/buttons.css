@@ -3,13 +3,13 @@ body {
 }
 .primary-btn {
 	background: var(--cta-color);
-	padding: 1rem;
-	border-radius: 1rem;
+	padding: var(--p-5);
+	border-radius: var(--br-2);
 	font-family: inherit;
-	border: 0.2rem solid var(--cta-color);
+	border: var(--b-2) solid var(--cta-color);
 	color: var(--secondary-color);
 	font-size: inherit;
-	margin: 1rem 0rem;
+	margin: var(--m-5) var(--m-0);
 }
 
 .primary-btn:hover {
@@ -18,17 +18,17 @@ body {
 	border-color: var(--secondary-color);
 }
 
-.outline {
+.outline-btn {
 	background: var(--secondary-background-color);
-	border: 0.2rem solid var(--secondary-color);
+	border: var(--b-2) solid var(--secondary-color);
 	color: var(--secondary-color);
-	padding: 1rem;
-	border-radius: 1rem;
+	padding: var(--p-5);
+	border-radius: var(--br-2);
 	font-family: inherit;
 	font-size: inherit;
-	margin: 1rem 0rem;
+	margin: var(--m-5) var(--m-0);
 }
-.outline:hover {
+.outline-btn:hover {
 	background: var(--primary-color);
 	border-color: var(--cta-color);
 	color: var(--cta-color);
@@ -37,13 +37,13 @@ body {
 .link-btn {
 	color: var(--secondary-color);
 	text-decoration: none;
-	border-bottom: 0.1rem solid var(--cta-color);
-	margin: 1rem 0;
+	border-bottom: var(--br-1) solid var(--cta-color);
+	margin: var(--m-5) var(--m-0);
 }
 
 .link-btn:hover {
 	color: var(--cta-color);
-	border-bottom: 0.3rem solid var(--cta-color);
+	border-bottom: var(--br-3) solid var(--cta-color);
 }
 
 .icon-btn {
@@ -53,20 +53,13 @@ body {
 	color: var(--cta-color);
 }
 
-.icon-text-btn {
-	display: flex;
-	gap: 1rem;
-	align-items: center;
-	justify-content: center;
-}
-
 .floating-btn {
 	background: var(--cta-color);
 	width: 4rem;
 	height: 4rem;
-	border-radius: 50%;
+	border-radius: var(--br-circle);
 	font-family: inherit;
-	border: 0.2rem solid var(--cta-color);
+	border: var(--br-2) solid var(--cta-color);
 	color: var(--secondary-color);
 	font-size: 1.2rem;
 	z-index: var(--z-index);
@@ -98,7 +91,7 @@ body {
 	right: 0;
 	background: var(--secondary-background-color);
 	transition: 0.4s;
-	border-radius: 2rem;
+	border-radius: var(--br-4);
 }
 
 .switch input {
@@ -113,7 +106,7 @@ body {
 	left: 0.5rem;
 	bottom: 0.5rem;
 	background-color: var(--secondary-color);
-	border-radius: 50%;
+	border-radius: var(--br-circle);
 	transition: 0.4s;
 }
 

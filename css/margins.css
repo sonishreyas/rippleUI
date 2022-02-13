@@ -1,0 +1,22 @@
+.m-1 {
+	margin: 1rem;
+}
+
+.m-2-0 {
+	margin: 2rem 0;
+}
+:root {
+	--margin: 0.2rem;
+	--margin-auto: auto;
+	--m-0: 0;
+	--m-1: calc(1 * var(--margin));
+	--m-2: calc(2 * var(--margin));
+	--m-3: calc(3 * var(--margin));
+	--m-4: calc(4 * var(--margin));
+	--m-5: calc(5 * var(--margin));
+	--m-6: calc(6 * var(--margin));
+	--m-7: calc(7 * var(--margin));
+	--m-8: calc(8 * var(--margin));
+	--m-9: calc(9 * var(--margin));
+	--m-10: calc(10 * var(--margin));
+}

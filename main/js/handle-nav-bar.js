@@ -20,18 +20,24 @@ const handleNavBar = () => {
 		if (window.innerWidth >= 1180) {
 			navBar.style.visibility = "visible";
 			brandName.style.visibility = "visible";
-			if (drawerHeader.classList.contains("inactive") === false) {
-				drawerHeader.classList.add("inactive");
+			if (drawerHeader.classList.contains("display-inactive") === false) {
+				drawerHeader.classList.add("display-inactive");
 			}
 		} else {
-			if (drawerHeader.classList.contains("inactive")) {
-				drawerHeader.classList.remove("inactive");
+			if (drawerHeader.classList.contains("display-inactive")) {
+				drawerHeader.classList.remove("display-inactive");
 			}
 			navBar.style.visibility = "hidden";
 			drawerHeader.style.visibility = "hidden";
 			brandName.style.visibility = "visible";
 		}
 	});
+
+	if (window.innerWidth < 1180) {
+		if (drawerHeader.classList.contains("display-inactive")) {
+			drawerHeader.classList.remove("display-inactive");
+		}
+	}
 };
 
 export { handleNavBar };

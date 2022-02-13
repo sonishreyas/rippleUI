@@ -1,3 +1,6 @@
+/**
+ * Inactivate the card onclick of dismiss button
+ */
 const handleDismissCard = () => {
 	const dismissCardBtn = document.querySelector(
 		".dismiss-cards .card-dismiss-btn"

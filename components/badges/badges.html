@@ -8,14 +8,17 @@
     <meta name="author" content="Shreyas c. Soni">
     <link rel="stylesheet" href="https://ripple-ui.netlify.app/css/components.css" />
     <title>Badges - RippleUI</title>
+    <link rel="icon"
+        href="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/ripple-logo-dark.png"
+        type="image/x-icon">
 </head>
 
 <body>
     <div class="grid-container">
 
         <!-- || Header -->
-        <header class="header">
-            <div class="brand-info">
+        <header class="header header-shadow flex-row justify-content-space-between align-center">
+            <div class="brand-info flex-row justify-content-center align-center flex-gap-1">
                 <section>
                     <i class="fas fa-bars header-nav-icon"></i>
                 </section>
@@ -25,7 +28,7 @@
                     <sub class="brand-name">Ripple UI</sub>
                 </a>
             </div>
-            <div class="social-icon-container">
+            <div class="social-icon-container flex-row align-center flex-gap-2">
                 <a href="https://github.com/sonishreyas" target="_blank" aria-label="View Github Profile"
                     class="no-link"><i class="fab fa-github social"></i></a>
                 <a href="https://twitter.com/ShreyasSoni0204" target="_blank" aria-label="View Twitter Profile"
@@ -59,7 +62,7 @@
                 </div>
             </section>
 
-            <section class="rui-main-nav-links--container">
+            <section class="rui-main-nav-links--container flex-row justify-content-space-between">
                 <a href="https://ripple-ui.netlify.app/components/avatars/avatars.html"
                     class="rui-main-nav-links no-link"><i class="fas fa-angle-left main-nav-icon"></i>
                     Avatar</a>
@@ -69,9 +72,9 @@
         </main>
 
         <!-- || Aside -->
-        <aside class="aside">
+        <aside class="aside flex-column justify-content-start">
             <ul class="rui-drawer-content--list no-list">
-                <li class="rui-aside--heading">On this page</li>
+                <li class="rui-aside--heading text-bold">On this page</li>
                 <li class="rui-drawer-content">
                     <a href="#icon-badges" class="rui-drawer-links">
                         <span class="rui-drawer-content--text">Icon Badges</span>
@@ -85,9 +88,10 @@
         </aside>
 
         <!-- || Nav Bar -->
-        <nav class="nav">
+        <nav class="nav nav-shadow">
             <ul class="rui-drawer-content--list no-list">
-                <li class="rui-drawer-content rui-drawer-header inactive">
+                <li
+                    class="flex-row justify-content-space-between align-center rui-drawer-content rui-drawer-header display-inactive">
                     <section>
                         <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/ripple-logo-dark.png"
                             alt="Logo of ripple UI" class="brand-logo" />
@@ -228,8 +232,8 @@
         </nav>
 
         <!-- || Footer -->
-        <footer class="footer">
-            <div class="social-icon-container">
+        <footer class="footer footer-shadow flex-column justify-content-center align-center flex-gap-1 flex-wrap">
+            <div class="social-icon-container flex-row align-center flex-gap-2">
                 <a href="https://github.com/sonishreyas" target="_blank" aria-label="View Github Profile"
                     class="no-link"><i class="fab fa-github social"></i></a>
                 <a href="https://twitter.com/ShreyasSoni0204" target="_blank" aria-label="View Twitter Profile"

@@ -1,14 +1,10 @@
 /* || Basic Alert */
 .rui-alert--container {
 	position: fixed;
-	display: flex;
-	gap: 1rem;
 	font-size: 1.35rem;
 	width: max-content;
-	padding: 1rem;
-	border-radius: 1rem;
-	align-items: center;
-	justify-content: center;
+	padding: var(--p-5);
+	border-radius: var(--br-2);
 	z-index: var(--max-z-index);
 	bottom: 1rem;
 	left: 1rem;
@@ -24,32 +20,24 @@
 }
 
 .rui-cross {
-	border: 0;
+	border: var(--b-0);
 	font-size: 2rem;
 	border-radius: 50%;
 	cursor: pointer;
 }
 
 .rui-cross:hover {
-	color: var(--secondary-color);
-	background: var(--cta-color);
+	color: var(--primary-color);
+	background: var(--secondary-color);
 }
 
 /* || Alert Position */
-.rui-alert-type--container {
-	display: flex;
-	gap: 1rem;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-}
 
 .rui-alert-type {
-	border: 0;
-	padding: 1rem;
-	border-radius: 1rem;
+	border: var(--b-0);
+	padding: var(--p-5);
+	border-radius: var(--br-2);
 	font-family: inherit;
-	font-weight: bold;
 	background-color: var(--cta-color);
 	color: var(--primary-color);
 }
@@ -58,10 +46,6 @@
 	cursor: pointer;
 	background: var(--secondary-color);
 	color: var(--cta-color);
-}
-
-.trial {
-	visibility: hidden;
 }
 
 .success {
