@@ -1,6 +1,9 @@
+/**
+ * Handle basic chips dismiss
+ */
 const handleBasicChips = () => {
-	const chip_cross = document.querySelectorAll(".chip-cross");
-	chip_cross.forEach((item) => {
+	const chipCross = document.querySelectorAll(".chip-cross");
+	chipCross.forEach((item) => {
 		item.addEventListener(
 			"click",
 			() => (item.parentElement.style.display = "none")

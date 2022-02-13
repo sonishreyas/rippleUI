@@ -3,39 +3,33 @@ body {
 }
 
 /* || Chip Container */
-.chip--container {
-	display: flex;
+.chip-container {
 	background: var(--secondary-background-color);
-	padding: 1rem;
-	flex-wrap: wrap;
-	gap: 1rem;
-	border-radius: 1rem;
+	padding: var(--p-5);
+	border-radius: var(--br-2);
 	box-shadow: 1rem 1rem 1rem var(--shadow-color);
 	color: var(--primary-color);
+	max-width: 70rem;
+	height: auto;
 }
 
 /* || Basic Chips */
 
 .basic-chip {
-	display: flex;
-	gap: 1rem;
 	background: var(--primary-color);
 	color: var(--secondary-color);
-	padding: 1rem;
-	flex-wrap: wrap;
+	padding: var(--p-5);
 	min-width: 2rem;
-	align-items: center;
-	border-radius: 1.5rem;
+	border-radius: var(--br-3);
 	font-size: 1.2rem;
-	/* font-weight: bold; */
 }
 
 .chip-cross {
 	background: var(--secondary-background-color);
 	color: var(--secondary-color);
 	font-size: 1.5rem;
-	border-radius: 2rem;
-	padding: 0 0.5rem 0.15rem 0.5rem;
+	border-radius: var(--br-circle);
+	padding: var(--p-0) var(--p-2) var(--p-1) var(--p-2);
 	cursor: pointer;
 }
 
@@ -47,12 +41,12 @@ body {
 /* || Input Chips */
 
 .input-chip--input {
-	border: 0;
+	border: var(--b-0);
 	background: var(--secondary-background-color);
 	color: var(--secondary-color);
 	font-size: inherit;
 	flex-grow: 1;
-	padding: 1rem;
+	padding: var(--p-5);
 }
 
 .input-chip--input:focus {
@@ -66,5 +60,5 @@ body {
 .chip-icon {
 	width: 3rem;
 	height: 3rem;
-	border-radius: 5rem;
+	border-radius: var(--br-circle);
 }
