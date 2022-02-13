@@ -1,26 +1,18 @@
 .stacked-list .basic-card {
-	display: flex;
-	align-items: center;
-	gap: 1rem;
-	padding: 1rem;
+	padding: var(--p-5);
 }
 
 .stacked-list li {
-	margin: 2rem;
+	margin: var(--m-10);
 }
 .notification-image {
 	height: 5rem;
 	width: 4rem;
 	background: var(--primary-color);
-	padding: 1rem;
-	border-radius: 1rem;
-}
-
-.spaced-list {
-	display: flex;
-	align-items: center;
+	padding: var(--p-5);
+	border-radius: var(--br-2);
 }
 
 .spaced-list li {
-	margin: 1rem;
+	margin: var(--m-5);
 }

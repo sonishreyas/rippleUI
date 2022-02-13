@@ -16,6 +16,8 @@ body {
 	height: auto;
 	width: 30rem;
 	padding: var(--p-10);
+	background-color: var(--secondary-background-color);
+	border-radius: var(--br-2);
 }
 
 .vertical {
