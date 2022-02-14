@@ -22,7 +22,7 @@
 		hue-rotate(134deg) brightness(98%) contrast(98%);
 
 	/* Light Theme color */
-	--primary-color-light: #dce2e5;
+	--primary-color-light: #d0d9dd;
 	--secondary-color-light: #3a3c41;
 	--tertiary-color-light: #303236;
 	--cta-color-light: #01b77a;
