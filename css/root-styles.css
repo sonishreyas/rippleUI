@@ -11,24 +11,26 @@
 	--flex-gap: 1rem;
 
 	/* Dark Theme Color */
-	--primary-color-dark: #0a1929;
-	--secondary-color-dark: #fffafa;
-	--cta-color-dark: #3399ff;
-	--secondary-background-color-dark: #0f263e;
-	--secondary-color-filter-dark: invert(100%) sepia(37%) saturate(278%)
-		hue-rotate(338deg) brightness(102%) contrast(104%);
-	--cta-color-filter-dark: invert(54%) sepia(38%) saturate(4203%)
-		hue-rotate(190deg) brightness(100%) contrast(104%);
+	--primary-color-dark: #17181a;
+	--secondary-color-dark: #a0a0a7;
+	--tertiary-color-dark: #b5b5ba;
+	--cta-color-dark: #02b075;
+	--secondary-background-color-dark: #202123;
+	--secondary-color-filter-dark: invert(71%) sepia(0%) saturate(3725%)
+		hue-rotate(137deg) brightness(80%) contrast(77%);
+	--cta-color-filter-dark: invert(67%) sepia(100%) saturate(5068%)
+		hue-rotate(134deg) brightness(98%) contrast(98%);
 
 	/* Light Theme color */
-	--primary-color-light: #d4d4d8;
-	--secondary-color-light: #0a1929;
-	--cta-color-light: #ff4321;
-	--secondary-background-color-light: #f3f4f6;
-	--secondary-color-filter-light: invert(8%) sepia(13%) saturate(3148%)
-		hue-rotate(172deg) brightness(95%) contrast(97%);
-	--cta-color-filter-light: invert(34%) sepia(91%) saturate(3439%)
-		hue-rotate(349deg) brightness(109%) contrast(101%);
+	--primary-color-light: #d0d9dd;
+	--secondary-color-light: #3a3c41;
+	--tertiary-color-light: #303236;
+	--cta-color-light: #01b77a;
+	--secondary-background-color-light: #f3f5f6;
+	--secondary-color-filter-light: invert(14%) sepia(0%) saturate(2914%)
+		hue-rotate(298deg) brightness(91%) contrast(71%);
+	--cta-color-filter-light: invert(54%) sepia(56%) saturate(4854%)
+		hue-rotate(131deg) brightness(99%) contrast(99%);
 
 	/* Components Color */
 
@@ -64,6 +66,7 @@
 	:root {
 		--primary-color: var(--primary-color-light);
 		--secondary-color: var(--secondary-color-light);
+		--tertiary-color: var(--tertiary-color-light);
 		--cta-color: var(--cta-color-light);
 		--secondary-background-color: var(--secondary-background-color-light);
 		--secondary-color-filter: var(--secondary-color-filter-light);
@@ -76,6 +79,7 @@
 	:root {
 		--primary-color: var(--primary-color-dark);
 		--secondary-color: var(--secondary-color-dark);
+		--tertiary-color: var(--tertiary-color-dark);
 		--cta-color: var(--cta-color-dark);
 		--secondary-background-color: var(--secondary-background-color-dark);
 		--secondary-color-filter: var(--secondary-color-filter-dark);
@@ -87,6 +91,7 @@
 [color-scheme="dark"] {
 	--primary-color: var(--primary-color-dark);
 	--secondary-color: var(--secondary-color-dark);
+	--tertiary-color: var(--tertiary-color-dark);
 	--cta-color: var(--cta-color-dark);
 	--secondary-background-color: var(--secondary-background-color-dark);
 	--secondary-color-filter: var(--secondary-color-filter-dark);
@@ -98,6 +103,7 @@
 [color-scheme="light"] {
 	--primary-color: var(--primary-color-light);
 	--secondary-color: var(--secondary-color-light);
+	--tertiary-color: var(--tertiary-color-light);
 	--cta-color: var(--cta-color-light);
 	--secondary-background-color: var(--secondary-background-color-light);
 	--secondary-color-filter: var(--secondary-color-filter-light);
