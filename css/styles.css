@@ -140,7 +140,7 @@ body {
 	position: sticky;
 	top: 0rem;
 	height: 100vh;
-	margin-bottom: calc(4 * var(--p-10) + var(--p-4));
+	margin-bottom: calc(4 * var(--m-10) + var(--m-2));
 	background-color: var(--primary-color);
 }
 
