@@ -4,16 +4,12 @@ body {
 
 /* || Icon Badge Style */
 .badge-container {
-	padding: var(--p-5);
-	border-radius: var(--br-2);
 	width: 100%;
 	height: auto;
 }
 
 .badge-alignment--container {
 	color: var(--cta-color);
-	margin: var(--m-5);
-	padding-bottom: var(--p-10);
 	width: 100%;
 	height: auto;
 }
@@ -39,13 +35,11 @@ body {
 .badge-text {
 	position: relative;
 	background: var(--cta-color);
-	color: var(--secondary-color);
+	color: var(--tertiary-color);
 	font-weight: bold;
 	font-size: 0.9rem;
 	width: 2rem;
 	height: 2rem;
-	padding: var(--p-2);
-	border-radius: var(--br-circle);
 }
 
 .top {
@@ -66,24 +60,19 @@ body {
 /* || Button Badge */
 
 .badge-btn {
-	border-radius: var(--br-2);
 	border: var(--b-0);
 	background: var(--cta-color);
-	color: var(--secondary-color);
+	color: var(--tertiary-color);
 	font-family: inherit;
 	font-size: inherit;
-	padding: var(--p-5);
 }
 
 .badge-btn--counter {
 	background: var(--cta-color);
-	color: var(--secondary-color);
-	padding: var(--p-3);
-	margin: var(--margin-auto);
-	border-radius: var(--br-1);
+	color: var(--tertiary-color);
 }
 
 .badge-btn:hover {
-	background-color: var(--secondary-color);
+	background-color: var(--tertiary-color);
 	color: var(--cta-color);
 }

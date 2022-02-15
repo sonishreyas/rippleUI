@@ -7,12 +7,9 @@ body {
 	height: auto;
 }
 
-.avatar {
-	border-radius: 50%;
-}
-
 .avatar-text {
 	background: var(--cta-color);
+	color: var(--tertiary-color);
 	font-weight: bold;
 }
 
@@ -44,7 +41,6 @@ body {
 	height: 1.5rem;
 	width: 1.5rem;
 	border: 0.2rem solid var(--secondary-color);
-	border-radius: 50%;
 	position: relative;
 }
 

@@ -3,8 +3,6 @@
 	position: fixed;
 	font-size: 1.35rem;
 	width: max-content;
-	padding: var(--p-5);
-	border-radius: var(--br-2);
 	z-index: var(--max-z-index);
 	bottom: 1rem;
 	left: 1rem;
@@ -22,7 +20,6 @@
 .rui-cross {
 	border: var(--b-0);
 	font-size: 2rem;
-	border-radius: 50%;
 	cursor: pointer;
 }
 
@@ -32,15 +29,6 @@
 }
 
 /* || Alert Position */
-
-.rui-alert-type {
-	border: var(--b-0);
-	padding: var(--p-5);
-	border-radius: var(--br-2);
-	font-family: inherit;
-	background-color: var(--cta-color);
-	color: var(--primary-color);
-}
 
 .rui-alert-type:hover {
 	cursor: pointer;

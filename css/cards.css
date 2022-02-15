@@ -4,9 +4,7 @@ body {
 
 .card {
 	display: grid;
-	padding: var(--p-5);
 	position: relative;
-	border-radius: var(--br-2);
 	background-color: var(--secondary-background-color);
 	height: 45rem;
 	font-size: 1.4rem;
@@ -15,9 +13,7 @@ body {
 .basic-card {
 	height: auto;
 	width: 30rem;
-	padding: var(--p-10);
 	background-color: var(--secondary-background-color);
-	border-radius: var(--br-2);
 }
 
 .vertical {
@@ -32,49 +28,27 @@ body {
 	grid-column: 1/-1;
 	grid-row: 1/5;
 	background: var(--primary-color);
-	border-radius: var(--br-2);
 }
 
 .card-image {
 	width: 20rem;
 	height: 25rem;
-	border-radius: var(--br-2);
-	margin-top: var(--m-5);
 }
 
 .card-content {
 	grid-column: 1/-1;
 	grid-row: 5/6;
-	padding: var(--p-5) var(--p-5) var(--p-0) var(--p-5);
 	box-sizing: border-box;
 }
 
 .card-tag {
 	grid-area: 1/-1;
-	margin: var(--m-2);
 	background: var(--secondary-background-color);
 	align-self: start;
 	justify-self: end;
-	padding: var(--p-0) var(--p-1) var(--p-0) var(--p-1);
-	border-radius: var(--br-1);
 	position: relative;
 	font-size: 1.5rem;
 	opacity: 0.95;
-}
-
-.card-review {
-	margin: var(--m-3);
-	padding: var(--p-0);
-	font-weight: bold;
-}
-
-.card-price-tag {
-	margin-top: var(--m-3);
-}
-
-.card-price-tag > * {
-	padding: var(--p-0);
-	margin: var(--m-0);
 }
 
 .card-price-tag strike {
@@ -93,23 +67,13 @@ body {
 	font-size: 1.4rem;
 }
 
-.card-btn {
-	padding: var(--p-0);
-	margin: var(--m-1);
-	border-radius: var(--br-2);
-	border: var(--b-0);
-	font-family: inherit;
-	color: var(--primary-color);
-}
-
 .card-wishlist {
 	opacity: 0.65;
 	grid-column: 1/2;
 	grid-row: 4/5;
-	background-color: var(--secondary-background-color);
-	margin: var(--m-5);
 	visibility: hidden;
 }
+
 .card:hover {
 	transform: scale(var(--zoom-card));
 }
@@ -121,45 +85,32 @@ body {
 	opacity: 100%;
 }
 
-.card-cart {
-	background-color: var(--cta-color);
-}
-
-.card-cart:hover {
-	background: var(--secondary-color);
-	color: var(--cta-color);
-}
-
 .card-text-overlay {
-	opacity: 0.4;
-	text-align: center;
+	opacity: 0.6;
 	color: var(--cta-color);
-	background: var(--secondary-color);
+	background: var(--tertiary-color);
 	grid-column: 1/2;
 	grid-row: 1/6;
 	position: relative;
-	border-radius: var(--br-2);
 	z-index: var(--max-z-index);
 }
+
 .overlay-text {
 	font-size: 2rem;
-	font-weight: bold;
 	opacity: 100%;
 }
+
 .rui-cross {
 	border: var(--b-0);
 	font-size: 2rem;
-	border-radius: var(--br-circle);
 	cursor: pointer;
 }
 
 .card-dismiss-btn {
 	grid-area: 1/-1;
-	margin: var(--m-3);
 	position: relative;
 	align-self: start;
 	justify-self: end;
-	padding: var(--p-1);
 	color: var(--secondary-color);
 }
 
@@ -183,21 +134,15 @@ body {
 .horizontal-card-img--container {
 	grid-area: h-img;
 	background: var(--primary-color);
-	border-radius: var(--br-2);
 }
 
 .horizontal-card-text--container {
 	grid-area: h-txt;
-	padding: var(--p-5);
-	border-radius: var(--br-2);
-	margin: var(--m-0) var(--m-5);
 }
 
 .horizontal-card-img {
 	width: 100%;
 	height: auto;
-	border-radius: var(--br-2);
-	margin-top: var(--m-5);
 }
 
 .set {
@@ -214,60 +159,38 @@ body {
 
 .rating {
 	border-bottom: var(--b-1) solid var(--cta-color);
-	padding-bottom: var(--p-5);
 }
 
-.pricing {
-	padding: var(--p-5) var(--p-0);
-}
 .size {
 	font-family: inherit;
-	padding: var(--p-5);
 	width: 4rem;
 	height: 4rem;
 	border: var(--b-2) solid var(--primary-color);
 	background: var(--primary-color);
 	color: var(--secondary-color);
-	border-radius: var(--br-circle);
 }
 
 .size:hover {
 	color: var(--cta-color);
-	background: var(--secondary-color);
-	border-color: var(--secondary-color);
+	background: var(--tertiary-color);
+	border-color: var(--tertiary-color);
 }
 
 .horizontal-card-btn-container {
-	margin-bottom: var(--m-5);
 	border-bottom: var(--b-1) solid var(--cta-color);
 	font-size: inherit;
 }
 
 .horizontal-card-btn-primary {
-	padding: var(--p-5);
-	margin: var(--m-5);
 	width: 45%;
-	margin-bottom: var(--m-10);
 	font-size: inherit;
 }
 
 .horizontal-card-btn-secondary {
-	padding: var(--p-5);
-	margin: var(--m-5);
 	width: 45%;
-	margin-bottom: var(--m-10);
 	background: none;
 	font-size: inherit;
 	border: var(--b-2) solid var(--secondary-color);
-}
-.horizontal-card-btn-secondary:hover {
-	background: var(--primary-color);
-	color: var(--cta-color);
-	border-color: var(--primary-color);
-}
-
-.specification {
-	margin: var(--m-5);
 }
 
 .specification-key {
@@ -277,7 +200,6 @@ body {
 
 .specification-value {
 	font-family: inherit;
-	padding: var(--p-2);
 	border: var(--b-0);
 	background: inherit;
 	color: var(--secondary-color);

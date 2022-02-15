@@ -85,7 +85,7 @@ body {
 	height: 3rem;
 	width: 2rem;
 	position: relative;
-	top: -0.6rem;
+	top: 0;
 	left: -2.6rem;
 	font-weight: bold;
 	color: var(--cta-color);

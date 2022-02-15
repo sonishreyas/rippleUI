@@ -3,11 +3,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&family=Roboto:ital,wght@1,300&display=swap");
 
 /* *****Components CSS***** */
+@import url("./reset.css");
 @import url("./root-styles.css");
 @import url("./margins.css");
 @import url("./padding.css");
 @import url("./borders.css");
 @import url("./layouts.css");
+@import url("./utils.css");
 @import url("./flex-layouts.css");
 @import url("./code-tabs.css");
 @import url("./styles.css");

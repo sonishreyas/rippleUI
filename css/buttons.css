@@ -3,31 +3,26 @@ body {
 }
 .primary-btn {
 	background: var(--cta-color);
-	padding: var(--p-5);
-	border-radius: var(--br-2);
 	font-family: inherit;
 	border: var(--b-2) solid var(--cta-color);
-	color: var(--secondary-color);
+	color: var(--tertiary-color);
 	font-size: inherit;
-	margin: var(--m-5) var(--m-0);
 }
 
 .primary-btn:hover {
-	background: var(--secondary-color);
+	background: var(--tertiary-color);
 	color: var(--cta-color);
-	border-color: var(--secondary-color);
+	border-color: var(--tertiary-color);
 }
 
 .outline-btn {
 	background: var(--secondary-background-color);
 	border: var(--b-2) solid var(--secondary-color);
 	color: var(--secondary-color);
-	padding: var(--p-5);
-	border-radius: var(--br-2);
 	font-family: inherit;
 	font-size: inherit;
-	margin: var(--m-5) var(--m-0);
 }
+
 .outline-btn:hover {
 	background: var(--primary-color);
 	border-color: var(--cta-color);
@@ -37,18 +32,18 @@ body {
 .link-btn {
 	color: var(--secondary-color);
 	text-decoration: none;
-	border-bottom: var(--br-1) solid var(--cta-color);
-	margin: var(--m-5) var(--m-0);
+	border-bottom: var(--b-1) solid var(--cta-color);
 }
 
 .link-btn:hover {
 	color: var(--cta-color);
-	border-bottom: var(--br-3) solid var(--cta-color);
+	border-bottom: var(--b-3) solid var(--cta-color);
 }
 
 .icon-btn {
 	color: var(--secondary-color);
 }
+
 .icon-btn:hover {
 	color: var(--cta-color);
 }
@@ -57,24 +52,25 @@ body {
 	background: var(--cta-color);
 	width: 4rem;
 	height: 4rem;
-	border-radius: var(--br-circle);
 	font-family: inherit;
 	border: var(--br-2) solid var(--cta-color);
-	color: var(--secondary-color);
+	color: var(--tertiary-color);
 	font-size: 1.2rem;
 	z-index: var(--z-index);
 }
+
 .floating-btn:hover {
 	color: var(--cta-color);
-	background: var(--secondary-color);
-	border-color: var(--secondary-color);
+	background: var(--tertiary-color);
+	border-color: var(--tertiary-color);
 }
+
 .toggle-button-container {
 	position: absoulte;
 	top: 50%;
 	left: 50%;
-	text-align: center;
 }
+
 .switch {
 	position: relative;
 	display: inline-block;
@@ -89,9 +85,8 @@ body {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: var(--secondary-background-color);
+	background: var(--secondary-color);
 	transition: 0.4s;
-	border-radius: var(--br-4);
 }
 
 .switch input {
@@ -105,13 +100,14 @@ body {
 	width: 5.2rem;
 	left: 0.5rem;
 	bottom: 0.5rem;
-	background-color: var(--secondary-color);
+	background-color: var(--secondary-background-color);
 	border-radius: var(--br-circle);
 	transition: 0.4s;
 }
 
 input:checked + .slider {
 	background: var(--cta-color);
+	color: var(--tertiary-color);
 }
 
 input:checked + .slider::before {
