@@ -13,3 +13,33 @@
 .w-100 {
 	width: 100%;
 }
+.h-auto {
+	height: auto;
+}
+
+.text-cta-color {
+	color: var(--cta-color);
+}
+
+.homepage-heading {
+	font-size: 5rem;
+	font-weight: bold;
+	padding: 1rem;
+}
+
+.homepage-subheading {
+	font-size: 1.8rem;
+	padding: 1rem;
+}
+
+.pos-bottom {
+	/* top: 0; */
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.no-link-decoration {
+	color: inherit;
+	text-decoration: none;
+}
