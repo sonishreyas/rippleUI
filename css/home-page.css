@@ -30,7 +30,7 @@
 	border-radius: 1rem;
 }
 .background-image {
-	background-image: url("../assets/media/images/background1.jpg");
+	background-image: url("https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/background.jpg");
 	background-size: cover;
 	height: 50rem;
 	width: 100%;
