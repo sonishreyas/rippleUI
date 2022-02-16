@@ -65,6 +65,9 @@
 		background: var(--primary-color);
 		visibility: hidden;
 	}
+	.grid-3-rows .header {
+		width: 100%;
+	}
 	.header-nav-icon {
 		display: block;
 	}
