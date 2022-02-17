@@ -1,13 +1,13 @@
-<article class="horizontal-tabs-container">
-    <article class="horizontal-tabs-btn-container tabs-btn-center">
-        <button class="tabs-btn tabs-btn-center">Login</button>
-        <button class="tabs-btn tabs-btn-center">Register</button>
+<article class="horizontal-tabs-container flex-column flex-wrap flex-gap-1 b-radius-2 p-5">
+    <article class="horizontal-tabs-btn-container flex-row flex-grow-1 justify-content-center align-center">
+        <button class="tabs-btn p-5 flex-row flex-grow-1 justify-content-center align-center">Login</button>
+        <button class="tabs-btn p-5 flex-row flex-grow-1 justify-content-center align-center">Register</button>
     </article>
 
     <div class="horizontal-tabs-content">
-        <form class="input-form login">
-            <section class="input-container">
-                <input id="email" class="textbox-content" type="email" name="email" />
+        <form class="input-form login flex-column flex-gap-1 flex-grow-1 flex-wrap">
+            <section class="input-container flex-column">
+                <input id="email" class="textbox-content  m-5" type="email" name="email" />
                 <label for="email" class="textbox-label">Email<span class="required-field">*</span></label>
                 <span>
                     <sub class="email-check"></sub>
@@ -21,12 +21,12 @@
                     <sub class="password-check"></sub>
                 </span>
                 <section class="password-container">
-                    <section class="forget-password-container">
-                        <a href="#" class="link-btn">Forget Password</a>
+                    <section class="forget-password-container my-5">
+                        <a href="#" class="link-btn my-2">Forget Password</a>
                     </section>
                 </section>
-                <button class="outline">Test Credentials</button>
-                <button class="primary-btn">Login</button>
+                <button class="outline-btn p-5 b-radius-2 mx-5 my-0 text-bold">Test Credentials</button>
+                <button class="primary-btn p-5 b-radius-2 mx-5 my-0 text-bold">Login</button>
         </form>
     </div>
     <div class="horizontal-tabs-content">

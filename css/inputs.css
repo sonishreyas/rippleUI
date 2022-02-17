@@ -2,30 +2,19 @@ body {
 	font-family: inherit;
 }
 
-.input-form {
-	width: 100%;
-	height: auto;
-}
-
 .input-container {
-	margin: var(--m-5);
 	outline: none;
-	width: 100%;
+	position: relative;
 }
 
 .textbox-content {
 	font-family: inherit;
-	padding: var(--p-5);
 	border: var(--b-0);
 	background: inherit;
 	font-size: inherit;
 	outline: none;
 	border-bottom: var(--b-2) solid var(--cta-color);
 	color: var(--secondary-color);
-}
-
-.input-container {
-	position: relative;
 }
 
 .textbox-label {
@@ -47,19 +36,13 @@ body {
 	border-radius: var(--br-1);
 	outline: none;
 }
+
 .input-filled .input-container:focus-within::after {
 	border: var(--b-1) solid var(--secondary-color);
 }
 
 .required-field {
 	color: var(--cta-color);
-}
-
-.email-check {
-	padding: var(--p-2);
-}
-.password-check {
-	padding: var(--p-2);
 }
 
 .inactive-check {
@@ -99,27 +82,21 @@ body {
 .form-container {
 	width: 100%;
 	height: auto;
-	padding: var(--p-5);
-	margin: var(--m-5);
 }
 
 .form-header {
-	padding-bottom: var(--p-10);
 	border-bottom: var(--b-1) solid var(--cta-color);
 }
 
 .form-heading {
-	padding: var(--p-5) var(--p-0);
 	color: var(--cta-color);
 }
 
 .radio-btn-container {
-	padding-bottom: var(--p-10);
 	border-bottom: var(--b-1) solid var(--cta-color);
 }
 
 .checkbox-btn-container {
-	padding-bottom: var(--p-10);
 	border-bottom: var(--b-1) solid var(--cta-color);
 }
 
@@ -140,7 +117,6 @@ body {
 
 .input-with-icon {
 	border: var(--b-1) solid;
-	border-radius: var(--br-2);
 }
 
 .input-with-icon .textbox-content {
