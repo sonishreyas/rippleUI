@@ -1,17 +1,13 @@
-<form class="input-form flex-column flex-gap-1 flex-grow-1 flex-wrap w-100 h-auto">
-    <section class="input-container flex-column m-5 w-100">
-        <input id="email" class="textbox-content p-5 m-10" type="email" name="email" aria-label="Enter Email" />
-        <label for="email" class="textbox-label">Email<span class="required-field">*</span></label>
-        <span>
-            <sub class="email-check p-2"></sub>
-        </span>
+<form class="input-form flex-column flex-gap-1 flex-wrap h-auto w-100">
+    <section class="input-container flex-column m-5">
+        <input id="email" class="textbox-content p-5" type="email" name="email" aria-label="Enter Email" />
+        <label for="email" class="textbox-label m-0">Email<span class="required-field">*</span></label>
+        <sub class="email-check p-2 my-2"></sub>
     </section>
-    <section class="input-container flex-column m-5 w-100">
-        <input id="password" class="textbox-content p-5" type="password" name="password" aria-label="Enter Password" />
+    <section class="input-container flex-column m-5">
+        <input id="password" class="textbox-content p-5" typs="password" name="password" aria-label="Enter Password" />
         <i class="fas fa-eye show-password" id="show-password" aria-label="Show password button"></i>
-        <label for="password" class="textbox-label">Password<span class="required-field">*</span></label>
-        <span>
-            <sub class="password-check p-2"></sub>
-        </span>
+        <label for="password" class="textbox-label m-0">Password<span class="required-field">*</span></label>
+        <sub class="password-check p-2 my-2"></sub>
     </section>
 </form>

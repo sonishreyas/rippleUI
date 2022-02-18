@@ -5,6 +5,7 @@ body {
 .input-container {
 	outline: none;
 	position: relative;
+	width: 30rem;
 }
 
 .textbox-content {
@@ -66,7 +67,7 @@ body {
 }
 
 .valid-border {
-	border: var(--b-2) solid var(--valid-color);
+	border-color: var(--valid-color);
 }
 
 .show-password {
