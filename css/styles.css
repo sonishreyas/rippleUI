@@ -158,11 +158,6 @@ body {
 	display: none;
 }
 
-.no-list {
-	list-style: none;
-	margin-left: var(--m-5);
-}
-
 .rui-drawer-content--list {
 	color: var(--secondary-color);
 }

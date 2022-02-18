@@ -235,3 +235,20 @@ body {
 		width: 100%;
 	}
 }
+
+/* Orders Card */
+.orders-card .horizontal {
+	height: max-content;
+	width: 100%;
+	margin: 3rem 0;
+	box-shadow: 0rem 0rem 0.2rem 0.2rem var(--shadow-color);
+}
+
+.orders-card .horizontal-card-img {
+	height: 25rem;
+	width: 20rem;
+}
+
+.order-status {
+	color: var(--cta-color);
+}

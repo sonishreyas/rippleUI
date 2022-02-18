@@ -4,6 +4,8 @@ import { handleNavBar } from "../../../../main/js/handle-nav-bar.js";
 import { elements } from "./properties.js";
 import { handleTabs } from "./tabs.js";
 import { handleInput } from "./textbox.js";
+import { handleInputProfile } from "./profile-tabs.js";
+import { handleModal } from "./modals.js";
 
 // Call Function
 const callImportFunctions = async () => {
@@ -20,5 +22,8 @@ const runScripts = async () => {
 	handleTabs("vertical", "vertical");
 	handleTabs("authentication", "horizontal");
 	handleInput();
+	handleInputProfile();
+	handleModal();
+	handleTabs("profile", "vertical");
 };
 runScripts();

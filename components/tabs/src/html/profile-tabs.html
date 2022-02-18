@@ -1,0 +1,165 @@
+<article class="vertical-tabs-container flex-row flex-wrap flex-gap-1 b-radius-2 p-5 w-100 h-auto">
+    <article class="vertical-tabs-btn-container flex-column justify-content-start align-start p-0 my-5 mx-0">
+        <button class="tabs-btn p-5 flex-row flex-gap-1 align-center justify-content-start">
+            <span class="tabs-icon"><i class="fa-solid fa-user"></i></span>
+            <p class="tabs-btn-text">Profile</p>
+        </button>
+        <button class="tabs-btn p-5 flex-row flex-gap-1 align-center justify-content-start">
+            <span class="tabs-icon"><i class="fa-solid fa-bag-shopping"></i></span>
+            <p class="tabs-btn-text">Orders</p>
+        </button>
+        <button class="tabs-btn p-5 flex-row flex-gap-1 align-center justify-content-start">
+            <span class="tabs-icon"><i class="fa-solid fa-address-book"></i></span>
+            <p class="tabs-btn-text">Address</p>
+        </button>
+        <button class="tabs-btn p-5 flex-row flex-gap-1 align-center justify-content-start">
+            <span class="tabs-icon"><i class="fa-solid fa-gear"></i></span>
+            <p class="tabs-btn-text">Settings</p>
+        </button>
+    </article>
+    <div class="vertical-tabs-content p-5 b-radius-2 my-5 mx-0 flex-grow-1 flex-gap-1">
+        <div class="profile-container p-5 flex-gap-1 b-radius-2 ">
+            <div class="profile-header flex-row justify-content-space-between align-center flex-wrap p-5 my-0 mx-5">
+                <h1 class="p-2 my-2 mx-0">Profile Details</h1>
+            </div>
+            <ul class="profile-list p-5">
+                <li class="no-list">
+                    <article
+                        class="card basic-card flex-row justify-content-center align-center flex-wrap card-shadow p-10 b-radius-2 w-100 h-auto">
+                        <table class="table my-5 w-100">
+                            <tbody class="w-100">
+                                <tr class="table-row m-3 w-100">
+                                    <th class="table-head p-3">Name</th>
+                                    <td class="table-data p-3">Shreyas Soni</td>
+                                </tr>
+                                <tr class="table-row m-3 w-100">
+                                    <th class="table-head p-3">Email</th>
+                                    <td class="table-data p-3">sonishreyas10@gmail.com</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button class="primary-btn edit-profile-btn p-5 b-radius-2 mx-5 my-0 text-bold">Edit</button>
+                    </article>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="vertical-tabs-content p-5 b-radius-2 my-5 mx-0 flex-grow-1 flex-gap-1 orders-container">
+        <div class="profile-container">
+            <div class="profile-header flex-row justify-content-space-between align-center flex-wrap p-5 my-0 mx-5">
+                <h1 class="p-2 my-2 mx-0">Orders</h1>
+            </div>
+            <ul class="profile-list p-5">
+                <li class="no-list">
+                    <article
+                        class="card basic-card flex-row justify-content-center align-center flex-wrap card-shadow p-10 b-radius-2 w-100 h-auto">
+                        <h2 class="order-status">Order Confirmed</h2>
+                        <p class="secondary-font">Sun Feb 06 2022</p>
+                        <table class="table my-5">
+                            <tr class="table-row m-3">
+                                <th class="table-head p-3">OrderId:</th>
+                                <td class="table-data p-3">6648065895632</td>
+                            </tr>
+                            <tr class="table-row m-3">
+                                <th class="table-head p-3">Total:</th>
+                                <td class="table-data p-3">₹2999</td>
+                            </tr>
+                        </table>
+                        <article class="card horizontal card-shadow">
+                            <div class="horizontal-card-img--container flex-jc-ac">
+                                <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/sneaker.png"
+                                    alt="Puma Sneakers" class="horizontal-card-img" />
+                            </div>
+                            <div class="horizontal-card-text--container">
+                                <h1>Puma White Sneakers</h1>
+                                <p>PUMA</p>
+                                <hr />
+                                <p>Size: 9</p>
+                                <p>Qty: 1</p>
+                            </div>
+                        </article>
+                    </article>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="vertical-tabs-content p-5 b-radius-2 my-5 mx-0 flex-grow-1 flex-gap-1 address-container">
+        <div class="profile-container">
+            <div class="profile-header flex-row justify-content-space-between align-center flex-wrap p-5 my-0 mx-5">
+                <h1 class="p-2 my-2 mx-0">Address</h1>
+                <button class="primary-btn outline icon-text-btn m-3 address-btn">
+                    <span><i class="fas fa-plus"></i></span>
+                    <p class="btn-text">Add new address</p>
+                </button>
+            </div>
+            <ul class="profile-list p-5">
+                <li class="no-list">
+                    <article
+                        class="card basic-card flex-row justify-content-center align-center flex-wrap card-shadow p-10 b-radius-2 w-100 h-auto">
+                        <h2 class="name">Shreyas Soni</h2>
+                        <p class="address">
+                            D-203, Nisarg Nirman, Kokne Chowk Pimple Saudagar
+                        </p>
+                        <p class="city">Pune</p>
+                        <p class="state">Maharashtra</p>
+                        <p class="country">India</p>
+                        <p class="pincode">411027</p>
+                        <section class="card-footer flex-row flex-grow-1 justify-content-center flex-gap-1 py-5 px-0">
+                            <button class="primary-btn edit-btn flex-grow-1">Edit</button>
+                            <button class="primary-btn outline delete-btn flex-grow-1">Delete</button>
+                        </section>
+                    </article>
+                </li>
+            </ul>
+
+            <div class="modal-container modal-center text-center">
+                <h3 class="p-2 my-2 mx-0">Add a new Address</h3>
+                <form class="input-form flex-column flex-gap-1 flex-grow-1 flex-wrap">
+                    <section class="input-container flex-column m-5">
+                        <input id="name" class="textbox-content p-5" type="text" name="name" />
+                        <label for="name" class="textbox-label m-0">Name</label>
+                    </section>
+                    <section class="input-container flex-column m-5">
+                        <input id="address" class="textbox-content p-5" type="text" name="address" />
+                        <label for="address" class="textbox-label m-0">Address</label>
+                    </section>
+                    <section class="input-container flex-column m-5">
+                        <input id="country" class="textbox-content p-5" name="country" type="text" />
+                        <label for="country" class="textbox-label m-0">Country</label>
+                    </section>
+
+                    <section class="input-container flex-column m-5">
+                        <input id="state" class="textbox-content p-5" name="state" type="text" />
+                        <label for="state" class="textbox-label m-0">State</label>
+                    </section>
+                    <section class="input-container flex-column m-5">
+                        <input id="city" class="textbox-content p-5" type="text" name="city" />
+                        <label for="city" class="textbox-label m-0">City</label>
+                    </section>
+                    <section class="input-container flex-column m-5">
+                        <input id="pincode" class="textbox-content p-5" type="number" name="pincode" />
+                        <label for="pincode" class="textbox-label m-0">Pincode</label>
+                    </section>
+                    <section class="card-footer  flex-row flex-grow-1 justify-content-center flex-gap-1 py-5 px-0">
+                        <div class="primary-btn save-btn flex-grow-1" type="button">Save</div>
+                        <div class="primary-btn outline cancel-btn flex-grow-1" type="button">
+                            Cancel
+                        </div>
+                    </section>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="vertical-tabs-content p-5 b-radius-2 my-5 mx-0 flex-grow-1 flex-gap-1 settings-container">
+        <div class="profile-container">
+            <div class="profile-header flex-row justify-content-space-between align-center flex-wrap p-5 my-0 mx-5">
+                <h1 class="p-2 my-2 mx-0">Settings</h1>
+            </div>
+            <ul class="profile-list p-5">
+                <li class="no-list">
+                    <button class="primary-btn log-out-btn">Log Out</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</article>

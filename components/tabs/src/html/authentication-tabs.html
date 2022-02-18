@@ -5,70 +5,63 @@
     </article>
 
     <div class="horizontal-tabs-content">
-        <form class="input-form login flex-column flex-gap-1 flex-grow-1 flex-wrap">
-            <section class="input-container flex-column">
-                <input id="email" class="textbox-content  m-5" type="email" name="email" />
-                <label for="email" class="textbox-label">Email<span class="required-field">*</span></label>
-                <span>
-                    <sub class="email-check"></sub>
-                </span>
+        <form class="input-form login flex-column flex-gap-1 flex-wrap h-auto w-100">
+            <section class="input-container flex-column m-5">
+                <input id="email" class="textbox-content p-5" type="email" name="email" />
+                <label for="email" class="textbox-label m-0">Email<span class="required-field">*</span></label>
+                <sub class="email-check p-2 my-2"></sub>
             </section>
-            <section class="input-container">
-                <input id="password" class="textbox-content" type="password" name="password" />
+            <section class="input-container flex-column m-5">
+                <input id="password" class="textbox-content p-5" type="password" name="password" />
                 <i class="fas fa-eye show-password" id="show-password"></i>
-                <label for="password" class="textbox-label">Password<span class="required-field">*</span></label>
-                <span>
-                    <sub class="password-check"></sub>
-                </span>
-                <section class="password-container">
+                <label for="password" class="textbox-label m-0">Password<span class="required-field">*</span></label>
+
+                <sub class="password-check p-2 my-2"></sub>
+
+                <section class="password-container flex-column justify-content-space-between mb-5 flex-wrap">
                     <section class="forget-password-container my-5">
                         <a href="#" class="link-btn my-2">Forget Password</a>
                     </section>
                 </section>
-                <button class="outline-btn p-5 b-radius-2 mx-5 my-0 text-bold">Test Credentials</button>
-                <button class="primary-btn p-5 b-radius-2 mx-5 my-0 text-bold">Login</button>
+            </section>
+            <button class="outline-btn p-5 b-radius-2 mx-5 my-0 text-bold">Test Credentials</button>
+            <button class="primary-btn p-5 b-radius-2 mx-5 my-0 text-bold">Login</button>
         </form>
     </div>
     <div class="horizontal-tabs-content">
-        <form class="input-form register">
-            <section class="input-container">
-                <input id="first-name" class="textbox-content" type="first-name" name="first-name" />
-                <label for="first-name" class="textbox-label">First Name<span class="required-field">*</span></label>
-                <span><sub></sub></span>
+        <form class="input-form register flex-column flex-gap-1 flex-wrap h-auto w-100">
+            <section class="input-container flex-column m-5">
+                <input id="first-name" class="textbox-content p-5" type="first-name" name="first-name" />
+                <label for="first-name" class="textbox-label m-0">First Name<span
+                        class="required-field">*</span></label>
+                <sub class="p-2 my-2 inactive-check"></sub>
             </section>
-            <section class="input-container">
-                <input id="last-name" class="textbox-content" type="last-name" name="last-name" />
-                <label for="last-name" class="textbox-label">Last Name<span class="required-field">*</span></label>
-                <span><sub></sub></span>
+            <section class="input-container flex-column m-5">
+                <input id="last-name" class="textbox-content p-5" type="last-name" name="last-name" />
+                <label for="last-name" class="textbox-label m-0">Last Name<span class="required-field">*</span></label>
+                <sub class="p-2 my-2 inactive-check"></sub>
             </section>
-            <section class="input-container">
-                <input id="email" class="textbox-content" type="email" name="email" />
-                <label for="email" class="textbox-label">Email<span class="required-field">*</span></label>
-                <span>
-                    <sub class="email-check  inactive-check"></sub>
-                </span>
+            <section class="input-container flex-column m-5">
+                <input id="email" class="textbox-content p-5" type="email" name="email" />
+                <label for="email" class="textbox-label m-0">Email<span class="required-field">*</span></label>
+                <sub class="email-check p-2 my-2 inactive-check"></sub>
             </section>
-            <section class="input-container">
-                <input id="password" class="textbox-content" type="password" name="password" />
+            <section class="input-container flex-column m-5">
+                <input id="password" class="textbox-content p-5" type="password" name="password" />
                 <i class="fas fa-eye show-password" id="show-password"></i>
-
-                <label for="password" class="textbox-label">Password<span class="required-field">*</span></label>
-                <span>
-                    <sub class="password-check  inactive-check"></sub>
-                </span>
+                <label for="password" class="textbox-label m-0">Password<span class="required-field">*</span></label>
+                <sub class="password-check p-2 my-2 inactive-check"></sub>
             </section>
-            <section class="input-container">
-                <input id="confirm-password" class="textbox-content  confirm-password" type="password"
+            <section class="input-container flex-column m-5">
+                <input id="confirm-password" class="textbox-content p-5 confirm-password" type="password"
                     name="confirm-password" />
                 <i class="fas fa-eye show-password" id="show-password"></i>
 
-                <label for="confirm-password" class="textbox-label">Confirm Password<span
+                <label for="confirm-password" class="textbox-label m-0">Confirm Password<span
                         class="required-field">*</span></label>
-                <span>
-                    <sub class="password-check confirm-password-check  inactive-check"></sub>
-                </span>
+                <sub class="password-check p-2 my-2 confirm-password-check inactive-check"></sub>
             </section>
-            <button class="primary-btn">Register</button>
+            <button class="primary-btn p-5 b-radius-2 mx-5 my-0 text-bold">Register</button>
         </form>
 
     </div>

@@ -16,3 +16,8 @@
 .spaced-list li {
 	margin: var(--m-5);
 }
+
+.no-list {
+	list-style: none;
+	margin-left: var(--m-5);
+}

@@ -67,13 +67,6 @@ body {
 
 /* Authentication Tabs */
 
-/* .tabs-btn-center {
-	display: flex;
-	flex-grow: 1;
-	justify-content: center;
-	align-items: center;
-} */
-
 .show-password {
 	cursor: pointer;
 	position: absolute;
@@ -81,30 +74,17 @@ body {
 	right: 1rem;
 }
 
-.password-container {
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 1rem;
-	flex-wrap: wrap;
-}
-
 /* Profile Tabs */
 
 /* Profile Container Style */
 
 /* Removed Afterwards */
-.profile-vertical-tabs-container {
+.profile-tabs {
 	height: 100%;
-	margin: 5rem 0;
-}
-.profile-vertical-tabs-container .vertical-tabs-btn-container {
-	justify-content: start;
-	align-items: start;
-	border-right: 0.05rem solid var(--primary-color);
-	margin: 1rem 0;
+	margin: calc(5 * var(--m-5)) 0;
 }
 
-.profile-vertical-tabs-container .tabs-btn {
+.profile-tabs .tabs-btn {
 	width: 18rem;
 	height: 10rem;
 	font-size: 1.8rem;
@@ -112,104 +92,43 @@ body {
 
 .profile-container {
 	background: var(--primary-color);
-	padding: 1rem;
-	gap: 1rem;
-	border-radius: 1rem;
 	color: inherit;
 	min-height: 40rem;
 }
 
-.profile-header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
-	padding: 1rem;
-	margin: 0 1rem;
+@media screen and (max-width: 870px) {
+	.vertical-tabs-btn-container {
+		flex-direction: row;
+		width: 100%;
+		height: auto;
+		background: var(--secondary-background-color);
+		color: inherit;
+		border-right: 0;
+	}
+
+	.vertical-tabs-btn-container .tabs-btn {
+		height: max-content;
+		width: 100%;
+		margin: var(--m-0);
+		justify-content: center;
+	}
+
+	.vertical-tabs-btn-container .vertical-tabs-btn-active {
+		border-right: 0;
+		padding-right: var(--p-5);
+		border-bottom: var(--b-1) solid var(--cta-color);
+		border-radius: 0;
+		background-color: var(--secondary-background-color);
+	}
+	.vertical-tabs-content {
+		width: 0;
+		width: 100%;
+		height: auto;
+	}
 }
 
-.profile-list {
-	padding: 1rem;
-}
-.margin-7px {
-	padding: 0.7rem;
-}
-
-.profile-vertical-tabs-container .basic-card > * {
-	padding: 0.4rem;
-}
-
-.card-footer {
-	display: flex;
-	flex-grow: 1;
-	justify-content: center;
-	gap: 1rem;
-	padding: 1rem 0;
-}
-
-.card-footer > * {
-	flex-grow: 1;
-}
-
-.profile-heading {
-	padding: 0.5rem;
-	margin: 0.5rem 0;
-}
-
-/* Modal Styling */
-.modal-container {
-	display: none;
-	background: var(--primary-color);
-	width: max-content;
-	padding: 1rem;
-	margin: 1rem;
-	border-radius: 1rem;
-	text-align: center;
-	z-index: 1;
-	box-shadow: 0rem 0rem 1rem 1rem var(--shadow-color);
-}
-.center {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-}
-.modal-container .input-form {
-	width: max-content;
-}
-
-/* Orders Card */
-.orders-card .horizontal {
-	height: max-content;
-	width: 100%;
-	margin: 3rem 0;
-	box-shadow: 0rem 0rem 0.2rem 0.2rem var(--shadow-color);
-}
-
-.orders-card .horizontal-card-img {
-	height: 25rem;
-	width: 20rem;
-}
-
-.order-status {
-	color: var(--cta-color);
-}
-
-/* Table formatting */
-
-.table {
-	margin: 1rem 0;
-	font-size: inherit;
-}
-
-.table-row {
-	margin: 0.5rem;
-}
-
-.table-head {
-	padding: 0.5rem;
-}
-
-.table-data {
-	padding: 0.5rem;
+@media only screen and (max-width: 600px) {
+	.profile-tabs .vertical-tabs-btn-container .tabs-btn .tabs-btn-text {
+		display: none;
+	}
 }
