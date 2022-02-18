@@ -39,8 +39,8 @@ const handleModal = () => {
 
 	saveBtn.addEventListener("click", () => {
 		const formData = new FormData(addressForm);
-		addAddressPath.innerHTML += `<li class="no-list">
-      <article class="card basic-card .flex-jc-ac card-shadow">
+		addAddressPath.innerHTML += `<li class="no-list my-5">
+      <article class="card basic-card flex-row justify-content-center align-center flex-wrap card-shadow p-10 b-radius-2 w-100 h-auto">
         <h2 class="name">${formData.get("name")}</h2>
         <p class="address">
         ${formData.get("address")}
@@ -49,10 +49,10 @@ const handleModal = () => {
         <p class="state">${formData.get("state")}</p>
         <p class="country">${formData.get("country")}</p>
         <p class="pincode">${formData.get("pincode")}</p>
-        <section class="card-footer">
-          <button class="primary-btn edit-btn">Edit</button>
-          <button class="primary-btn outline delete-btn">Delete</button>
-        </section>
+        <section class="card-footer flex-row flex-grow-1 justify-content-center flex-gap-1 py-5 px-0">
+			<button class="primary-btn edit-btn p-5 b-radius-2 mx-5 my-0 text-bold flex-grow-1">Edit</button>
+			<button class="outline-btn p-5 b-radius-2 mx-5 my-0 text-bold flex-grow-1">Delete</button>
+		</section>
       </article>
     </li>`;
 		handleCardButtons(modal);

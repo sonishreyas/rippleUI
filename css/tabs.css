@@ -96,6 +96,9 @@ body {
 	min-height: 40rem;
 }
 
+.border-shadow {
+	box-shadow: 0rem 0rem 0.2rem 0.2rem var(--shadow-color);
+}
 @media screen and (max-width: 870px) {
 	.vertical-tabs-btn-container {
 		flex-direction: row;

@@ -26,9 +26,9 @@
                 <li class="no-list">
                     <article
                         class="card basic-card flex-row justify-content-center align-center flex-wrap card-shadow p-10 b-radius-2 w-100 h-auto">
-                        <table class="table my-5 w-100">
+                        <table class="table my-5 w-100 h-auto">
                             <tbody class="w-100">
-                                <tr class="table-row m-3 w-100">
+                                <tr class="table-row m-3 w-100 h-auto">
                                     <th class="table-head p-3">Name</th>
                                     <td class="table-data p-3">Shreyas Soni</td>
                                 </tr>
@@ -65,12 +65,14 @@
                                 <td class="table-data p-3">₹2999</td>
                             </tr>
                         </table>
-                        <article class="card horizontal card-shadow">
-                            <div class="horizontal-card-img--container flex-jc-ac">
+                        <article class="card horizontal border-shadow p-5 b-radius-2">
+                            <div
+                                class="horizontal-card-img--container flex-row justify-content-center align-center flex-wrap b-radius-2">
                                 <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/sneaker.png"
-                                    alt="Puma Sneakers" class="horizontal-card-img" />
+                                    alt="Puma Sneakers" class="horizontal-card-img b-radius-2 mt-5"" />
                             </div>
-                            <div class="horizontal-card-text--container">
+                            <div class=" horizontal-card-text--container flex-column flex-gap-1 p-5 b-radius-2 my-0
+                                    mx-5">
                                 <h1>Puma White Sneakers</h1>
                                 <p>PUMA</p>
                                 <hr />
@@ -87,7 +89,8 @@
         <div class="profile-container">
             <div class="profile-header flex-row justify-content-space-between align-center flex-wrap p-5 my-0 mx-5">
                 <h1 class="p-2 my-2 mx-0">Address</h1>
-                <button class="primary-btn outline icon-text-btn m-3 address-btn">
+                <button
+                    class="outline-btn p-5 b-radius-2 mx-5 my-0 text-bold icon-text-btn flex-row justify-content-center align-center flex-gap-1 address-btn">
                     <span><i class="fas fa-plus"></i></span>
                     <p class="btn-text">Add new address</p>
                 </button>
@@ -105,8 +108,9 @@
                         <p class="country">India</p>
                         <p class="pincode">411027</p>
                         <section class="card-footer flex-row flex-grow-1 justify-content-center flex-gap-1 py-5 px-0">
-                            <button class="primary-btn edit-btn flex-grow-1">Edit</button>
-                            <button class="primary-btn outline delete-btn flex-grow-1">Delete</button>
+                            <button
+                                class="primary-btn edit-btn p-5 b-radius-2 mx-5 my-0 text-bold flex-grow-1">Edit</button>
+                            <button class="outline-btn p-5 b-radius-2 mx-5 my-0 text-bold flex-grow-1">Delete</button>
                         </section>
                     </article>
                 </li>
@@ -141,8 +145,10 @@
                         <label for="pincode" class="textbox-label m-0">Pincode</label>
                     </section>
                     <section class="card-footer  flex-row flex-grow-1 justify-content-center flex-gap-1 py-5 px-0">
-                        <div class="primary-btn save-btn flex-grow-1" type="button">Save</div>
-                        <div class="primary-btn outline cancel-btn flex-grow-1" type="button">
+                        <div class="primary-btn save-btn p-5 b-radius-2 mx-5 my-0 text-bold flex-grow-1" type="button">
+                            Save</div>
+                        <div class="outline-btn cancel-btn p-5 b-radius-2 mx-5 my-0 text-bold flex-grow-1"
+                            type="button">
                             Cancel
                         </div>
                     </section>
@@ -157,7 +163,7 @@
             </div>
             <ul class="profile-list p-5">
                 <li class="no-list">
-                    <button class="primary-btn log-out-btn">Log Out</button>
+                    <button class="primary-btn log-out-btn  p-5 b-radius-2 mx-5 my-0 text-bold">Log Out</button>
                 </li>
             </ul>
         </div>

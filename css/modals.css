@@ -44,7 +44,7 @@
 }
 
 @media screen and (max-width: 450px) {
-	.center {
+	.modal-center {
 		left: 50vh;
 		top: 50vh;
 		transform: translate(-50vh, -50vh);
