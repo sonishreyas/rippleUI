@@ -15,3 +15,7 @@
 	background-color: var(--cta-color);
 	color: var(--tertiary-color);
 }
+
+.rules-modal {
+	display: block;
+}
