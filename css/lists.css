@@ -1,23 +1,9 @@
-.stacked-list .basic-card {
-	padding: var(--p-5);
-}
-
-.stacked-list li {
-	margin: var(--m-10);
-}
 .notification-image {
 	height: 5rem;
 	width: 4rem;
 	background: var(--primary-color);
-	padding: var(--p-5);
-	border-radius: var(--br-2);
-}
-
-.spaced-list li {
-	margin: var(--m-5);
 }
 
 .no-list {
 	list-style: none;
-	margin-left: var(--m-5);
 }
