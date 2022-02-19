@@ -24,7 +24,7 @@
 
 /* Modal Styling */
 .modal-container {
-	/* display: none; */
+	display: none;
 	background: var(--primary-color);
 	/* width: max-content; */
 	padding: var(--p-5);
