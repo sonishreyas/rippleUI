@@ -15,8 +15,6 @@
 	grid-area: g-col-2;
 	border-left: 0.2rem solid var(--cta-color);
 	width: max-content;
-	flex-direction: column;
-	align-items: start;
 }
 
 .cart-billing > * {
@@ -30,9 +28,6 @@
 	display: flex;
 	justify-content: space-between;
 	margin: auto;
-}
-
-.cart-deliver-container {
 	height: max-content;
 	width: 100%;
 }
