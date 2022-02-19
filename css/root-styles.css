@@ -60,6 +60,9 @@
 	/* Inputs */
 	--valid-color: green;
 	--invalid-color: red;
+
+	/* Quiz */
+	--wrong-answer: #d41212d8;
 }
 
 @media (prefers-color-scheme: light) {

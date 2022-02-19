@@ -1,0 +1,15 @@
+.quiz-container {
+	border-bottom: var(--b-2) solid var(--cta-color);
+}
+
+.quiz-nav-link:hover {
+	color: var(--cta-color);
+}
+
+.wrong-answer {
+	background-color: var(--wrong-answer);
+}
+
+.right-answer {
+	background-color: var(--cta-color);
+}
