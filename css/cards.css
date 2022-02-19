@@ -140,11 +140,6 @@ body {
 	grid-area: h-txt;
 }
 
-.horizontal-card-img {
-	width: 100%;
-	height: auto;
-}
-
 .set {
 	color: var(--review-star-color);
 }
