@@ -8,8 +8,10 @@
 
 .wrong-answer {
 	background-color: var(--wrong-answer);
+	color: var(--tertiary-color);
 }
 
 .right-answer {
 	background-color: var(--cta-color);
+	color: var(--tertiary-color);
 }
