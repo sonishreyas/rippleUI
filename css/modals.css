@@ -42,11 +42,3 @@
 .modal-container .input-form {
 	width: max-content;
 }
-
-@media screen and (max-width: 450px) {
-	.modal-center {
-		left: 50vh;
-		top: 50vh;
-		transform: translate(-50vh, -50vh);
-	}
-}
