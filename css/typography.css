@@ -41,7 +41,7 @@ h6,
 }
 
 .text-disabled {
-	color: var(--dark-grey);
+	color: var(--disabled-font-color);
 }
 
 /* || Text Sizes */
@@ -84,4 +84,8 @@ h6,
 
 .text-justify {
 	text-align: justify;
+}
+
+.text-position .preview {
+	margin: 0;
 }
