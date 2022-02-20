@@ -31,6 +31,7 @@ themeIcon.addEventListener("click", () => {
 	localStorage.setItem("ripple.theme", `${theme}`);
 	loadTheme(theme);
 });
+
 window.addEventListener("DOMContentLoaded", () => {
 	loadTheme(getCurrentTheme());
 });

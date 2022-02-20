@@ -32,6 +32,8 @@ const elements = [
 			class="rui-code--iframe" scrolling="yes"
 			sandbox="allow-scripts allow-same-origin">
 		  </iframe>`,
+		elementJSCodeBtnClassPath:
+			".two-column-grids .rui-import-html .rui-code-tabs--container .rui-code-js-btn",
 		elementJSCodeClassPath:
 			".two-column-grids .rui-import-html .rui-code-tabs--container .rui-code-js",
 		elementJSCodeInnerText: `NA`,

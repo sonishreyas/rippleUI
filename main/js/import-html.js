@@ -1,6 +1,12 @@
 import { handleCodeTab } from "./code-tabs-root.js";
 
-// Importing HTML Functionn
+/**
+ * Import HTML code into the specified classpath
+ * @param {String} htmlPath Path of HTML code that we want to import
+ * @param {String} classPath Classpath where we need to import the HTML code
+ * @param {String} splitOne This handles an edge case incase the fetch api returns data in other format
+ * @param {String} splitTwo This handles an edge case incase the fetch api returns data in other format
+ */
 const importHtml = async (
 	htmlPath,
 	classPath,
@@ -16,34 +22,52 @@ const importHtml = async (
 		});
 };
 
-// Build Logic
-
-// This function defines the code inside the tabs
-const handleCodeTabContent = (params) => {
-	const element_code = document.querySelector(params.elementCodeClassPath);
-	element_code.innerHTML = params.elementCodeInnerText;
-	const element_JS_code = document.querySelector(params.elementJSCodeClassPath);
-	element_JS_code.innerHTML = params.elementJSCodeInnerText;
-	handleCodeTab(
-		params.handleCodeTabBtnClass,
-		params.handleCodeTabCodeContentClass
+/**
+ * Defines the content in the code tabs
+ * @param {Array of Objects} classnameDictionary Properties of the element to import
+ */
+const handleCodeTabContent = (classnameDictionary) => {
+	const elementCode = document.querySelector(
+		classnameDictionary.elementCodeClassPath
 	);
-	const addSandboxURL = document.querySelector(params.sandboxURLClass);
-	addSandboxURL.href = params.sandboxURL;
+	elementCode.innerHTML = classnameDictionary.elementCodeInnerText;
+	const elementJSCode = document.querySelector(
+		classnameDictionary.elementJSCodeClassPath
+	);
+	if (classnameDictionary.elementJSCodeInnerText === `NA`) {
+		const elementJSCodeBtn = document.querySelector(
+			classnameDictionary.elementJSCodeBtnClassPath
+		);
+		elementJSCodeBtn.style.display = "none";
+	} else {
+		elementJSCode.innerHTML = classnameDictionary.elementJSCodeInnerText;
+	}
+	handleCodeTab(
+		classnameDictionary.handleCodeTabBtnClass,
+		classnameDictionary.handleCodeTabCodeContentClass
+	);
+	const addSandboxURL = document.querySelector(
+		classnameDictionary.sandboxURLClass
+	);
+	addSandboxURL.href = classnameDictionary.sandboxURL;
 };
 
 // This function is used to import code from code tabs and element
-const codeImport = async (params) => {
+/**
+ * Import code tabs HTML code into the page and then import the element code into the code tabs code
+ * @param {Array of Objects} classnameDictionary Properties of the element to import
+ */
+const codeImport = async (classnameDictionary) => {
 	// Import root Code Drawer and then add styling
 	const importRootCode = await importHtml(
-		params.rootCodeTabFilePath,
-		params.rootCodeLocation
+		classnameDictionary.rootCodeTabFilePath,
+		classnameDictionary.rootCodeLocation
 	);
 	const importElementCode = await importHtml(
-		params.elementCodeFilePath,
-		params.elementCodeLocation
+		classnameDictionary.elementCodeFilePath,
+		classnameDictionary.elementCodeLocation
 	);
-	handleCodeTabContent(params);
+	handleCodeTabContent(classnameDictionary);
 };
 
 export { importHtml, codeImport };

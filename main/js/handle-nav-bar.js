@@ -1,3 +1,6 @@
+/**
+ * Handles responsiveness for navbar
+ */
 const handleNavBar = () => {
 	const hamburgerIcon = document.querySelector(".header .header-nav-icon");
 	const closeIcon = document.querySelector(
@@ -17,6 +20,7 @@ const handleNavBar = () => {
 		brandName.style.visibility = "visible";
 	});
 	window.addEventListener("resize", function () {
+		// To handle rerender of nav bar
 		if (window.innerWidth >= 1180) {
 			navBar.style.visibility = "visible";
 			brandName.style.visibility = "visible";

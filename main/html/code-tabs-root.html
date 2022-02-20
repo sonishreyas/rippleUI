@@ -1,26 +1,27 @@
-<article class="rui-code-tabs--container flex-column">
-  <article class="rui-code-tabs-btn--container">
-    <button class="rui-code-tabs--btn">
+<article class="rui-code-tabs--container flex-column flex-gap-1 m-5 p-5 b-radius-2 card-shadow ">
+  <article class="rui-code-tabs-btn--container flex-row flex-grow-1">
+    <button class="rui-code-tabs--btn preview-btn flex-row justify-content-center align-center flex-gap-1 p-5">
       <span class="rui-code-tabs--icons"><i class="fas fa-desktop"></i></span>
       <p>Preview</p>
     </button>
-    <button class="rui-code-tabs--btn">
+    <button class="rui-code-tabs--btn rui-code-btn flex-row justify-content-center align-center flex-gap-1 p-5">
       <span class="rui-code-tabs--icons"><i class="fas fa-code"></i></span>
       <p>HTML</p>
     </button>
-    <button class="rui-code-tabs--btn">
+    <button class="rui-code-tabs--btn rui-code-js-btn flex-row justify-content-center align-center flex-gap-1 p-5">
       <span class="rui-code-tabs--icons"><i class="fab fa-js-square"></i></span>
       <p>Javascript</p>
     </button>
-    <a href="" class="rui-code-tabs-sandbox--link" target="_blank" aria-label="Edit on sandbox">
+    <a href="" class="rui-code-tabs-sandbox--link flex-row align-center justify-content-end flex-grow-1 p-5"
+      target="_blank" aria-label="Edit on sandbox">
       <img
         src="https://raw.githubusercontent.com/sonishreyas/rippleUI/22c6ad194352187f729cc3641bd30a22e8952eb5/components/media/images/code-sandbox-logo.svg"
         alt="Edit in code sandbox" class="rui-code-tabs--icons codesandbox-icon" />
     </a>
   </article>
-  <div class="rui-code-tabs--content-container flex-column">
-    <div class="rui-code-tabs--content preview"></div>
-    <div class="rui-code-tabs--content rui-code"></div>
-    <div class="rui-code-tabs--content rui-code-js"></div>
+  <div class="rui-code-tabs--content-container flex-column flex-gap-1 p-5 b-radius-2 w-100 h-auto">
+    <div class="rui-code-tabs--content p-5 preview"></div>
+    <div class="rui-code-tabs--content p-5 rui-code"></div>
+    <div class="rui-code-tabs--content p-5 rui-code-js"></div>
   </div>
 </article>
