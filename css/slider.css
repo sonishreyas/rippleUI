@@ -1,0 +1,76 @@
+.outline-container {
+	background: var(--secondary-background-color);
+	border: var(--b-2) solid var(--secondary-color);
+	color: var(--secondary-color);
+	font-family: inherit;
+	font-size: inherit;
+}
+
+.field {
+	height: 3rem;
+}
+
+.field input {
+	height: 100%;
+	outline: none;
+	text-align: center;
+	border: var(--b-1) solid var(--secondary-color);
+	position: relative;
+	-moz-appearance: none;
+	background: inherit;
+	color: inherit;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+
+.range-slider-container {
+	height: 0.4rem;
+	background: var(--secondary-color);
+	position: relative;
+}
+
+.range-slider-progress {
+	height: 100%;
+	left: 15%;
+	right: 0;
+	position: absolute;
+	background: var(--cta-color);
+}
+
+.range-input {
+	position: relative;
+}
+
+.range-input input {
+	position: absolute;
+	top: -1.38rem;
+	height: 0.4rem;
+	width: 100%;
+	background: none;
+	pointer-events: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+	height: 1.7rem;
+	width: 1.7rem;
+	pointer-events: auto;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	border-radius: var(--br-circle);
+	background: var(--cta-color);
+}
+
+input[type="range"]::--moz-range-thumb {
+	height: 1.7rem;
+	width: 1.7rem;
+	border-radius: var(--br-circle);
+	pointer-events: auto;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background: var(--cta-color);
+}
