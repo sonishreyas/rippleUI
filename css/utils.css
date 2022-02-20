@@ -13,12 +13,18 @@
 .w-100 {
 	width: 100%;
 }
+
 .h-auto {
 	height: auto;
 }
 
 .text-cta-color {
 	color: var(--cta-color);
+}
+
+.background-cta-color {
+	background: var(--cta-color);
+	color: var(--tertiary-color);
 }
 
 .homepage-heading {

@@ -13,13 +13,13 @@
 
 .cart-billing {
 	grid-area: g-col-2;
-	border-left: 0.2rem solid var(--cta-color);
+	border-left: var(--b-2) solid var(--cta-color);
 	width: max-content;
 }
 
 .cart-billing > * {
-	margin: 0 2rem;
-	padding: 1rem;
+	margin: var(--m-0) var(--m-10);
+	padding: var(--p-5);
 	width: max-content;
 	height: max-content;
 }
@@ -37,33 +37,21 @@
 .cart-content .horizontal {
 	height: max-content;
 	width: 100%;
-	margin: 3rem;
-	margin: auto;
+	margin: calc(3 * var(--m-5));
+	margin: var(--margin-auto);
 }
 .delivery-address-container > * {
-	margin: 1rem;
+	margin: var(--m-5);
 }
 
 .cart-list > * {
-	margin: 2rem;
+	margin: var(--m-10);
 }
 
 .cart-content .horizontal-card-img {
 	height: 25rem;
 	width: 20rem;
 }
-
-/* .card-footer {
-	display: flex;
-	flex-grow: 1;
-	justify-content: center;
-	gap: 1rem;
-	padding: 1rem 0;
-}
-
-.card-footer > * {
-	flex-grow: 1;
-} */
 
 .profile-heading {
 	padding: 0.5rem;

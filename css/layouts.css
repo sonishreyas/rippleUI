@@ -75,3 +75,23 @@
 		display: none;
 	}
 }
+
+/* Example CSS */
+.three-rows-grid .preview {
+	margin: 0;
+}
+.grid-3-rows .nav-row {
+	grid-area: g-row-nav;
+	display: none;
+}
+.grid-3-rows .header-row {
+	grid-area: g-row-1;
+}
+
+.grid-3-rows .main-row {
+	grid-area: g-row-2;
+}
+
+.grid-3-rows .footer-row {
+	grid-area: g-row-3;
+}

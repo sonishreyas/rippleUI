@@ -12,7 +12,7 @@ body {
 
 .basic-card {
 	height: auto;
-	width: 30rem;
+	width: 100%;
 	background-color: var(--secondary-background-color);
 }
 
