@@ -53,17 +53,7 @@
 	width: 20rem;
 }
 
-/* Removed Afterwards */
-.basic-card {
-	width: 100%;
-	height: auto;
-}
-
-.basic-card > * {
-	padding: 0.4rem;
-}
-
-.card-footer {
+/* .card-footer {
 	display: flex;
 	flex-grow: 1;
 	justify-content: center;
@@ -73,7 +63,7 @@
 
 .card-footer > * {
 	flex-grow: 1;
-}
+} */
 
 .profile-heading {
 	padding: 0.5rem;
