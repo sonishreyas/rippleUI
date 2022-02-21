@@ -44,8 +44,7 @@ const elements = [
 			sandbox="allow-scripts allow-same-origin">
 	  	</iframe>`,
 		sandboxURLClass: ".horizontal-tabs .rui-code-tabs-sandbox--link",
-		sandboxURL:
-			"https://codesandbox.io/s/cards-final-rhlov?file=/src/styles.css:679-5951",
+		sandboxURL: "https://codesandbox.io/s/tabs-final-rhlov",
 	},
 	{
 		name: "Vertical Tabs",
@@ -77,8 +76,7 @@ const elements = [
 			sandbox="allow-scripts allow-same-origin">
 		</iframe>`,
 		sandboxURLClass: ".vertical-tabs .rui-code-tabs-sandbox--link",
-		sandboxURL:
-			"https://codesandbox.io/s/tabs-final-rhlov?file=/src/styles.css:679-5951",
+		sandboxURL: "https://codesandbox.io/s/tabs-final-rhlov",
 	},
 	{
 		name: "Authentication Tabs",
@@ -110,8 +108,7 @@ const elements = [
 			sandbox="allow-scripts allow-same-origin">
 		</iframe>`,
 		sandboxURLClass: ".authentication-tabs .rui-code-tabs-sandbox--link",
-		sandboxURL:
-			"https://codesandbox.io/s/tabs-final-rhlov?file=/src/styles.css:679-5951",
+		sandboxURL: "https://codesandbox.io/s/tabs-final-rhlov",
 	},
 	{
 		name: "Profile Tabs",
@@ -143,8 +140,7 @@ const elements = [
 			sandbox="allow-scripts allow-same-origin">
 		</iframe>`,
 		sandboxURLClass: ".profile-tabs .rui-code-tabs-sandbox--link",
-		sandboxURL:
-			"https://codesandbox.io/s/tabs-final-rhlov?file=/src/styles.css:679-5951",
+		sandboxURL: "https://codesandbox.io/s/tabs-final-rhlov",
 	},
 ];
 
