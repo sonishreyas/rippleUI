@@ -34,6 +34,10 @@
 		height: auto;
 		margin-right: 0;
 	}
+	.grid-col-70 .products-container {
+		justify-content: center;
+		align-items: center;
+	}
 }
 @media screen and (max-width: 480px) {
 	.grid-3-rows .header .header-brand {
