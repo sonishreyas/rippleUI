@@ -48,4 +48,14 @@
 ✅ <a href="https://ripple-ui.netlify.app/components/typography/typography.html">Typography</a> <br/>
 ✅ <a href="https://ripple-ui.netlify.app/components/tabs/tabs.html">Tabs</a> <br/>
 
-# Demo
+# Preview
+
+## Desktop
+
+
+## Mobile
+
+https://user-images.githubusercontent.com/46019734/155017854-cf2818d1-3c75-48b2-b61d-ab6e1bf5714a.mp4
+
+
+
