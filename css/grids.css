@@ -163,7 +163,7 @@
 		height: auto;
 		width: 100%;
 	}
-	.grid-2-column * {
+	.grid-2-column > * {
 		width: 100%;
 		height: auto;
 		margin: 0;
@@ -184,9 +184,15 @@
 		margin: 0;
 	}
 	.cart-list > * {
-		margin: 2rem 0 !important;
+		margin: 2rem 0;
 	}
 	.cart-deliver-container {
 		flex-direction: column;
+	}
+
+	.grid-2-column .horizontal .coupon-btn {
+		display: flex;
+		align-items: center;
+		justify-content: start;
 	}
 }
