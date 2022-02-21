@@ -242,6 +242,10 @@ body {
 		width: 100%;
 		height: auto;
 	}
+	.horizontal-card-img {
+		height: 22rem;
+		width: 18rem;
+	}
 
 	.specifications-form > *,
 	.specification-value {
