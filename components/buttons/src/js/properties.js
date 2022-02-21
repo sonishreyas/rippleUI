@@ -6,6 +6,7 @@
  * handleCodeTabCodeContentClass: Here we add content classpath
  * elementCodeClassPath: This is the location where we store the HTML code.
  * elementCodeInnerText: Here we add HTML code
+ * elementJSCodeBtnClassPath: Here we add the classpath for JS code tab button.
  * elementJSCodeClassPath: Here we add the classpath for JS code.
  * elementJSCodeInnerText: Here we add the JS code.
  * sandboxURLClass: Here we add the classPath for sandboxURL.
@@ -29,10 +30,12 @@ const elements = [
 		elementCodeClassPath:
 			".primary-button .rui-import-html .rui-code-tabs--container .rui-code",
 		elementCodeInnerText: `<iframe
-		src="https://carbon.now.sh/embed?bg=rgba%281%2C22%2C39%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=48px&wc=true&wa=true&pv=30px&ph=39px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522primary-btn%2522%253EPrimary%253C%252Fbutton%253E"
-		class="rui-code--iframe" scrolling="yes"
-		sandbox="allow-scripts allow-same-origin">
+			src="https://carbon.now.sh/embed?bg=rgba%2823%2C24%2C26%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=36px&ph=35px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522primary-btn%2520p-5%250A%2520b-radius-2%2520mx-5%2520my-0%2520text-bold%2522%253EPrimary%253C%252Fbutton%253E"
+			class="rui-code--iframe" scrolling="yes"
+			sandbox="allow-scripts allow-same-origin">
 	  	</iframe>`,
+		elementJSCodeBtnClassPath:
+			".primary-button .rui-import-html .rui-code-tabs--container .rui-code-js-btn",
 		elementJSCodeClassPath:
 			".primary-button .rui-import-html .rui-code-tabs--container .rui-code-js",
 		elementJSCodeInnerText: `NA`,
@@ -56,10 +59,12 @@ const elements = [
 		elementCodeClassPath:
 			".outline-button .rui-import-html .rui-code-tabs--container .rui-code",
 		elementCodeInnerText: `<iframe
-		src="https://carbon.now.sh/embed?bg=rgba%281%2C22%2C39%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=48px&wc=true&wa=true&pv=30px&ph=39px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522outline-btn%2522%253EPrimary%2520Outline%253C%252Fbutton%253E"
-		class="rui-code--iframe" scrolling="yes"
-		sandbox="allow-scripts allow-same-origin">
+			src="https://carbon.now.sh/embed?bg=rgba%2823%2C24%2C26%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=36px&ph=35px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522outline-btn%2520p-5%2520%250Ab-radius-2%2520mx-5%2520my-0%2520text-bold%2522%253EPrimary%2520Outline%253C%252Fbutton%253E"
+			class="rui-code--iframe" scrolling="yes"
+			sandbox="allow-scripts allow-same-origin">
 	  	</iframe>`,
+		elementJSCodeBtnClassPath:
+			".outline-button .rui-import-html .rui-code-tabs--container .rui-code-js-btn",
 		elementJSCodeClassPath:
 			".outline-button .rui-import-html .rui-code-tabs--container .rui-code-js",
 		elementJSCodeInnerText: `NA`,
@@ -83,10 +88,12 @@ const elements = [
 		elementCodeClassPath:
 			".link-button .rui-import-html .rui-code-tabs--container .rui-code",
 		elementCodeInnerText: `<iframe
-		src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=text%2Fx-c%2B%2Bsrc&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522link-btn%2522%253ELink%2520Button%253C%252Fa%253E"
-		class="rui-code--iframe" scrolling="yes"
-		sandbox="allow-scripts allow-same-origin">
-	  </iframe>`,
+			src="https://carbon.now.sh/embed?bg=rgba%2823%2C24%2C26%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=36px&ph=35px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522link-btn%2520mx-5%2520my-0%2522%253ELink%2520Button%253C%252Fa%253E"
+			class="rui-code--iframe" scrolling="yes"
+			sandbox="allow-scripts allow-same-origin">
+	  	</iframe>`,
+		elementJSCodeBtnClassPath:
+			".link-button .rui-import-html .rui-code-tabs--container .rui-code-js-btn",
 		elementJSCodeClassPath:
 			".link-button .rui-import-html .rui-code-tabs--container .rui-code-js",
 		elementJSCodeInnerText: `NA`,
@@ -110,10 +117,12 @@ const elements = [
 		elementCodeClassPath:
 			".icon-button .rui-import-html .rui-code-tabs--container .rui-code",
 		elementCodeInnerText: `<iframe
-		src="https://carbon.now.sh/embed?bg=rgba%281%2C22%2C39%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=48px&wc=true&wa=true&pv=30px&ph=39px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522link-btn%2522%253ELink%2520Button%253C%252Fa%253E"
-		class="rui-code--iframe" scrolling="yes"
-		sandbox="allow-scripts allow-same-origin">
+			src="https://carbon.now.sh/embed?bg=rgba%2823%2C24%2C26%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=36px&ph=35px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522icon-btn%2520mx-5%2520my-0%2520text-bold%2522%253E%250A%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%253C%252Fspan%253E"
+			class="rui-code--iframe" scrolling="yes"
+			sandbox="allow-scripts allow-same-origin">
 	  	</iframe>`,
+		elementJSCodeBtnClassPath:
+			".icon-button .rui-import-html .rui-code-tabs--container .rui-code-js-btn",
 		elementJSCodeClassPath:
 			".icon-button .rui-import-html .rui-code-tabs--container .rui-code-js",
 		elementJSCodeInnerText: `NA`,
@@ -137,10 +146,12 @@ const elements = [
 		elementCodeClassPath:
 			".icon-text-button .rui-import-html .rui-code-tabs--container .rui-code",
 		elementCodeInnerText: `<iframe
-		src="https://carbon.now.sh/embed?bg=rgba%281%2C22%2C39%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=48px&wc=true&wa=true&pv=30px&ph=39px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522primary-btn%2520icon-text-btn%2520flex-row%2520justify-content-center%2520align-center%2520flex-gap-1%2522%253E%250A%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522btn-text%2522%253EAdd%2520to%2520Cart%253C%252Fp%253E%250A%253C%252Fbutton%253E"
-		class="rui-code--iframe" scrolling="yes"
-		sandbox="allow-scripts allow-same-origin">
+			src="https://carbon.now.sh/embed?bg=rgba%2823%2C24%2C26%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=36px&ph=35px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%250A%2520%2520%2520%2520class%253D%2522primary-btn%2520p-5%2520b-radius-2%2520mx-5%2520my-0%2520%250Atext-bold%2520icon-text-btn%2520flex-row%2520justify-content-center%2520align-center%2520flex-gap-1%2522%253E%250A%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522btn-text%2522%253EAdd%2520to%2520Cart%253C%252Fp%253E%250A%253C%252Fbutton%253E"
+			class="rui-code--iframe" scrolling="yes"
+			sandbox="allow-scripts allow-same-origin">
 	  	</iframe>`,
+		elementJSCodeBtnClassPath:
+			".icon-text-button .rui-import-html .rui-code-tabs--container .rui-code-js-btn",
 		elementJSCodeClassPath:
 			".icon-text-button .rui-import-html .rui-code-tabs--container .rui-code-js",
 		elementJSCodeInnerText: `NA`,
@@ -164,10 +175,12 @@ const elements = [
 		elementCodeClassPath:
 			".toggle-button .rui-import-html .rui-code-tabs--container .rui-code",
 		elementCodeInnerText: `<iframe
-		src="https://carbon.now.sh/embed?bg=rgba%281%2C22%2C39%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=48px&wc=true&wa=true&pv=30px&ph=39px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Csection%2520class%253D%2522toggle-button-container%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520class%253D%2522switch%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522slider%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%253C%252Fsection%253E"
-		class="rui-code--iframe" scrolling="yes"
-		sandbox="allow-scripts allow-same-origin">
+			src="https://carbon.now.sh/embed?bg=rgba%2823%2C24%2C26%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=36px&ph=35px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Csection%2520class%253D%2522toggle-button-container%2520text-center%2522%253E%250A%2520%2520%2520%2520%253Clabel%2520class%253D%2522switch%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%2520aria-label%253D%2522Toggle%2520Choice%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522slider%2520b-radius-4%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Flabel%253E%250A%253C%252Fsection%253E"
+			class="rui-code--iframe" scrolling="yes"
+			sandbox="allow-scripts allow-same-origin">
 	  	</iframe>`,
+		elementJSCodeBtnClassPath:
+			".toggle-button .rui-import-html .rui-code-tabs--container .rui-code-js-btn",
 		elementJSCodeClassPath:
 			".toggle-button .rui-import-html .rui-code-tabs--container .rui-code-js",
 		elementJSCodeInnerText: `NA`,
@@ -191,10 +204,12 @@ const elements = [
 		elementCodeClassPath:
 			".floating-button .rui-import-html .rui-code-tabs--container .rui-code",
 		elementCodeInnerText: `<iframe
-		src="https://carbon.now.sh/embed?bg=rgba%281%2C22%2C39%2C1%29&t=night-owl&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=48px&wc=true&wa=true&pv=30px&ph=39px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522floating-btn%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522floating-btn-icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-plus%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%253C%252Fbutton%253E"
-		class="rui-code--iframe" scrolling="yes"
-		sandbox="allow-scripts allow-same-origin">
+			src="https://carbon.now.sh/embed?bg=rgba%2823%2C24%2C26%2C1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=36px&ph=35px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522floating-btn%2520b-radius-circle%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522floating-btn-icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-plus%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%253C%252Fbutton%253E"
+			class="rui-code--iframe" scrolling="yes"
+			sandbox="allow-scripts allow-same-origin">
 	  	</iframe>`,
+		elementJSCodeBtnClassPath:
+			".floating-button .rui-import-html .rui-code-tabs--container .rui-code-js-btn",
 		elementJSCodeClassPath:
 			".floating-button .rui-import-html .rui-code-tabs--container .rui-code-js",
 		elementJSCodeInnerText: `NA`,
