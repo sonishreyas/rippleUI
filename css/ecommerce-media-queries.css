@@ -18,6 +18,8 @@
 		grid-template-areas:
 			". grid-col-70 grid-col-70 ."
 			". grid-col-30 grid-col-30 .";
+		width: 100%;
+		height: auto;
 	}
 	.grid-3-rows .grid-30-70-column {
 		align-items: center;
@@ -28,6 +30,9 @@
 	.grid-3-rows .grid-30-70-column .grid-col-70 {
 		align-items: center;
 		justify-content: center;
+		width: 80%;
+		height: auto;
+		margin-right: 0;
 	}
 }
 @media screen and (max-width: 480px) {
