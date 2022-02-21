@@ -4,6 +4,7 @@
  * elementCodeLocation: The location where we need to import the code for the component.
  * handleCodeTabBtnClass: The classPath for the code tabs to call the handleCodeTab function which allows us to use the tabs.
  * handleCodeTabCodeContentClass: Here we add content classpath
+ * elementJSCodeBtnClassPath: Here we add the classpath for JS code tab button.
  * elementCodeClassPath: This is the location where we store the HTML code.
  * elementCodeInnerText: Here we add HTML code
  * elementJSCodeClassPath: Here we add the classpath for JS code.

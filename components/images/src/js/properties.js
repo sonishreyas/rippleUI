@@ -6,6 +6,7 @@
  * handleCodeTabCodeContentClass: Here we add content classpath
  * elementCodeClassPath: This is the location where we store the HTML code.
  * elementCodeInnerText: Here we add HTML code
+ * elementJSCodeBtnClassPath: Here we add the classpath for JS code tab button.
  * elementJSCodeClassPath: Here we add the classpath for JS code.
  * elementJSCodeInnerText: Here we add the JS code.
  * sandboxURLClass: Here we add the classPath for sandboxURL.

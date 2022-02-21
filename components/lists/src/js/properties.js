@@ -6,6 +6,7 @@
  * handleCodeTabCodeContentClass: Here we add content classpath
  * elementCodeClassPath: This is the location where we store the HTML code.
  * elementCodeInnerText: Here we add HTML code
+ * elementJSCodeBtnClassPath: Here we add the classpath for JS code tab button.
  * elementJSCodeClassPath: Here we add the classpath for JS code.
  * elementJSCodeInnerText: Here we add the JS code.
  * sandboxURLClass: Here we add the classPath for sandboxURL.
@@ -34,6 +35,8 @@ const elements = [
 	  	</iframe>`,
 		elementJSCodeBtnClassPath:
 			".stacked-lists .rui-import-html .rui-code-tabs--container .rui-code-js-btn",
+		elementJSCodeBtnClassPath:
+			".stacked-lists .rui-import-html .rui-code-tabs--container .rui-code-js-btn",
 		elementJSCodeClassPath:
 			".stacked-lists .rui-import-html .rui-code-tabs--container .rui-code-js",
 		elementJSCodeInnerText: `NA`,
@@ -59,6 +62,8 @@ const elements = [
 			class="rui-code--iframe" scrolling="yes"
 			sandbox="allow-scripts allow-same-origin">
 	  	</iframe>`,
+		elementJSCodeBtnClassPath:
+			".spaced-lists .rui-import-html .rui-code-tabs--container .rui-code-js-btn",
 		elementJSCodeBtnClassPath:
 			".spaced-lists .rui-import-html .rui-code-tabs--container .rui-code-js-btn",
 		elementJSCodeClassPath:
