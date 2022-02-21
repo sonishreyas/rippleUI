@@ -1,3 +1,7 @@
+/**
+ * Apply edit and delete functionality on the buttons
+ * @param {element} modal The modal element whose values we address
+ */
 const handleCardButtons = (modal) => {
 	const editAddressBtn = document.querySelectorAll(".edit-btn");
 	const deleteAddressBtn = document.querySelectorAll(".delete-btn");
@@ -13,6 +17,9 @@ const handleCardButtons = (modal) => {
 	});
 };
 
+/**
+ * Handles modal and new address creation
+ */
 const handleModal = () => {
 	const modal = document.querySelector(".profile-tabs .modal-container");
 	const addNewAddressBtn = document.querySelector(
@@ -40,21 +47,21 @@ const handleModal = () => {
 	saveBtn.addEventListener("click", () => {
 		const formData = new FormData(addressForm);
 		addAddressPath.innerHTML += `<li class="no-list my-5">
-      <article class="card basic-card flex-row justify-content-center align-center flex-wrap card-shadow p-10 b-radius-2 w-100 h-auto">
-        <h2 class="name">${formData.get("name")}</h2>
-        <p class="address">
-        ${formData.get("address")}
-        </p>
-        <p class="city">${formData.get("city")}</p>
-        <p class="state">${formData.get("state")}</p>
-        <p class="country">${formData.get("country")}</p>
-        <p class="pincode">${formData.get("pincode")}</p>
-        <section class="card-footer flex-row flex-grow-1 justify-content-center flex-gap-1 py-5 px-0">
-			<button class="primary-btn edit-btn p-5 b-radius-2 mx-5 my-0 text-bold flex-grow-1">Edit</button>
-			<button class="outline-btn p-5 b-radius-2 mx-5 my-0 text-bold flex-grow-1">Delete</button>
-		</section>
-      </article>
-    </li>`;
+		<article class="card basic-card flex-row justify-content-center align-center flex-wrap card-shadow p-10 b-radius-2 w-100 h-auto">
+		  <h2 class="name p-2">${formData.get("name")}</h2>
+		  <p class="address p-2">
+		  ${formData.get("address")}
+		  </p>
+		  <p class="city p-2">${formData.get("city")}</p>
+		  <p class="state p-2">${formData.get("state")}</p>
+		  <p class="country p-2">${formData.get("country")}</p>
+		  <p class="pincode p-2">${formData.get("pincode")}</p>
+		  <section class="card-footer flex-row flex-grow-1 justify-content-center flex-gap-1 py-5 px-0">
+			  <button class="primary-btn edit-btn p-5 b-radius-2 mx-5 my-0 text-bold flex-grow-1">Edit</button>
+			  <button class="outline-btn delete-btn p-5 b-radius-2 mx-5 my-0 text-bold flex-grow-1">Delete</button>
+		  </section>
+		</article>
+		</li`;
 		handleCardButtons(modal);
 		modal.style.display = "none";
 	});

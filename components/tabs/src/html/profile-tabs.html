@@ -107,10 +107,11 @@
                         <p class="state p-2">Maharashtra</p>
                         <p class="country p-2">India</p>
                         <p class="pincode p-2">411027</p>
-                        <section class="card-footer flex-row flex-grow-1 justify-content-center flex-gap-1 py-5 px-0">
+                        <section class="card-footer flex-row flex-grow-1 justify-content-center flex-gap-1 py-5 px-0 ">
                             <button
-                                class="primary-btn edit-btn p-5 b-radius-2 mx-5 my-0 text-bold flex-grow-1">Edit</button>
-                            <button class="outline-btn p-5 b-radius-2 mx-5 my-0 text-bold flex-grow-1">Delete</button>
+                                class="primary-btn edit-btn p-5 b-radius-2 mx-5 my-0 text-bold flex-grow-1 w-100">Edit</button>
+                            <button
+                                class="outline-btn delete-btn p-5 b-radius-2 mx-5 my-0 text-bold flex-grow-1 w-100">Delete</button>
                         </section>
                     </article>
                 </li>
@@ -144,13 +145,15 @@
                         <input id="pincode" class="textbox-content p-5" type="number" name="pincode" />
                         <label for="pincode" class="textbox-label m-0">Pincode</label>
                     </section>
-                    <section class="card-footer  flex-row flex-grow-1 justify-content-center flex-gap-1 py-5 px-0">
-                        <div class="primary-btn save-btn p-5 b-radius-2 mx-5 my-0 text-bold flex-grow-1" type="button">
-                            Save</div>
-                        <div class="outline-btn cancel-btn p-5 b-radius-2 mx-5 my-0 text-bold flex-grow-1"
+                    <section
+                        class="card-footer flex-row flex-grow-1 justify-content-center flex-gap-1 py-5 px-0 flex-wrap w-100 h-auto">
+                        <button class="primary-btn save-btn p-5 b-radius-2 mx-5 my-0 text-bold flex-grow-1"
+                            type="button">
+                            Save</button>
+                        <button class="outline-btn cancel-btn p-5 b-radius-2 mx-5 my-0 text-bold flex-grow-1"
                             type="button">
                             Cancel
-                        </div>
+                        </button>
                     </section>
                 </form>
             </div>

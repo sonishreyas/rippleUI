@@ -78,12 +78,6 @@ body {
 
 /* Profile Container Style */
 
-/* Removed Afterwards */
-.profile-tabs {
-	height: 100%;
-	margin: calc(5 * var(--m-5)) 0;
-}
-
 .profile-tabs .tabs-btn {
 	width: 18rem;
 	height: 10rem;
