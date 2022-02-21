@@ -9,7 +9,6 @@
 @import url("./padding.css");
 @import url("./borders.css");
 @import url("./layouts.css");
-@import url("./utils.css");
 @import url("./flex-layouts.css");
 @import url("./code-tabs.css");
 @import url("./styles.css");
@@ -36,3 +35,4 @@
 @import url("./quiz.css");
 @import url("./slider.css");
 @import url("./snackbars.css");
+@import url("./utils.css");
