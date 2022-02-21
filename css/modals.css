@@ -2,34 +2,13 @@
 
 .profile-container {
 	width: 100%;
-}
-
-.profile-header {
-	padding: var(--p-5);
-	margin: var(--m-0) var(--m-5);
-}
-
-.address-btn {
-	margin: var(--m-3);
-}
-
-.card-footer {
-	padding: var(--p-5) var(--p-0);
-}
-
-.profile-heading {
-	padding: var(--p-2);
-	margin: var(--m-2) var(--m-0);
+	position: relative;
 }
 
 /* Modal Styling */
 .modal-container {
 	display: none;
 	background: var(--primary-color);
-	/* width: max-content; */
-	padding: var(--p-5);
-	margin: var(--m-5);
-	border-radius: var(--br-2);
 	z-index: 1;
 	box-shadow: 0rem 0rem 1rem 1rem var(--shadow-color);
 }
@@ -39,6 +18,29 @@
 	top: 50%;
 	transform: translate(-50%, -50%);
 }
-.modal-container .input-form {
-	width: max-content;
+
+@media screen and (max-width: 650px) {
+	.modal-container {
+		width: 100%;
+		height: auto;
+	}
+	.modal-container > * {
+		height: auto;
+		width: 100%;
+	}
+
+	.modal-container .input-form {
+		width: 100%;
+		height: auto;
+	}
+	.modal-container .input-container {
+		width: 100%;
+		height: auto;
+		margin: var(--m-0);
+	}
+
+	.modal-container .text-box-content {
+		width: 100%;
+		height: auto;
+	}
 }

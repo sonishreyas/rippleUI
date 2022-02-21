@@ -5,14 +5,18 @@ import { elements } from "./properties.js";
 import { handleInput } from "./input.js";
 import { handleModal } from "./modals.js";
 
-// Call Function
+/**
+ * Calling codeImport for all components
+ */
 const callImportFunctions = async () => {
 	for (let i = 0; i < elements.length; i++) {
 		await codeImport(elements[i]);
 	}
 };
 
-// runs all the js files
+/**
+ * Run all scripts on the page
+ */
 const runScripts = async () => {
 	const importCode = await callImportFunctions();
 	handleInput();

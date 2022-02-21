@@ -1,3 +1,6 @@
+/**
+ * Handle the effect of textbox
+ */
 const handleInput = () => {
 	const input_container = document.querySelectorAll(
 		".input-container .textbox-content"

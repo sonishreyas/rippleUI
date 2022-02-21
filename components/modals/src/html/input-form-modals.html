@@ -1,68 +1,69 @@
 <div class="profile-container">
-    <div class="profile-header flex-row justify-content-space-between align-center flex-wrap">
-        <h1 class="profile-heading">Address</h1>
-        <button class="outline-btn icon-text-btn flex-row justify-content-center align-center flex-gap-1 address-btn">
+    <div class="profile-header flex-row justify-content-space-between align-center flex-wrap p-5 my-0 mx-5">
+        <h1 class="p-2 my-2 mx-0">Address</h1>
+        <button
+            class="outline-btn p-5 b-radius-2 text-bold icon-text-btn flex-row justify-content-center align-center flex-gap-1 address-btn my-3">
             <span><i class="fas fa-plus"></i></span>
             <p class="btn-text">Add new address</p>
         </button>
     </div>
-    <ul class="stacked-list">
+    <ul class="profile-list p-5">
         <li class="no-list">
-            <article class="card basic-card .flex-jc-ac card-shadow">
-                <h2 class="name">Shreyas Soni</h2>
-                <p class="address">
+            <article
+                class="card basic-card flex-row justify-content-center align-center flex-wrap card-shadow p-10 b-radius-2 w-100 h-auto">
+                <h2 class="name p-2">Shreyas Soni</h2>
+                <p class="address p-2">
                     D-203, Nisarg Nirman, Kokne Chowk Pimple Saudagar
                 </p>
-                <p class="city">Pune</p>
-                <p class="state">Maharashtra</p>
-                <p class="country">India</p>
-                <p class="pincode">411027</p>
-                <p class="ph-number"><b>Mobile Number: </b> 7894561230</p>
-                <section class="card-footer">
-                    <button class="primary-btn edit-btn">Edit</button>
-                    <button class="primary-btn outline delete-btn">Delete</button>
+                <p class="city p-2">Pune</p>
+                <p class="state p-2">Maharashtra</p>
+                <p class="country p-2">India</p>
+                <p class="pincode p-2">411027</p>
+                <section class="card-footer flex-row flex-grow-1 justify-content-center flex-gap-1 py-5 px-0 ">
+                    <button
+                        class="primary-btn edit-btn p-5 b-radius-2 mx-5 my-0 text-bold flex-grow-1 w-100">Edit</button>
+                    <button
+                        class="outline-btn delete-btn p-5 b-radius-2 mx-5 my-0 text-bold flex-grow-1 w-100">Delete</button>
                 </section>
             </article>
         </li>
     </ul>
 
-    <div class="modal-container modal-center text-center">
+    <div class="modal-container modal-center text-center p-5 m-5 b-radius-2">
         <h3 class="p-2 my-2 mx-0">Add a new Address</h3>
         <form class="input-form flex-column flex-gap-1 flex-grow-1 flex-wrap">
-            <section class="input-container flex-column">
-                <input id="name" class="textbox-content" type="text" name="name" />
-                <label for="name" class="textbox-label">Name</label>
+            <section class="input-container flex-column m-5">
+                <input id="name" class="textbox-content p-5" type="text" name="name" />
+                <label for="name" class="textbox-label m-0">Name</label>
             </section>
-            <section class="input-container flex-column">
-                <input id="address" class="textbox-content" type="text" name="address" />
-                <label for="address" class="textbox-label">Address</label>
+            <section class="input-container flex-column m-5">
+                <input id="address" class="textbox-content p-5" type="text" name="address" />
+                <label for="address" class="textbox-label m-0">Address</label>
             </section>
-            <section class="input-container flex-column">
-                <input id="country" class="textbox-content" name="country" type="text" />
-                <label for="country" class="textbox-label">Country</label>
+            <section class="input-container flex-column m-5">
+                <input id="country" class="textbox-content p-5" name="country" type="text" />
+                <label for="country" class="textbox-label m-0">Country</label>
             </section>
 
-            <section class="input-container flex-column">
-                <input id="state" class="textbox-content" name="state" type="text" />
-                <label for="state" class="textbox-label">State</label>
+            <section class="input-container flex-column m-5">
+                <input id="state" class="textbox-content p-5" name="state" type="text" />
+                <label for="state" class="textbox-label m-0">State</label>
             </section>
-            <section class="input-container flex-column">
-                <input id="city" class="textbox-content" type="text" name="city" />
-                <label for="city" class="textbox-label">City</label>
+            <section class="input-container flex-column m-5">
+                <input id="city" class="textbox-content p-5" type="text" name="city" />
+                <label for="city" class="textbox-label m-0">City</label>
             </section>
-            <section class="input-container flex-column">
-                <input id="pincode" class="textbox-content" type="number" name="pincode" />
-                <label for="pincode" class="textbox-label">Pincode</label>
+            <section class="input-container flex-column m-5">
+                <input id="pincode" class="textbox-content p-5" type="number" name="pincode" />
+                <label for="pincode" class="textbox-label m-0">Pincode</label>
             </section>
-            <section class="input-container flex-column">
-                <input id="ph-number" class="textbox-content" type="number" name="ph-number" />
-                <label for="ph-number" class="textbox-label">Mobile Number</label>
-            </section>
-            <section class="card-footer flex-row flex-grow-1 justify-content-center flex-gap-1">
-                <div class="primary-btn save-btn flex-grow-1" type="button">Save</div>
-                <div class="primary-btn outline cancel-btn flex-grow-1" type="button">
+            <section
+                class="card-footer flex-row flex-grow-1 justify-content-center flex-gap-1 py-5 px-0 flex-wrap w-100 h-auto">
+                <button class="primary-btn save-btn p-5 b-radius-2 mx-5 my-0 text-bold flex-grow-1" type="button">
+                    Save</button>
+                <button class="outline-btn cancel-btn p-5 b-radius-2 mx-5 my-0 text-bold flex-grow-1" type="button">
                     Cancel
-                </div>
+                </button>
             </section>
         </form>
     </div>
