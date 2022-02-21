@@ -225,6 +225,23 @@ body {
 	.card-image {
 		width: 100%;
 	}
+	.horizontal-card-text--container {
+		width: 100%;
+		height: auto;
+	}
+
+	.specifications-form,
+	.horizontal-card-img--container,
+	.horizontal-card-img--container {
+		width: 100%;
+		height: auto;
+	}
+
+	.specifications-form > *,
+	.specification-value {
+		width: 100%;
+		height: auto;
+	}
 }
 
 /* Orders Card */
