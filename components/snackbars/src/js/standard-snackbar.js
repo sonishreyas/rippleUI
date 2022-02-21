@@ -1,3 +1,6 @@
+/**
+ * Handle snackbar display and dismiss
+ */
 const handleSnackbar = () => {
 	const top_left = document.querySelector(".top-left");
 	const top_center = document.querySelector(".top-center");
@@ -19,7 +22,7 @@ const handleSnackbar = () => {
 		displaySnackbar("1rem", null, "1rem", null);
 	});
 	top_center.addEventListener("click", () => {
-		displaySnackbar("1rem", null, "50%", null);
+		displaySnackbar("1rem", null, "40%", null);
 	});
 
 	top_right.addEventListener("click", () => {
@@ -30,7 +33,7 @@ const handleSnackbar = () => {
 		displaySnackbar(null, "1rem", "1rem", null);
 	});
 	bottom_center.addEventListener("click", () => {
-		displaySnackbar(null, "1rem", "50%", null);
+		displaySnackbar(null, "1rem", "40%", null);
 	});
 
 	bottom_right.addEventListener("click", () => {
