@@ -123,3 +123,14 @@ body {
 .input-with-icon .textbox-content {
 	border: var(--b-0);
 }
+
+@media screen and (max-width: 650px) {
+	.input-form,
+	.input-form .input-container,
+	.input-form .textbox-content,
+	.input-with-icon {
+		width: 100%;
+		height: auto;
+		margin: var(--m-0);
+	}
+}
