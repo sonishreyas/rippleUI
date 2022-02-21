@@ -90,6 +90,11 @@ body {
 	min-height: 40rem;
 }
 
+.profile-tabs .vertical-tabs-content .horizontal .horizontal-card-img {
+	height: 25rem;
+	width: 20rem;
+}
+
 .border-shadow {
 	box-shadow: 0rem 0rem 0.2rem 0.2rem var(--shadow-color);
 }
