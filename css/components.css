@@ -28,7 +28,6 @@
 @import url("./rating.css");
 @import url("./images.css");
 @import url("./lists.css");
-@import url("./typography.css");
 @import url("./pagination.css");
 @import url("./home-page.css");
 @import url("./tables.css");
@@ -36,3 +35,4 @@
 @import url("./slider.css");
 @import url("./snackbars.css");
 @import url("./utils.css");
+@import url("./typography.css");

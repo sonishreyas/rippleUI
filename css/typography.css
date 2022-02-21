@@ -40,6 +40,10 @@ h6,
 	color: var(--secondary-color);
 }
 
+.text-tertiary-color {
+	color: var(--tertiary-color);
+}
+
 .text-disabled {
 	color: var(--disabled-font-color);
 }
