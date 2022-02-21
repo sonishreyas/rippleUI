@@ -1,0 +1,37 @@
+/* || Tablet Screen Layout */
+@media screen and (max-width: 1180px) {
+	.grid-3-rows .rui-drawer-content--list {
+		margin-top: 3rem;
+	}
+
+	.grid-3-rows .header .header-nav {
+		display: none;
+	}
+
+	.grid-3-rows .header .header-nav-icons {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.grid-30-70-column {
+		grid-template-areas:
+			". grid-col-70 grid-col-70 ."
+			". grid-col-30 grid-col-30 .";
+	}
+	.grid-3-rows .grid-30-70-column {
+		align-items: center;
+		justify-content: center;
+	}
+
+	.grid-3-rows .grid-30-70-column .grid-col-30,
+	.grid-3-rows .grid-30-70-column .grid-col-70 {
+		align-items: center;
+		justify-content: center;
+	}
+}
+@media screen and (max-width: 480px) {
+	.grid-3-rows .header .header-brand {
+		display: none;
+	}
+}

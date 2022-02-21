@@ -14,5 +14,11 @@
 .page-number:hover {
 	color: var(--cta-color);
 	background: var(--tertiary-color);
-	border-color: var(--tertiary-color);
+	border: 0.2rem solid var(--tertiary-color);
+}
+
+.page-active {
+	color: var(--cta-color);
+	background-color: var(--tertiary-color);
+	border: 0.2rem solid var(--tertiary-color);
 }

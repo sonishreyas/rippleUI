@@ -220,10 +220,16 @@ body {
 		margin: var(--m-0) var(--m-2) var(--m-2) var(--m-2);
 	}
 
-	.basic-card,
-	.vertical,
-	.card-image {
+	.basic-card {
 		width: 100%;
+	}
+	.vertical > * {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.card-image {
+		width: 20rem;
 	}
 	.horizontal-card-text--container {
 		width: 100%;
