@@ -62,3 +62,19 @@ body {
 	height: 3rem;
 	border-radius: var(--br-circle);
 }
+
+/* Filter Chips */
+.filter-chip:hover {
+	color: var(--cta-color);
+	background-color: var(--tertiary-color);
+}
+
+.fliter-chip-selected {
+	color: var(--cta-color);
+	background-color: var(--tertiary-color);
+}
+
+.fliter-chip-selected:hover {
+	color: var(--secondary-color);
+	background-color: var(--primary-color);
+}
