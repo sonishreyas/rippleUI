@@ -34,7 +34,7 @@ body {
 .grid-container .nav {
 	grid-column: 1/3;
 	grid-row: 2/12;
-	min-width: 20rem;
+	width: 20rem;
 }
 
 .grid-container .main {
@@ -45,7 +45,7 @@ body {
 .grid-container .aside {
 	grid-column: 11/13;
 	grid-row: 2/12;
-	min-width: 20rem;
+	width: 20rem;
 }
 
 .grid-container .footer {
