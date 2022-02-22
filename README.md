@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6a889947-f5cc-4fbf-9010-5a58d251ee24/deploy-status)](https://app.netlify.com/sites/ripple-ui/deploys)
 
 <p align="center">
   <a href="https://ripple-ui.netlify.app" target="_blank">
@@ -65,8 +66,9 @@
 
 # Technology Stack
 
-- HTML
+- Html
 - CSS
-- JavaScript
+- Javascript
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/6a889947-f5cc-4fbf-9010-5a58d251ee24/deploy-status)](https://app.netlify.com/sites/ripple-ui/deploys)
+<img src = "https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white">  <img src = "https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white">  <img src="https://img.shields.io/badge/-JavaScript-eed718?style=flat&logo=javascript&logoColor=ffffff">
+
