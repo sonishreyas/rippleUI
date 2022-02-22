@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6a889947-f5cc-4fbf-9010-5a58d251ee24/deploy-status)](https://app.netlify.com/sites/ripple-ui/deploys)
+
 <p align="center">
   <a href="https://ripple-ui.netlify.app" target="_blank">
     <img src="https://raw.githubusercontent.com/sonishreyas/rippleUI/dev/components/media/images/ripple-logo.png" alt="Ripple UI logo" >
@@ -52,10 +54,21 @@
 
 ## Desktop
 
+![ripple-ui-preview-desktop](https://user-images.githubusercontent.com/46019734/155149239-2b5fd3c8-0bf3-4a0e-aa56-3cae626d98e1.gif)
+
+## Tablet
+
+![ripple-ui-preview-tablet](https://user-images.githubusercontent.com/46019734/155150950-b5b53fb6-ebdd-4295-81ba-828ffa3a64e7.gif)
 
 ## Mobile
 
-https://user-images.githubusercontent.com/46019734/155017854-cf2818d1-3c75-48b2-b61d-ab6e1bf5714a.mp4
+![ripple-ui-preview-mobile](https://user-images.githubusercontent.com/46019734/155149319-3a4cb79f-d409-427b-8e46-45ef306fc34b.gif)
 
+# Technology Stack
 
+- Html
+- CSS
+- Javascript
+
+<img src = "https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white">  <img src = "https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white">  <img src="https://img.shields.io/badge/-JavaScript-eed718?style=flat&logo=javascript&logoColor=ffffff">
 
