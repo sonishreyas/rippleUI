@@ -28,6 +28,9 @@
 ```css
 @import url("https://ripple-ui.netlify.app/css/components.css");
 ```
+# Key Features
+▶️ The website and all the components are responsive. <br/>
+▶️ All the components support both dark and light theme.
 
 # Components
 
@@ -52,15 +55,15 @@
 
 # Preview
 
-## Desktop
+### Desktop
 
 ![ripple-ui-preview-desktop](https://user-images.githubusercontent.com/46019734/155149239-2b5fd3c8-0bf3-4a0e-aa56-3cae626d98e1.gif)
 
-## Tablet
+### Tablet
 
 ![ripple-ui-preview-tablet](https://user-images.githubusercontent.com/46019734/155150950-b5b53fb6-ebdd-4295-81ba-828ffa3a64e7.gif)
 
-## Mobile
+### Mobile
 
 ![ripple-ui-preview-mobile](https://user-images.githubusercontent.com/46019734/155149319-3a4cb79f-d409-427b-8e46-45ef306fc34b.gif)
 
