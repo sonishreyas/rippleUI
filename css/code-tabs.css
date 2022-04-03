@@ -76,7 +76,7 @@
 		display: none;
 	}
 	.rui-code--iframe {
-		width: 100% !important;
+		width: 100%;
 		height: auto;
 		overflow: scroll;
 		-webkit-overflow-scrolling: touch;

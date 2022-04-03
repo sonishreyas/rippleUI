@@ -8,9 +8,9 @@
 <h1 align="center" color="green">Ripple UI</h3>
 <p align="center">
  Minimal, customizable, and user friendly component library built using HTML, CSS, and Javascript.
-  <br>
+  <br />
   <a href="https://ripple-ui.netlify.app/components/installation/installation.html"><strong>Get Started</strong></a>
- <br />
+  <br />
   <br />
     <a href="https://github.com/sonishreyas/rippleUI/issues/new?assignees=&labels=bug&template=01_BUG_REPORT.md&title=bug%3A+">Report a Bug</a>
     ·
@@ -21,37 +21,45 @@
 # Installation
 
 - You can add this line into your html code to use the components inside the library.
+
 ```html
-<link rel="stylesheet" href="https://ripple-ui.netlify.app/css/components.css" />
+<link
+	rel="stylesheet"
+	href="https://ripple-ui.netlify.app/css/components.css"
+/>
 ```
+
 - You can also import it in your css file.
+
 ```css
 @import url("https://ripple-ui.netlify.app/css/components.css");
 ```
+
 # Key Features
-▶️ The website and all the components are responsive. <br/>
+
+▶️ The website and all the components are responsive. \
 ▶️ All the components support both dark and light theme.
 
 # Components
 
-✅ <a href="https://ripple-ui.netlify.app/components/alerts/alerts.html">Alerts</a> <br/>
-✅ <a href="https://ripple-ui.netlify.app/components/avatars/avatars.html">Avatars</a> <br/>
-✅ <a href="https://ripple-ui.netlify.app/components/badges/badges.html">Badges</a> <br/>
-✅ <a href="https://ripple-ui.netlify.app/components/buttons/buttons.html">Buttons</a> <br/>
-✅ <a href="https://ripple-ui.netlify.app/components/cards/cards.html">Cards</a> <br/>
-✅ <a href="https://ripple-ui.netlify.app/components/chips/chips.html">Chips</a> <br/>
-✅ <a href="https://ripple-ui.netlify.app/components/drawers/drawers.html">Drawers</a> <br/>
-✅ <a href="https://ripple-ui.netlify.app/components/grids/grids.html">Grids</a> <br/>
-✅ <a href="https://ripple-ui.netlify.app/components/images/images.html">Images</a> <br/>
-✅ <a href="https://ripple-ui.netlify.app/components/inputs/inputs.html">Inputs</a> <br/>
-✅ <a href="https://ripple-ui.netlify.app/components/lists/lists.html">Lists</a> <br/>
-✅ <a href="https://ripple-ui.netlify.app/components/modals/modals.html">Modals</a> <br/>
-✅ <a href="https://ripple-ui.netlify.app/components/navigation/navigation.html">Navigation</a> <br/>
-✅ <a href="https://ripple-ui.netlify.app/components/rating/rating.html">Rating</a> <br/>
-✅ <a href="https://ripple-ui.netlify.app/components/slider/slider.html">Slider</a> <br/>
-✅ <a href="https://ripple-ui.netlify.app/components/snackbars/snackbars.html">Snackbars</a> <br/>
-✅ <a href="https://ripple-ui.netlify.app/components/typography/typography.html">Typography</a> <br/>
-✅ <a href="https://ripple-ui.netlify.app/components/tabs/tabs.html">Tabs</a> <br/>
+✅ <a href="https://ripple-ui.netlify.app/components/alerts/alerts.html">Alerts</a> \
+✅ <a href="https://ripple-ui.netlify.app/components/avatars/avatars.html">Avatars</a> \
+✅ <a href="https://ripple-ui.netlify.app/components/badges/badges.html">Badges</a> \
+✅ <a href="https://ripple-ui.netlify.app/components/buttons/buttons.html">Buttons</a> \
+✅ <a href="https://ripple-ui.netlify.app/components/cards/cards.html">Cards</a> \
+✅ <a href="https://ripple-ui.netlify.app/components/chips/chips.html">Chips</a> \
+✅ <a href="https://ripple-ui.netlify.app/components/drawers/drawers.html">Drawers</a> \
+✅ <a href="https://ripple-ui.netlify.app/components/grids/grids.html">Grids</a> \
+✅ <a href="https://ripple-ui.netlify.app/components/images/images.html">Images</a> \
+✅ <a href="https://ripple-ui.netlify.app/components/inputs/inputs.html">Inputs</a> \
+✅ <a href="https://ripple-ui.netlify.app/components/lists/lists.html">Lists</a> \
+✅ <a href="https://ripple-ui.netlify.app/components/modals/modals.html">Modals</a> \
+✅ <a href="https://ripple-ui.netlify.app/components/navigation/navigation.html">Navigation</a> \
+✅ <a href="https://ripple-ui.netlify.app/components/rating/rating.html">Rating</a> \
+✅ <a href="https://ripple-ui.netlify.app/components/slider/slider.html">Slider</a> \
+✅ <a href="https://ripple-ui.netlify.app/components/snackbars/snackbars.html">Snackbars</a> \
+✅ <a href="https://ripple-ui.netlify.app/components/typography/typography.html">Typography</a> \
+✅ <a href="https://ripple-ui.netlify.app/components/tabs/tabs.html">Tabs</a>
 
 # Preview
 
@@ -73,5 +81,4 @@
 - CSS
 - Javascript
 
-<img src = "https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white">  <img src = "https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white">  <img src="https://img.shields.io/badge/-JavaScript-eed718?style=flat&logo=javascript&logoColor=ffffff">
-
+<img src = "https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white"> <img src = "https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/-JavaScript-eed718?style=flat&logo=javascript&logoColor=ffffff">
