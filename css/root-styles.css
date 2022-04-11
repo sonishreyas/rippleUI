@@ -4,8 +4,8 @@
 	font-size: 62.5%;
 
 	/* Z-Index */
-	--max-z-index: 99999;
-	--header-z-index: 99998;
+	--max-z-index: 10;
+	--header-z-index: 9;
 
 	/* Flex */
 	--flex-gap: 1rem;
